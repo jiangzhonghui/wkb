@@ -2,6 +2,7 @@ package com.apj.wkb;
 
 import java.util.Locale;
 
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -21,7 +22,12 @@ import android.widget.TextView;
 import com.apj.wkb.utils.FragmentManagerUtils;
 
 
-public class HomeActivity extends ActionBarActivity implements ActionBar.TabListener {
+public class HomeActivity extends ActionBarActivity implements ActionBar.TabListener,OnFragmentInteractionListener {
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
