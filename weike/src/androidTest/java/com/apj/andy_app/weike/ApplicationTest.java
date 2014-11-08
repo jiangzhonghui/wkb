@@ -1,4 +1,4 @@
-package ite.apj.com.ite;
+package com.apj.andy_app.weike;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
