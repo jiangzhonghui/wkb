@@ -1,1 +1,1 @@
-include ':app', ':wkblibary'
+include ':app', ':wkblibary', ':wkb-app'
