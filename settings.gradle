@@ -1,1 +1,1 @@
-include ':com.apj.wkb', ':wkb-app'
+include ':wkblibrary', ':wkb-app', ':myWKB'
