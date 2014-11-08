@@ -1,12 +1,12 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '21.0.2'
+    buildToolsVersion "21.0.2"
 
     defaultConfig {
-        applicationId "ite.apj.com.ite"
-        minSdkVersion 14
+        applicationId "com.apj.wkb"
+        minSdkVersion 9
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -21,8 +21,5 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v13:21.0.0'
-    compile 'com.android.support:support-v4:21.+'
-    compile 'com.google.code.gson:gson:2.2.2'
-    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.android.support:appcompat-v7:19.1.0'
 }
