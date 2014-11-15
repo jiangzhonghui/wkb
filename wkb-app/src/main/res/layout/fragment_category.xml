@@ -1,15 +1,128 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.apj.wkb.HomeFragment.CategoryFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    tools:context="com.apj.wkb.HomeFragment.CategoryFragment"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
 
-</FrameLayout>
-    <
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+         <TextView android:textSize="13.0sp"
+             android:padding="20dp"
+             android:textColor="@color/text_black"
+             android:gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20.0dip"
+             android:text="@string/all_course_filter_tag" />
+
+
+         </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_qb" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_jlp" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_wx" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_ys" />
+
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_zx" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_ls" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_jj" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_sh" />
+
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_fl" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_mt" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_ll" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_xl" />
+
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_gl" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_jn" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_sx" />
+         <TextView
+             style="@style/category_lesson_type"
+             android:text="@string/lesson_type_wl" />
+
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView android:textSize="13.0sp"
+             android:textColor="@color/text_black"
+             android:layout_marginLeft="33dp"
+             android:gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/lesson_type_jsj" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+         <TextView android:textSize="13.0sp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginBottom="20dp"
+             android:textColor="@color/text_black"
+             android:gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20.0dip"
+             android:text="@string/all_course_filter_source" />
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_qb" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_gn" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_gw" />
+         <TextView
+             style="@style/category_lesson_type"
+             android:text="@string/lesson_type_TED" />
+
+     </LinearLayout>
+     <LinearLayout
+         style="@style/category_lesson_type_layout">
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_azx" />
+         <TextView style="@style/category_lesson_type"
+             android:text="@string/lesson_type_azr" />
+         <TextView style="@style/category_lesson_type"
+             android:text="             " />
+         <TextView
+             style="@style/category_lesson_type"
+             android:text="        " />
+
+     </LinearLayout>
+ </LinearLayout>
+
+
