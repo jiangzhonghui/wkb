@@ -15,7 +15,7 @@ import com.apj.moxin.fragment.SettingFragment;
 public class FragementManagerUtils {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    public Fragment getFragmentInstance(int sectionNumber){
+    public static Fragment getFragmentInstance(int sectionNumber){
         if(sectionNumber == 1){
             HomeFragment fragment = new HomeFragment();
             Bundle args = new Bundle();

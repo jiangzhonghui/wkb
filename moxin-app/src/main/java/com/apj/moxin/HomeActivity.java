@@ -19,6 +19,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.apj.moxin.util.FragementManagerUtils;
+
 
 public class HomeActivity extends ActionBarActivity implements ActionBar.TabListener,OnFragmentInteractionListener {
 
@@ -131,7 +133,7 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            return FragementManagerUtils.getFragmentInstance(position + 1);
         }
 
         @Override
