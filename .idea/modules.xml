@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wkb.iml" filepath="$PROJECT_DIR$/wkb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wkb-app/wkb-app.iml" filepath="$PROJECT_DIR$/wkb-app/wkb-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wkblibrary/wkblibrary.iml" filepath="$PROJECT_DIR$/wkblibrary/wkblibrary.iml" />
+    </modules>
+  </component>
+</project>
+
