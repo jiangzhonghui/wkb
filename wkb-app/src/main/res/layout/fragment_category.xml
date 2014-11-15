@@ -5,9 +5,141 @@
     tools:context="com.apj.wkb.HomeFragment.CategoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
+        <TextView
+            android:text="类型"
+            style="@style/btn_fragment_category_title"
+             />
+
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="全部"
+                 />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="纪录片"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="文学"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="艺术"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="哲学"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="历史"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="经济"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="社会"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="法律"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="媒体"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="伦理"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="心理"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="管理"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="物理"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="数学"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="物理"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="化学"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="生物"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="医学"
+                />
+            <TextView
+                style="@style/btn_fragment_category_item"
+                android:text="环境"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linearlayout_fragment_category_item"
+            >
+
+            <TextView
+                style="@style/btn_fragment_category_single"
+                android:text="计算机"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
 </FrameLayout>

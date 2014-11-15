@@ -25,33 +25,36 @@ public class TestActivity extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d(Tag,"onStart");
+        Log.d(Tag,"onRestart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(Tag,"onStart");
+        Log.d(Tag,"onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(Tag,"onStart");
+        Log.d(Tag,"onPause");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.d(Tag,"onPause");
     }
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
+        Log.d(Tag,"onCreateContextMenu");
     }
 
     @Override
     public void finish() {
         super.finish();
+        Log.d(Tag,"finish");
     }
 }
