@@ -5,9 +5,123 @@
     tools:context="com.apj.wkb.Fragment.CategoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="15dp"
 
+       >
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:text="类型"/>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+
+           </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+           <TextView
+               style="@style/test_layout"
+               android:text="全部"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_marginLeft="30dp"
+               style="@style/test_layout_1"
+               android:text="全部"/>
+
+       </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
 </FrameLayout>
