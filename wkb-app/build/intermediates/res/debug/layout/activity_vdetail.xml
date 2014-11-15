@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/vdetail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/v_detail_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="com.netease.vopen.frag.PlayerFragment" android:id="@id/v_detail_player" android:layout_width="fill_parent" android:layout_height="205.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/v_detail_other" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.netease.vopen.view.vpi.TabPageIndicator android:id="@id/v_detail_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                <android.support.v4.view.ViewPager android:id="@id/v_detail_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/v_detail_mask" android:background="@drawable/player_replay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/v_detail_comment_box" android:background="#ffeeeeee" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <EditText android:textColor="@color/text_black" android:textColorHint="@color/text_gray" android:gravity="top" android:id="@id/post_comment_box" android:background="@drawable/text_input_bg" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:hint="@string/comment_length_hint" android:maxLines="4" android:layout_weight="1.0" />
+            <ImageView android:id="@id/submit_post_comment_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/publish_comment_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v_detail_nolink_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:src="@drawable/ico_no_content" />
+        <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/vdetail_fail_to_load" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v_detail_no_such_course" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:src="@drawable/ico_no_such_course" />
+        <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/vdetail_no_suchcourse" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v_detail_loading_page" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/top_progressbar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="162.0dip" android:indeterminateDrawable="@drawable/vopen_progress_anim" />
+        <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/loading" />
+    </LinearLayout>
+</FrameLayout>
+<!-- From: file:/F:/neallin/wkb1/wkb-app/src/main/res/layout/activity_vdetail.xml -->

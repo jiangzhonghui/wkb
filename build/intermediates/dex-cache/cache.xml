@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="F:\neallin\wkb1\wkb-app\build\intermediates\pre-dexed\debug\classes-1373c328a7206c4d105c8d754edcfd159507f605.jar"
+        jar="F:\neallin\wkb1\wkb-app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
+    <item
+        dex="F:\neallin\wkb1\wkb-app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-c0383a358436b52f7764ee680edd656e5d20af0f.jar"
+        jar="F:\neallin\wkb1\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
+        dex="F:\neallin\wkb1\wkb-app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-22bed8634bfcb65f80adf29136395bf773983352.jar"
+        jar="C:\App\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+    <item
+        dex="F:\neallin\wkb1\wkb-app\build\intermediates\pre-dexed\debug\classes-062b1d2d78f0f091393d14a094457d02d9379247.jar"
+        jar="F:\neallin\wkb1\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="F:\neallin\wkb1\wkb-app\build\intermediates\pre-dexed\debug\classes-8761d16dda8be07f9fcdc6fc5b8ebdc29a681a00.jar"
+        jar="F:\neallin\wkb1\wkb-app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
+
+</pre-dex-items>

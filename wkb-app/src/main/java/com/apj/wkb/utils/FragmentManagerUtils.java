@@ -21,7 +21,6 @@ public class FragmentManagerUtils {
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
-
         }else if(sectionNumber==2){
             CategoryFragment fragment = new CategoryFragment();
             Bundle args = new Bundle();
