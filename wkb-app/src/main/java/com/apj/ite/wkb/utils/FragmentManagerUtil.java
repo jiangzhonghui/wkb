@@ -14,13 +14,13 @@ import com.apj.ite.wkb.CCFragment;
 public class FragmentManagerUtil {
     private static final String ARG_SECTION_NUMBER = "section_number";
     public static Fragment getFragmentInstance(int sectionNumber){
-        if(sectionNumber == 0){
+        if(sectionNumber == 1){
             AAFragment fragment = new AAFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER,sectionNumber);
             fragment.setArguments(args);
             return fragment;
-        }else if(sectionNumber == 1){
+        }else if(sectionNumber == 2){
             BBFragment fragment = new BBFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER,sectionNumber);

@@ -8,6 +8,8 @@
     <string name="title_section3">我</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragmentAA">hello aa</string>
+    <string name="hello_blank_fragmentBB">hello bb</string>
+    <string name="hello_blank_fragmentCC">hello cc</string>
 
 </resources>
