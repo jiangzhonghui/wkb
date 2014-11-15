@@ -4346,6 +4346,13 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:textColor">@color/text_darkgray</item>
     </style>
 
+    <style name="fragment_category_class_all">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/my_item_selector</item>
+    </style>
+
     <style name="h_about_style">
         <item name="android:textSize">12.0sp</item>
         <item name="android:typeface">sans</item>

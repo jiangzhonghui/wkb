@@ -449,4 +449,11 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/text_black</item>
     </style>
+
+    <style name="fragment_category_class_all">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/my_item_selector</item>
+    </style>
 </resources>
