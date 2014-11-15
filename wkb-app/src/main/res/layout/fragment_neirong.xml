@@ -6,6 +6,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"
         android:text="类型"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,16 +24,19 @@
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
@@ -44,21 +50,26 @@
 
 
         <TextView
+
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
@@ -72,21 +83,26 @@
 
 
         <TextView
+
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
@@ -100,52 +116,31 @@
 
 
         <TextView
+
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
         <TextView
+            style="@style/btnNoSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="全部"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="全部"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="全部"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="全部"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="全部"/>
-
-    </LinearLayout>
 </LinearLayout>
