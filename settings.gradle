@@ -1,2 +1,2 @@
-include ':wkblibrary', ':wkb-app'
+include ':wkblibrary', ':wkb-app', ':test-resource', ':testprovider', ':testintent', ':dataprovider', ':dataprovidersqlite'
 
