@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apj.wkb.test.resource">
+    package="com.ai.android.book.resources">
 
     <application android:name=".MyApplication"
         android:icon="@drawable/icon"

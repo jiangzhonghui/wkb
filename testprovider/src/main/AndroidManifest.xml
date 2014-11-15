@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apj.wkb.testprovider">
+    package="com.ai.android.book.provider">
 
     <application android:name=".MyApplication"
-        android:icon="@drawable/icon"
         android:label="Test Provider">
         <activity android:name=".HelloWorld"
             android:label="Test Provider">
