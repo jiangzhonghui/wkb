@@ -11,6 +11,11 @@
     <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
 
+    <string name="title_activity_home">威客吧</string>
+    <string name="title_section1">威客吧</string>
+    <string name="title_section2">威客吧</string>
+    <string name="title_section3">威客吧</string>
+
     <string name="com.crashlytics.android.build_id">6f7a9905-c5f4-4ddf-a54e-31d7832a3bbe</string>
     <string name="channel_id">test_open</string>
     <string name="app_name">网易公开课</string>
