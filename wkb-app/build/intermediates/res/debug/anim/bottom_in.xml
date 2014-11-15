@@ -4,4 +4,4 @@
     <translate android:duration="1500" android:fromYDelta="100.0%p" android:toYDelta="0.0%p" />
     <alpha android:duration="1500" android:fromAlpha="1.0" android:toAlpha="0.0" />
 </set>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/anim/bottom_in.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/anim/bottom_in.xml -->

@@ -7,4 +7,4 @@
     <ImageView android:background="@drawable/comment_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
     <TextView android:textAppearance="@style/comment_toolbar_style" android:id="@id/comment_toolbar_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/comment_copy" />
 </LinearLayout>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/comment_toolbar.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/comment_toolbar.xml -->

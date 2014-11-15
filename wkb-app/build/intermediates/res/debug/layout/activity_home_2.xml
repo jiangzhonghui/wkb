@@ -4,4 +4,4 @@
     <com.netease.vopen.view.vpi.TabPageIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" />
     <view android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" class="com.netease.vopen.view.CustomViewPager" />
 </LinearLayout>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_home_2.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/activity_home_2.xml -->

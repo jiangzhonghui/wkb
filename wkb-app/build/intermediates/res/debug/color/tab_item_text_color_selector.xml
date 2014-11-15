@@ -6,4 +6,4 @@
     <item android:state_enabled="false" android:color="@color/text_disabled" />
     <item android:color="@color/text_black" />
 </selector>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/color/tab_item_text_color_selector.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/color/tab_item_text_color_selector.xml -->

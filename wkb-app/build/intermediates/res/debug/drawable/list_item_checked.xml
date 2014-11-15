@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/list_selector_pressed" />
 </shape>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/drawable/list_item_checked.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/list_item_checked.xml -->

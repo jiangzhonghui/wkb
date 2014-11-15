@@ -8,4 +8,4 @@
     <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" />
     <com.netease.vopen.view.MyGridView android:id="@id/recommend_grid" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:listSelector="@null" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
 </LinearLayout>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/hm_column_item.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/hm_column_item.xml -->

@@ -11,4 +11,4 @@
     </LinearLayout>
     <ImageView android:layout_gravity="center" android:id="@id/c_image_toplay" android:background="@drawable/play_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
 </LinearLayout>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/list_item_downloaded_course.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/list_item_downloaded_course.xml -->

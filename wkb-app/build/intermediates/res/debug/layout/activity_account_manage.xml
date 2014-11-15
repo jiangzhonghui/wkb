@@ -29,4 +29,4 @@
         <TextView android:textSize="13.0sp" android:textColor="@color/text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/account_weibo_description_text" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_account_manage.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/activity_account_manage.xml -->

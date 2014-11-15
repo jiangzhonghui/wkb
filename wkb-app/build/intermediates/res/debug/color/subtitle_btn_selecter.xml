@@ -4,4 +4,4 @@
     <item android:state_selected="true" android:color="@color/text_green" />
     <item android:color="@color/border_gray" />
 </selector>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/color/subtitle_btn_selecter.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/color/subtitle_btn_selecter.xml -->
