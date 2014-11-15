@@ -22332,6 +22332,36 @@ false
     <dataSet config="main" >
         <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res" >
             <file
+                name="abc_fade_in"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_fade_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="abc_fade_out"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_fade_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="abc_slide_in_bottom"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_slide_in_bottom.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="abc_slide_in_top"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_slide_in_top.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="abc_slide_out_bottom"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_slide_out_bottom.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="abc_slide_out_top"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\abc_slide_out_top.xml"
+                qualifiers=""
+                type="anim" />
+            <file
                 name="bottom_in"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\bottom_in.xml"
                 qualifiers=""
@@ -22441,6 +22471,11 @@ false
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\anim\welcome_text2_fade_in.xml"
                 qualifiers=""
                 type="anim" />
+            <file
+                name="abc_search_url_text_holo"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\color\abc_search_url_text_holo.xml"
+                qualifiers=""
+                type="color" />
             <file
                 name="black_text_btn_selecter"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\color\black_text_btn_selecter.xml"
@@ -24072,6 +24107,11 @@ false
                 qualifiers=""
                 type="layout" />
             <file
+                name="activity_home_1"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\activity_home_1.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="activity_home_2"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\activity_home_2.xml"
                 qualifiers=""
@@ -24079,6 +24119,11 @@ false
             <file
                 name="activity_login"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\activity_login.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_login_1"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\activity_login_1.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -24152,8 +24197,8 @@ false
                 qualifiers=""
                 type="layout" />
             <file
-                name="comment_toolbar"
-                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\comment_toolbar.xml"
+                name="browse_pics"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\browse_pics.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -24174,6 +24219,11 @@ false
             <file
                 name="filter_panel_item"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\filter_panel_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_all"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\fragment_all.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -24411,6 +24461,21 @@ false
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\tab_item_view2.xml"
                 qualifiers=""
                 type="layout" />
+            <file
+                name="test2_layout"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\test2_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="test_layout"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\layout\test_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="app_login"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\menu\app_login.xml"
+                qualifiers=""
+                type="menu" />
             <file
                 name="download_context_actions"
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\menu\download_context_actions.xml"
@@ -31250,6 +31315,41 @@ false
                 </string>
                 <string name="abc_searchview_description_search" >Пошук
                 </string>
+            </file>
+            <file
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="@style/Theme.AppCompat.Light" >
+                    <item name="android:actionBarStyle">
+@style/VopenActionBar
+                    </item>
+                    <item name="android:homeAsUpIndicator">
+@drawable/actionbar_up_btn
+                    </item>
+                    <item name="android:actionBarItemBackground">
+@drawable/actionbar_item_bg
+                    </item>
+                    <item name="searchViewSearchIcon">
+@drawable/actionbar_search
+                    </item>
+                </style>
+
+                <style
+                    name="VopenActionBar"
+                    parent="@style/Widget.AppCompat.ActionBar" >
+                    <item name="android:background">
+@drawable/actionbar_bg
+                    </item>
+                    <item name="android:height">
+50.0dip
+                    </item>
+                    <item name="android:titleTextStyle">
+@style/VopenActionBarTitleText
+                    </item>
+                </style>
             </file>
             <file
                 path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\res\values-vi\strings.xml"
