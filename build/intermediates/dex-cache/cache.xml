@@ -14,12 +14,6 @@
         revision="21.0.2"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
     <item
-        dex="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-ed0a751a15e5d9e9d4fc6a0d5768e3e63ff53416.jar"
-        jar="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
-    <item
         dex="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-40e73abad84a6d13b321a9d7df174cb6349a87b8.jar"
         jar="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
         jumboMode="false"
@@ -31,5 +25,11 @@
         jumboMode="false"
         revision="21.0.2"
         sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
+    <item
+        dex="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-ed0a751a15e5d9e9d4fc6a0d5768e3e63ff53416.jar"
+        jar="E:\Aaron\MiniClass\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
 
 </pre-dex-items>

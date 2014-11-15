@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/my_item_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/download_checkbox" android:visibility="gone" android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:button="@drawable/checkbox_selector_no_border" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/c_selectid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[第1课]" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/c_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="课程标题标题" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/downloaded_size_color" android:ellipsize="end" android:id="@id/c_select_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="44M" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/c_image_toplay" android:background="@drawable/play_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+</LinearLayout>
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/list_item_downloaded_course.xml -->

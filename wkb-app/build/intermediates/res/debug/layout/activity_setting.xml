@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.netease.vopen.frag.SettingFragment" android:id="@id/setting_frag" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_setting.xml -->
