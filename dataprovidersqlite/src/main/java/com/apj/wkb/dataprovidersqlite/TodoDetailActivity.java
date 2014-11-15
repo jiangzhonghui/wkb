@@ -19,6 +19,7 @@ import com.apj.wkb.dataprovidersqlite.contentprovider.TodoTable;
  * TodoDetailActivity allows to enter a new todo item
  * or to change an existing
  */
+
 public class TodoDetailActivity extends Activity {
     private Spinner mCategory;
     private EditText mTitleText;
