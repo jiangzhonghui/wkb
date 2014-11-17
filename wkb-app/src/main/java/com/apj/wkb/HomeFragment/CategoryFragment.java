@@ -1,20 +1,34 @@
 package com.apj.wkb.HomeFragment;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.LinearLayout;
+import android.widget.SimpleAdapter;
 
+import com.apj.wkb.HomeActivity;
 import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link com.apj.wkb.HomeFragment.CategoryFragment.OnFragmentInteractionListener} interface
+ *
  * to handle interaction events.
  * Use the {@link com.apj.wkb.HomeFragment.CategoryFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -31,6 +45,8 @@ public class CategoryFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+
 
     /**
      * Use this factory method to create a new instance of
@@ -56,10 +72,26 @@ public class CategoryFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final  Resources resources=getResources();
+        final int[] tag= resources.getIntArray(R.array.all_course_filter_tag);
+         GridView gridView;
+        List<Map<String,Object>> listItems=new ArrayList<Map<String, Object>>();
+        for(int i=0;i<tag.length;i++){
+            Map<String ,Object> list=new HashMap<String, Object>();
+            list.put("text",tag[i]);
+            listItems.add(list);
+        }
+        SimpleAdapter adapter;
+        adapter = new SimpleAdapter(
+                getActivity() ,listItems, R.layout.cell
+                ,new String[]{"text"},new int[]{R.id.buttom1});
+        gridView=(GridView)getView().findViewById(R.id.gridtag);
+        gridView.setAdapter(adapter);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override

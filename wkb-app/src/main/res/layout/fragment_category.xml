@@ -7,6 +7,7 @@ android:layout_width="fill_parent"
 android:layout_height="fill_parent">
 
 <LinearLayout
+    android:id="@+id/lg"
     android:orientation="vertical"
     android:padding="20dp"
     android:layout_width="fill_parent"
@@ -18,181 +19,15 @@ android:layout_height="fill_parent">
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="@string/all_course_filter_tag"/>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_checked"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="全部"
-            style="@style/button_selector_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:text="全部"
-            style="@style/button_selector_sigle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+     <GridView
+         android:id="@+id/gridtag"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:horizontalSpacing="5pt"
+         android:verticalSpacing="1pt"
+         android:numColumns="4"
+         android:gravity="center"
+        />
 
 </LinearLayout>
 
@@ -217,24 +52,24 @@ android:layout_height="fill_parent">
 
         <Button
             android:text="全部"
-            style="@style/button_selector_checked"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
             android:text="全部"
-            style="@style/button_selector_all"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
             android:text="全部"
-            style="@style/button_selector_all"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:text="全部"
-            style="@style/button_selector_all"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
