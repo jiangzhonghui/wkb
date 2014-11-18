@@ -27,6 +27,7 @@ android:layout_height="fill_parent">
          android:verticalSpacing="1pt"
          android:numColumns="4"
          android:gravity="center"
+
         />
 
 </LinearLayout>
