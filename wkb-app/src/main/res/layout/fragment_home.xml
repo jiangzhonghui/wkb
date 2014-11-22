@@ -12,18 +12,11 @@
        <RelativeLayout
             android:id="@id/gllery_container"
             android:layout_width="fill_parent"
-            android:layout_height="180.0dip">   
-                   <com.netease.vopen.view.lvp.LoopViewPager
-                       android:id="@id/gallery"
-                       android:layout_width="fill_parent"
-                       android:layout_height="fill_parent" />
-
-                   <com.netease.vopen.view.vpi.CirclePageIndicator
-                       android:id="@id/indicator"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_alignParentBottom="true"
-                       android:layout_alignParentRight="true" />
+            android:layout_height="180.0dip">
+           <android.support.v4.view.ViewPager
+               android:id="@id/gallery"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
                </RelativeLayout>
 
         <LinearLayout
@@ -116,7 +109,7 @@
                 android:layout_marginTop="6.0dip"
                 android:orientation="vertical">
 
-                <com.netease.vopen.view.MyGridView
+                <GridView
                     android:id="@id/grid_view_for_you"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"

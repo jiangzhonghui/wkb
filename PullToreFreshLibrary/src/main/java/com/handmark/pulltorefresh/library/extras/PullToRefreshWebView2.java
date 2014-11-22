@@ -24,12 +24,12 @@ import android.webkit.WebView;
 import com.handmark.pulltorefresh.library.PullToRefreshWebView;
 
 /**
- * An advanced version of {@link PullToRefreshWebView} which delegates the
+ * An advanced version of {@link com.handmark.pulltorefresh.library.PullToRefreshWebView} which delegates the
  * triggering of the PullToRefresh gesture to the Javascript running within the
  * WebView. This means that you should only use this class if:
  * <p/>
  * <ul>
- * <li>{@link PullToRefreshWebView} doesn't work correctly because you're using
+ * <li>{@link com.handmark.pulltorefresh.library.PullToRefreshWebView} doesn't work correctly because you're using
  * <code>overflow:scroll</code> or something else which means
  * {@link android.webkit.WebView#getScrollY()} doesn't return correct values.</li>
  * <li>You control the web content being displayed, as you need to write some

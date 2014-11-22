@@ -1439,7 +1439,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Simple Listener that allows you to be notified when the user has scrolled
 	 * to the end of the AdapterView. See (
-	 * {@link PullToRefreshAdapterViewBase#setOnLastItemVisibleListener}.
+	 * {@link com.handmark.pulltorefresh.library.PullToRefreshAdapterViewBase#setOnLastItemVisibleListener}.
 	 * 
 	 * @author Chris Banes
 	 */
@@ -1456,7 +1456,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	 * Listener that allows you to be notified when the user has started or
 	 * finished a touch event. Useful when you want to append extra UI events
 	 * (such as sounds). See (
-	 * {@link PullToRefreshAdapterViewBase#setOnPullEventListener}.
+	 * {@link com.handmark.pulltorefresh.library.PullToRefreshAdapterViewBase#setOnPullEventListener}.
 	 * 
 	 * @author Chris Banes
 	 */

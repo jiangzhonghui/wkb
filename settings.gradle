@@ -1,2 +1,2 @@
-include ':wkblibrary', ':wkb-app', ':test-resource', ':testprovider', ':testintent', ':dataprovider', ':dataprovidersqlite', ':PullToreFreshLibrary'
+include ':wkblibrary', ':wkb-app', ':test-resource', ':PullToreFreshLibrary'
 

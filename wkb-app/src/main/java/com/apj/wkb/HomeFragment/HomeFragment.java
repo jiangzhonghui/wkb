@@ -4,23 +4,20 @@ import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
+import com.apj.wkb.entity.HomeCategory;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Fragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Fragment#newInstance} factory method to
- * create an instanc this fragment.
- *
- */
-public class HomeFragment extends Fragment {
+import java.util.List;
+
+
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -94,4 +91,18 @@ public class HomeFragment extends Fragment {
     }
 
 
+    @Override
+    public Loader<List<HomeCategory>> onCreateLoader(int i, Bundle bundle) {
+        return null;
+    }
+
+    @Override
+    public void onLoadFinished(Loader<List<HomeCategory>> listLoader, List<HomeCategory> homeCategories) {
+
+    }
+
+    @Override
+    public void onLoaderReset(Loader<List<HomeCategory>> listLoader) {
+
+    }
 }

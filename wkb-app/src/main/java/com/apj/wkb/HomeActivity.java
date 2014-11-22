@@ -61,7 +61,6 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
         setContentView(R.layout.activity_home);
 
 
-
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
