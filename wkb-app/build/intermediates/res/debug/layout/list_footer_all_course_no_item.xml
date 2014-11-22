@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textAppearance="@style/no_item_style" android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_course_no_found" android:drawableTop="@drawable/ico_no_course" android:drawablePadding="14.0dip" />
 </FrameLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/list_footer_all_course_no_item.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/list_footer_all_course_no_item.xml -->

@@ -22,4 +22,4 @@
         <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/loading" />
     </LinearLayout>
 </FrameLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/frag_downloading.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/frag_downloading.xml -->

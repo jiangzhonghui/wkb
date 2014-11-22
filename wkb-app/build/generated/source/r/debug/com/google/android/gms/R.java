@@ -8,23 +8,23 @@ package com.google.android.gms;
 
 public final class R {
 	public static final class attr {
-		public static final int adSize = 0x7f010053;
-		public static final int adSizes = 0x7f010054;
-		public static final int adUnitId = 0x7f010055;
+		public static final int adSize = 0x7f010040;
+		public static final int adSizes = 0x7f010041;
+		public static final int adUnitId = 0x7f010042;
 		public static final int appTheme = 0x7f0100ee;
 		public static final int buyButtonAppearance = 0x7f0100f5;
 		public static final int buyButtonHeight = 0x7f0100f2;
 		public static final int buyButtonText = 0x7f0100f4;
 		public static final int buyButtonWidth = 0x7f0100f3;
-		public static final int cameraBearing = 0x7f010063;
-		public static final int cameraTargetLat = 0x7f010064;
-		public static final int cameraTargetLng = 0x7f010065;
-		public static final int cameraTilt = 0x7f010066;
-		public static final int cameraZoom = 0x7f010067;
+		public static final int cameraBearing = 0x7f010050;
+		public static final int cameraTargetLat = 0x7f010051;
+		public static final int cameraTargetLng = 0x7f010052;
+		public static final int cameraTilt = 0x7f010053;
+		public static final int cameraZoom = 0x7f010054;
 		public static final int environment = 0x7f0100ef;
 		public static final int fragmentMode = 0x7f0100f1;
 		public static final int fragmentStyle = 0x7f0100f0;
-		public static final int mapType = 0x7f010062;
+		public static final int mapType = 0x7f01004f;
 		public static final int maskedWalletDetailsBackground = 0x7f0100f8;
 		public static final int maskedWalletDetailsButtonBackground = 0x7f0100fa;
 		public static final int maskedWalletDetailsButtonTextAppearance = 0x7f0100f9;
@@ -32,14 +32,14 @@ public final class R {
 		public static final int maskedWalletDetailsLogoImageType = 0x7f0100fc;
 		public static final int maskedWalletDetailsLogoTextColor = 0x7f0100fb;
 		public static final int maskedWalletDetailsTextAppearance = 0x7f0100f6;
-		public static final int uiCompass = 0x7f010068;
-		public static final int uiRotateGestures = 0x7f010069;
-		public static final int uiScrollGestures = 0x7f01006a;
-		public static final int uiTiltGestures = 0x7f01006b;
-		public static final int uiZoomControls = 0x7f01006c;
-		public static final int uiZoomGestures = 0x7f01006d;
-		public static final int useViewLifecycle = 0x7f01006e;
-		public static final int zOrderOnTop = 0x7f01006f;
+		public static final int uiCompass = 0x7f010055;
+		public static final int uiRotateGestures = 0x7f010056;
+		public static final int uiScrollGestures = 0x7f010057;
+		public static final int uiTiltGestures = 0x7f010058;
+		public static final int uiZoomControls = 0x7f010059;
+		public static final int uiZoomGestures = 0x7f01005a;
+		public static final int useViewLifecycle = 0x7f01005b;
+		public static final int zOrderOnTop = 0x7f01005c;
 	}
 	public static final class color {
 		public static final int common_action_bar_splitter = 0x7f08002e;
@@ -114,17 +114,17 @@ public final class R {
 		public static final int grayscale = 0x7f0a01ae;
 		public static final int holo_dark = 0x7f0a01a2;
 		public static final int holo_light = 0x7f0a01a3;
-		public static final int hybrid = 0x7f0a0195;
+		public static final int hybrid = 0x7f0a018c;
 		public static final int match_parent = 0x7f0a01a9;
 		public static final int monochrome = 0x7f0a01af;
-		public static final int none = 0x7f0a018d;
-		public static final int normal = 0x7f0a0189;
+		public static final int none = 0x7f0a0184;
+		public static final int normal = 0x7f0a0180;
 		public static final int production = 0x7f0a01a4;
 		public static final int sandbox = 0x7f0a01a5;
-		public static final int satellite = 0x7f0a0196;
+		public static final int satellite = 0x7f0a018d;
 		public static final int selectionDetails = 0x7f0a01a8;
 		public static final int strict_sandbox = 0x7f0a01a6;
-		public static final int terrain = 0x7f0a0197;
+		public static final int terrain = 0x7f0a018e;
 		public static final int wrap_content = 0x7f0a019f;
 	}
 	public static final class integer {
@@ -175,11 +175,11 @@ public final class R {
 		public static final int WalletFragmentDefaultStyle = 0x7f0d00c9;
 	}
 	public static final class styleable {
-		public static final int[] AdsAttrs = { 0x7f010053, 0x7f010054, 0x7f010055 };
+		public static final int[] AdsAttrs = { 0x7f010040, 0x7f010041, 0x7f010042 };
 		public static final int AdsAttrs_adSize = 0;
 		public static final int AdsAttrs_adSizes = 1;
 		public static final int AdsAttrs_adUnitId = 2;
-		public static final int[] MapAttrs = { 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f };
+		public static final int[] MapAttrs = { 0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c };
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;

@@ -9,4 +9,4 @@
     </LinearLayout>
     <ImageView android:layout_gravity="bottom|right|center" android:id="@id/player_fullscreen_btn" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/player_fullscreen_btn_src" android:scaleType="center" />
 </merge>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/player_videoview.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/player_videoview.xml -->

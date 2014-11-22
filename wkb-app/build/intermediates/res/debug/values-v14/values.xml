@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
@@ -10,7 +10,7 @@
         <item name="android:actionBarItemBackground">@drawable/actionbar_item_bg</item>
         <item name="searchViewSearchIcon">@drawable/actionbar_search</item>
     </style>
-    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v14/values.xml -->
+    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v14/values.xml -->
     <eat-comment />
 
     <style name="Base.Theme.AppCompat" parent="Base.V14.Theme.AppCompat">
@@ -52,7 +52,7 @@
     <style name="Base.V14.Theme.AppCompat.Light" parent="Base.V11.Theme.AppCompat.Light" />
 
     <style name="Base.V14.Theme.AppCompat.Light.Dialog" parent="Base.V11.Theme.AppCompat.Light.Dialog" />
-    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 
     <style name="VopenActionBar" parent="@style/Widget.AppCompat.ActionBar">

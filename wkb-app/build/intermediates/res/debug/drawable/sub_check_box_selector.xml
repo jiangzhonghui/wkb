@@ -4,4 +4,4 @@
     <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/player_checkbox_checked" />
     <item android:state_enabled="true" android:drawable="@drawable/player_checkbox_normal" />
 </selector>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/sub_check_box_selector.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/drawable/sub_check_box_selector.xml -->

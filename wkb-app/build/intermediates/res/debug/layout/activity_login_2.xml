@@ -12,4 +12,4 @@
     <TextView android:enabled="false" android:textSize="20.0sp" android:textColor="@color/white_text_btn_selector" android:gravity="center" android:id="@id/login_button" android:background="@drawable/btn_green_big_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/login_button_text" />
     <TextView android:textSize="13.0sp" android:textColor="@color/text_green" android:gravity="center_horizontal" android:id="@id/login_register_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/login_register_text" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/activity_login_2.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_login_2.xml -->

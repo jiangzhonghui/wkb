@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <translate android:duration="@android:integer/config_longAnimTime" android:fromYDelta="0.0" android:toYDelta="-100.0%p"
   xmlns:android="http://schemas.android.com/apk/res/android" />
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/anim/slide_out_to_top.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/anim/slide_out_to_top.xml -->

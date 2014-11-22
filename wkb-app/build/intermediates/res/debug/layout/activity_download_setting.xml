@@ -12,4 +12,4 @@
     </LinearLayout>
     <TextView android:textSize="16.0sp" android:textColor="@color/text_black" android:gravity="center" android:id="@id/scan_result_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="扫描结果" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/activity_download_setting.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_download_setting.xml -->

@@ -10,4 +10,4 @@
         <CheckBox android:textSize="14.0sp" android:textColor="@color/main_text_green" android:id="@id/need_follow_vopen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:text="@string/follow_vopen_sina_weibo" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/share_layout.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/share_layout.xml -->

@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/edit_btn_green_pressed" />
     <item android:drawable="@drawable/edit_btn_green_notmal" />
 </selector>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/btn_green_small_bg.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/drawable/btn_green_small_bg.xml -->

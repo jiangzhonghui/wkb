@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/search_history_clear_btn_pressed" />
     <item android:drawable="@drawable/search_history_clear_btn_normal" />
 </selector>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/search_history_clear_btn_bg.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/drawable/search_history_clear_btn_bg.xml -->

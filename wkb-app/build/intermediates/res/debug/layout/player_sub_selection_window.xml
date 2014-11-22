@@ -21,4 +21,4 @@
         <com.netease.vopen.view.HoriSelectorView android:id="@id/sub2_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/player_sub_selection_window.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/player_sub_selection_window.xml -->

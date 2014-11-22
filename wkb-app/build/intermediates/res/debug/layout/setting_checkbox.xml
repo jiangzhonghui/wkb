@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector_setting"
   xmlns:android="http://schemas.android.com/apk/res/android" />
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/setting_checkbox.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/setting_checkbox.xml -->

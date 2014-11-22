@@ -7,4 +7,4 @@
     </LinearLayout>
     <RadioButton android:id="@id/download_path_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/download_path_view.xml -->
+<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/download_path_view.xml -->
