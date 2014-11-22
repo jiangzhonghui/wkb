@@ -367,9 +367,11 @@
     </style>
 
     <style name="button_selector_checked">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
         <item name="android:layout_marginRight">5dp</item>
         <item name="android:background">@drawable/filter_item_selected</item>
     </style>
@@ -387,6 +389,21 @@
         <item name="android:layout_marginLeft">5dp</item>
         <item name="android:layout_marginRight">5dp</item>
         <item name="android:background">@drawable/filter_item_bg_selector</item>
+    </style>
+
+    <style name="category_title_all">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="category_title_singe">
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/filter_item_selected</item>
     </style>
 
 </resources>
