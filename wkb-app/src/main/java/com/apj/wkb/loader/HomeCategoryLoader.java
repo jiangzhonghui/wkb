@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
 
 import com.apj.wkb.entity.HomeCategory;
+import com.apj.wkb.utils.DataUtils;
 
 import java.util.List;
 
@@ -25,6 +26,6 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
 
     @Override
     public List<HomeCategory> loadInBackground() {
-        return null;
+        return DataUtils.loadDate(context);
     }
 }

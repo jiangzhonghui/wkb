@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger version="2" >
 
+    <dataSet config="unspecified" >
+        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\assets" />
+    </dataSet>
     <dataSet config="21.0.0" >
         <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\assets" />
     </dataSet>
@@ -13,8 +16,8 @@
     <dataSet config="main" >
         <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\assets" >
             <file
-                name="recommend.json"
-                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\assets\recommend.json" />
+                name="home_json"
+                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\assets\home_json" />
         </source>
     </dataSet>
     <dataSet config="debug" >
