@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
 
-/**
+/*
+*
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * {@link SettingFragment.OnFragmentInteractionListener} interface
@@ -19,7 +20,7 @@ import com.apj.wkb.R;
  * Use the {@link SettingFragment#newInstance} factory method to
  * create an instance of this fragment.
  *
- */
+*/
 public class SettingFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -66,7 +67,7 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setting, container, false);
+        return inflater.inflate(R.layout.frag_hm_my, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
