@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.view.ViewPager;
@@ -74,6 +75,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
         mViewPager = (ViewPager)this.getView().findViewById(R.id.gallery);
         gllery_container=(RelativeLayout)this.getView().findViewById(R.id.gllery_container);
         recommend_loading = (ProgressBar)this.getView().findViewById(R.id.recommend_loading);
@@ -92,14 +94,16 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         mViewPager.setAdapter(topAdapter);
 
         getLoaderManager().initLoader(0,null,this);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fr agment
         return inflater.inflate(R.layout.frag_hm_main, container, false);
     }
+
 
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {

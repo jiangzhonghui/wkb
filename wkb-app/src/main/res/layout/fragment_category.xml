@@ -1,145 +1,257 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.apj.wkb.HomeFragment.CategoryFragment">
+    tools:context="com.apj.wkb.HomeFragment.CategoryFragment"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:text="@string/hello_blank_fragment" />-->
     <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_gravity="center_horizontal">
 
         <TextView
-            android:text="类型"
-            style="@style/btn_fragment_category_title"
-             />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/all_course_filter_tag"/>
 
         <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/btn_fragment_category_item"
+            <Button
                 android:text="全部"
-                 />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="纪录片"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="文学"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="艺术"
-                />
+                style="@style/button_selector_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-            </LinearLayout>
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
-
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="哲学"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="历史"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="经济"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="社会"
-                />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
         <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="法律"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="媒体"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="伦理"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="心理"
-                />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        </LinearLayout>
-        <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="管理"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="物理"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="数学"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="物理"
-                />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="化学"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="生物"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="医学"
-                />
-            <TextView
-                style="@style/btn_fragment_category_item"
-                android:text="环境"
-                />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
+
         <LinearLayout
-            style="@style/linearlayout_fragment_category_item"
-            >
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/btn_fragment_category_single"
-                android:text="计算机"
-                />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_sigle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_course_filter_source"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="全部"
+                style="@style/button_selector_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>
