@@ -77,7 +77,7 @@ wkb
 # 39. Fragment父类是什么?为什么Fragment必须附加到一个Activity才能使用?
 # 40. FragmentManager用途以及特性
 # 41. Fragment和Activity之前有什么相同点和不同点?
-# 42. Fragment之间怎么通讯?
+## 42. Fragment之间怎么通讯?
 
 
 
