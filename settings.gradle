@@ -1,2 +1,1 @@
-include ':wkblibrary', ':wkb-app', ':test-resource', ':testprovider', ':testintent'
-
+include ':app'
