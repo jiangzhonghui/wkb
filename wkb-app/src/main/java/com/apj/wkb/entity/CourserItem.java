@@ -1,24 +1,25 @@
 package com.apj.wkb.entity;
 
+import java.io.StringBufferInputStream;
+
 /**
  * Created by student on 2014/11/22.
  */
 public class CourserItem {
 
-
     private String id;
-    private String gmtCreate;
-    private String gmtModified;
-    private String type;
-    private String contentType;
-    private String contentUrl;
-    private String contentId;
-    private String title;
-    private String picUrl;
-    private String tag;
-    private String tagColor;
-    private String tagColorBg;
-    private String top;
+    private  String gmtCreate;
+    private  String gmtModified;
+    private  String type;
+    private  String contentType;
+    private  String contentUrl;
+    private  String contentId;
+    private  String title;
+    private  String picUrl;
+    private  String tag;
+    private  String tagColor;
+    private  String tagColorBg;
+    private  String top;
 
 
     public String getId() {

@@ -19,31 +19,39 @@ import java.util.List;
  */
 public class DataUtils {
 
-    public static List<HomeCategory> loadDate(Context context){
+    public  static List<HomeCategory> loadData(Context context) {
+
         String jsonString = "";
-        try{
+        try {
             InputStream inputStream = context.getAssets().open("home_json");
             jsonString = inputStream2String(inputStream);
-        }catch (Exception ex){
-            Log.e("DataUtils","loadDate",ex);
+        } catch (Exception ex)
+        {
+            Log.e("DataUtils", "LoadDate", ex);
         }
-        Gson gson = new Gson();
-        List<HomeCategory> data = gson.fromJson(jsonString, new TypeToken<List<HomeCategory>>(){}.getType());
-        try{
-            JSONObject jsonObject = new JSONObject(jsonString);
-        }catch (Exception ex){
+        Gson gson=new Gson();
+        List<HomeCategory> data=gson.fromJson(jsonString, new TypeToken<List<HomeCategory>>() {
+        }.getType());
+        try
+        {
+            JSONObject jsonObject=new JSONObject(jsonString);
+        }catch (Exception ex)
+        {
 
-        }
-        return data;
+         }
+
+        return  data;
     }
 
-    public static String inputStream2String(InputStream is) throws IOException {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    public  static  String inputStream2String(InputStream is) throws  IOException
+    {
+        ByteArrayOutputStream baos=new ByteArrayOutputStream();
         int i=-1;
-        while((i=is.read())!=-1){
+        while ((i=is.read())!=-1)
+        {
             baos.write(i);
         }
-        return baos.toString();
+        return  baos.toString();
     }
 }
 

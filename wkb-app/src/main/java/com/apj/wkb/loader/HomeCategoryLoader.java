@@ -14,20 +14,19 @@ import java.util.List;
  */
 public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
 
+
     private Context context;
 
     public HomeCategoryLoader(Context context) {
         super(context);
-        this.context= context;
+        this.context = context;
     }
 
-    @Override
     public void deliverResult(List<HomeCategory> data) {
         super.deliverResult(data);
     }
 
-    @Override
     public List<HomeCategory> loadInBackground() {
-        return DataUtils.loadDate(context);
+        return DataUtils.loadData(context);
     }
 }

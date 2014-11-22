@@ -91,6 +91,10 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         topAdapter = new ImageBannerPagerAdapter(this.getActivity(),topData);
         mViewPager.setAdapter(topAdapter);
 
+        /*topData = new ArrayList<CourserItem>();
+        topAdapter = new ImageBannerPagerAdapter(this.getActivity(),recommend_loading);
+        mViewPager.setAdapter(topAdapter);
+        */
         getLoaderManager().initLoader(0,null,this);
     }
 

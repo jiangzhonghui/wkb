@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class HomeCategory {
 
-    private String name;
+   private String name;
     private String type;
     private List<CourserItem> vos;
 
@@ -34,4 +34,6 @@ public class HomeCategory {
     public void setVos(List<CourserItem> vos) {
         this.vos = vos;
     }
+
+
 }
