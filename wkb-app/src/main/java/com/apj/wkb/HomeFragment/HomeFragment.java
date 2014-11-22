@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private TextView no_data_text_for_you;
     private ProgressBar  for_you_loading;
     private List<CourserItem> topData;
+    private List<CourserItem> recommenData;
     private String mParam1;
     private String mParam2;
     private ImageBannerPagerAdapter topAdapter;
@@ -68,8 +69,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
