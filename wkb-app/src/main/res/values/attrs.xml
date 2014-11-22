@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="title" format="string" />
+    <attr name="height" format="dimension" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="searchDropdownBackground" format="reference" />
+    <attr name="searchViewCloseIcon" format="reference" />
+    <attr name="searchViewGoIcon" format="reference" />
+    <attr name="searchViewSearchIcon" format="reference" />
+    <attr name="searchViewVoiceIcon" format="reference" />
+    <attr name="searchViewEditQuery" format="reference" />
+    <attr name="searchViewEditQueryBackground" format="reference" />
+    <attr name="searchViewTextField" format="reference" />
+    <attr name="searchViewTextFieldRight" format="reference" />
+    <attr name="searchResultListItemHeight" format="dimension" />
+
+    <attr name="searchViewAutoCompleteTextView" format="reference" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="debugDraw" format="boolean" />
+    <attr name="layout_newLine" format="boolean" />
+    <attr name="layout_horizontalSpacing" format="dimension" />
+    <attr name="layout_verticalSpacing" format="dimension" />
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiLinePageIndicatorStyle" format="reference" />
+    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+</resources>

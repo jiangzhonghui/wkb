@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/setting_download_path" android:key="downloadmanager" android:summary="@string/setting_download_path_summary">
+        <intent android:action="com.netease.vopen.activity.DownloadSettingActivity" />
+    </Preference>
+    <Preference android:title="@string/setting_feedback" android:key="feedback">
+        <intent android:action="com.netease.vopen.activity.FeedBackActivity" />
+    </Preference>
+    <Preference android:title="@string/setting_about" android:key="about">
+        <intent android:action="com.netease.vopen.activity.AboutActivity" />
+    </Preference>
+    <Preference android:title="@string/setting_moreapp" android:key="moreapp">
+        <intent android:action="com.netease.vopen.activity.MoreAppActivity" />
+    </Preference>
+</PreferenceScreen>
