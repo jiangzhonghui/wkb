@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <!--
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
     <attr name="ptrHeaderBackground" format="reference|color" />
     <attr name="ptrHeaderTextColor" format="reference|color" />
     <attr name="ptrHeaderSubTextColor" format="reference|color" />
@@ -29,8 +30,8 @@
     <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
     <attr name="ptrAdapterViewBackground" format="reference|color" />
     <attr name="ptrDrawableTop" format="reference" />
-    <attr name="ptrDrawableBottom" format="reference" />-->
-
+    <attr name="ptrDrawableBottom" format="reference" />
+-->
     <attr name="title" format="string" />
     <attr name="height" format="dimension" />
     <attr name="isLightTheme" format="boolean" />

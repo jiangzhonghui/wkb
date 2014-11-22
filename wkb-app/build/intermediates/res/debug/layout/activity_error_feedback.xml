@@ -10,4 +10,4 @@
         <Button android:textColor="@color/white_text_btn_selector" android:id="@id/error_submit" android:background="@drawable/btn_green_big_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/error_feedback_btn" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/activity_error_feedback.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/activity_error_feedback.xml -->

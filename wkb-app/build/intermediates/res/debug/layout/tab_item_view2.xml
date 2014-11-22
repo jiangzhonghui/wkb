@@ -4,4 +4,4 @@
     <TextView android:textColor="@color/tab_item_text_color_selector" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论" />
     <TextView android:textColor="@color/tab_item_text_color_selector" android:id="@id/tab_update_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="(99+)" />
 </merge>
-<!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/layout/tab_item_view2.xml -->
+<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/tab_item_view2.xml -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/arrays.xml -->
     <eat-comment />
 
     <string-array name="all_course_filter_source">
@@ -76,16 +76,16 @@
         <item>相关推荐</item>
         <item>跟贴</item>
     </string-array>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/attrs.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="centered" format="boolean" />
     <attr name="debugDraw" format="boolean" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <attr name="drawerArrowStyle" format="reference" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/attrs.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="fillColor" format="color" />
@@ -125,11 +125,11 @@
     <attr name="vpiTabPageIndicatorStyle" format="reference" />
     <attr name="vpiTitlePageIndicatorStyle" format="reference" />
     <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <bool name="abc_action_bar_embed_tabs">true</bool>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/bools.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/bools.xml -->
     <eat-comment />
 
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -143,22 +143,22 @@
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="actionbar_item_pressed">#ff256743</color>
@@ -168,21 +168,21 @@
     <color name="aquamarine">#ff7fffd4</color>
     <color name="azure">#fff0ffff</color>
     <color name="background">#ff000000</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="background_gray">#ffcccccc</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="beige">#fff5f5dc</color>
@@ -193,7 +193,7 @@
     <color name="blue">#ff0000ff</color>
     <color name="blueviolet">#ff8a2be2</color>
     <color name="border_gray">#ffcccccc</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -202,17 +202,17 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="brown">#ffa52a2a</color>
     <color name="burlywood">#ffdeb887</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="cadetblue">#ff5f9ea0</color>
@@ -225,7 +225,7 @@
     <color name="color_content_black">#ff000000</color>
     <color name="color_listview">#fff4fa58</color>
     <color name="color_title">#ff3664ad</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_colors.xml -->
     <eat-comment />
 
     <color name="common_action_bar_splitter">#d2d2d2</color>
@@ -238,7 +238,7 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="control_back">#aa00003d</color>
@@ -284,14 +284,14 @@
     <color name="default_title_indicator_text_color">#bbffffff</color>
     <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
     <color name="delete_btn_text_color">#ff1c3521</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="dimgrey">#ff666666</color>
@@ -322,14 +322,14 @@
     <color name="green">#ff008000</color>
     <color name="greenyellow">#ffadff2f</color>
     <color name="grey">#ff808080</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="honeydew">#fff0fff0</color>
@@ -359,12 +359,12 @@
     <color name="lime">#ff00ff00</color>
     <color name="limegreen">#ff32cd32</color>
     <color name="linen">#fffaf0e6</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="list_selector_pressed">#ffe6e6e6</color>
@@ -375,7 +375,7 @@
     <color name="map_circle">#ffc1d0e5</color>
     <color name="map_circle_line">#ffa2bbdf</color>
     <color name="maroon">#ff800000</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -383,7 +383,7 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="mblog_setting_text_color">#ff003300</color>
@@ -424,7 +424,7 @@
     <color name="pink">#ffffc0cb</color>
     <color name="plum">#ffdda0dd</color>
     <color name="powderblue">#ffb0e0e6</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="primary_dark_material_dark">#ff000000</color>
@@ -435,7 +435,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="progressbar_pro">#ffe2fbdc</color>
@@ -443,12 +443,12 @@
     <color name="purple">#ff800080</color>
     <color name="red">#ffff0000</color>
     <color name="regist">#ffb1d0ae</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="ripple_material_dark">#40ffffff</color>
     <color name="ripple_material_light">#40000000</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="rosybrown">#ffbc8f8f</color>
@@ -459,14 +459,14 @@
     <color name="seagreen">#ff2e8b57</color>
     <color name="search_match_highlight">#ffff9a00</color>
     <color name="seashell">#fffff5ee</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="setting_summary">#ffb1b28a</color>
@@ -483,12 +483,12 @@
     <color name="snow">#fffffafa</color>
     <color name="springgreen">#ff00ff7f</color>
     <color name="steelblue">#ff4682b4</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="tan">#ffd2b48c</color>
@@ -519,7 +519,7 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_colors.xml -->
     <eat-comment />
 
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
@@ -535,14 +535,14 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="wheat">#fff5deb3</color>
     <color name="white">#ffffffff</color>
     <color name="whitesmoke">#fff5f5f5</color>
     <color name="yellow">#ffffff00</color>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -673,7 +673,7 @@
         -->
         <attr name="expandActivityOverflowButtonDrawable" format="reference" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_ads_attrs.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_ads_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="AdsAttrs">
@@ -695,7 +695,7 @@
         <!-- The ad unit ID. -->
         <attr name="adUnitId" format="string" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="CompatTextView">
@@ -782,7 +782,7 @@
         <!-- Amount of pixels by which the drop down should be offset horizontally. -->
         <attr name="android:dropDownHorizontalOffset" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/maps_attrs.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/maps_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="MapAttrs">
@@ -807,7 +807,7 @@
         <attr name="useViewLifecycle" format="boolean" />
         <attr name="zOrderOnTop" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="MenuGroup">
@@ -987,7 +987,7 @@
         <!-- State identifier indicating the popup will be above the anchor. -->
         <attr name="state_above_anchor" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/wkb/pulltorefresh/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/wkb/pulltorefresh/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="PullToRefresh">
@@ -1065,7 +1065,7 @@
         <attr name="ptrDrawableTop" format="reference" />
         <attr name="ptrDrawableBottom" format="reference" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="SearchView">
@@ -1559,7 +1559,7 @@
         <attr name="android:inflatedId" />
         <attr name="android:id" />
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_attrs.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="WalletFragmentOptions">
@@ -1633,70 +1633,70 @@
             <enum name="monochrome" value="2" />
         </attr>
     </declare-styleable>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_default_height">48.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_icon_vertical_padding">8.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_icon_vertical_padding_material">16dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_progress_bar_size">40.0dip</dimen>
     <dimen name="abc_action_bar_stacked_max_height">48.0dip</dimen>
     <dimen name="abc_action_bar_stacked_tab_max_width">180.0dip</dimen>
     <dimen name="abc_action_bar_subtitle_bottom_margin">5.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_subtitle_bottom_margin_material">5dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_subtitle_text_size">14.0dip</dimen>
     <dimen name="abc_action_bar_subtitle_top_margin">-3.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_subtitle_top_margin_material">-3dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_title_text_size">18.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_button_min_height_material">48dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_button_min_width">56.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_button_min_width_material">48dp</dimen>
     <dimen name="abc_action_button_min_width_overflow_material">36dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_control_inset_material">4dp</dimen>
     <dimen name="abc_control_padding_material">4dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
@@ -1705,7 +1705,7 @@
     <dimen name="abc_panel_menu_list_width">296.0dip</dimen>
     <dimen name="abc_search_view_preferred_width">320.0dip</dimen>
     <dimen name="abc_search_view_text_min_width">160.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_text_size_body_1_material">16sp</dimen>
@@ -1725,7 +1725,7 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="actionbar_left_margin">20.0dip</dimen>
@@ -1745,7 +1745,7 @@
     <dimen name="default_title_indicator_text_size">15.0dip</dimen>
     <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
     <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
@@ -1754,7 +1754,7 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item name="disabled_alpha_material_dark" format="float" type="dimen">0.30</item>
     <item name="disabled_alpha_material_light" format="float" type="dimen">0.26</item>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="header_footer_left_right_padding">24.0dip</dimen>
@@ -1773,7 +1773,7 @@
     <dimen name="player_titlebar_height_min">34.0dip</dimen>
     <dimen name="tabbar_divider_padding">6.0dip</dimen>
     <dimen name="welcome_pb_margin_top">250.0dip</dimen>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/ids.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="LinearLayout01" type="id">false</item>
@@ -1787,11 +1787,11 @@
     <item name="action_bar_container" type="id">false</item>
     <item name="action_bar_overlay_layout" type="id">false</item>
     <item name="action_bar_root" type="id">false</item>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <item name="action_bar_spinner" type="id"/>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/ids.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="action_bar_subtitle" type="id">false</item>
@@ -2163,7 +2163,7 @@
     <item name="welcome_title1" type="id">false</item>
     <item name="welcome_title2" type="id">false</item>
     <item name="write_comment_button" type="id">false</item>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/integers.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/integers.xml -->
     <eat-comment />
 
     <integer name="abc_max_action_buttons">2</integer>
@@ -2172,11 +2172,11 @@
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/version.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/version.xml -->
     <eat-comment />
 
     <integer name="google_play_services_version">6111000</integer>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="VideoView_ad_countdown">秒</string>
@@ -2186,12 +2186,12 @@
     <string name="VideoView_error_title">视频错误</string>
     <string name="VideoView_skip_ad">立即播放</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -2213,11 +2213,11 @@
     <string name="about_version">当前版本:%1$s</string>
     <string name="aboutpage_title">关于</string>
     <string name="aboutpage_weburl">网站主页：</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="accept">Accept</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="account_login">立即登录</string>
@@ -2244,14 +2244,20 @@
     <string name="action_feedback">纠错</string>
     <string name="action_login">登录</string>
     <string name="action_refresh">刷新</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string name="action_settings">Settings</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
+    <eat-comment />
+
     <string name="action_share">分享</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="add_store_err">添加收藏失败！</string>
@@ -2275,7 +2281,13 @@
     <string name="all_type_philosophy">哲学课程</string>
     <string name="all_type_psychology">心理课程</string>
     <string name="all_type_ted">TED课程</string>
-    <string name="app_name">网易公开课</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="app_name">微课吧</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
+    <eat-comment />
+
     <string name="back_feed_log">反馈日志</string>
     <string name="back_feed_subject">网易公开课问题反馈(Android)</string>
     <string name="cancel">取消</string>
@@ -2317,7 +2329,7 @@
     <string name="comments_title">第%1$d集 跟贴 (%2$d)</string>
     <string name="commnet_close_or_not_exist">此跟贴已关闭或不存在</string>
     <string name="commnet_null">还没有输入任何东西</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_strings.xml -->
     <eat-comment />
 
     <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
@@ -2348,7 +2360,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="copyright">"Copyright © 2014 NetEase.com, Inc.
@@ -2369,22 +2381,22 @@ All Rights Reserved"</string>
     <string name="course_type_toutu">头图</string>
     <string name="course_type_xinli">心理学</string>
     <string name="course_type_zhexue">哲学</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="date_diff_hour">%1$d小时前</string>
     <string name="date_diff_min">%1$d分钟前</string>
     <string name="date_diff_sec">1分钟前</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="decline">Decline</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="del_store_err">取消收藏失败！</string>
@@ -2458,14 +2470,14 @@ All Rights Reserved"</string>
     <string name="error_feedback_title">纠错</string>
     <string name="error_feedback_video_format">视频格式：</string>
     <string name="error_feedback_video_index">第%1$d集</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="error_field_required">This field is required</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="error_type_blurred_screen">视频画面花屏</string>
@@ -2511,8 +2523,14 @@ All Rights Reserved"</string>
     <string name="foot_querying">正在载入更多数据...</string>
     <string name="get_more">查看下20条</string>
     <string name="getlog_failed">日志文件提取失败</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
+    <eat-comment />
+
     <string name="home_action_history">观看历史</string>
     <string name="home_action_search">搜索</string>
     <string name="index_download_error">网络错误</string>
@@ -2623,12 +2641,12 @@ All Rights Reserved"</string>
     <string name="playrec_mgr_select_all">全选</string>
     <string name="playrec_mgr_title">播放记录管理</string>
     <string name="playrec_title">播放记录</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
@@ -2709,12 +2727,12 @@ All Rights Reserved"</string>
     <string name="show_more">查看更多</string>
     <string name="small">小</string>
     <string name="software_version">软件版本：</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="store_play_finish">最后一课已看完，将重新播放</string>
@@ -2724,11 +2742,18 @@ All Rights Reserved"</string>
     <string name="str_net_error_or_invalid">网络异常或不稳定</string>
     <string name="sure">确定</string>
     <string name="text_size">字号</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="title_activity_app_login">AppLoginActivity</string>
     <string name="title_activity_home">微课吧</string>
     <string name="title_activity_main">微课吧</string>
     <string name="title_section1">首页</string>
     <string name="title_section2">全部课程</string>
     <string name="title_section3">我</string>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
+    <eat-comment />
+
     <string name="token_err">token过期，请重新登录</string>
     <string name="transaction_fail">操作失败</string>
     <string name="unbound_dlg_message_text">是否解除分享帐号绑定，解绑后，您将无法分享到微博上。</string>
@@ -2777,11 +2802,11 @@ All Rights Reserved"</string>
     <string name="vdetail_video_not_available">未上传</string>
     <string name="vdetail_will_translate">即将开始翻译此课程</string>
     <string name="waitting_recover_download">正在恢复下载数据，请稍候...</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_strings.xml -->
     <eat-comment />
 
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/strings_netease.xml -->
     <eat-comment />
 
     <string name="wbsetting_activity_title">分享帐号绑定</string>
@@ -2808,13 +2833,22 @@ All Rights Reserved"</string>
     <string name="weibo_type_tencent_name_text">腾讯微博</string>
     <string name="weibo_un_setting_text">未设置</string>
     <string name="weibo_unbound_text">解绑</string>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/VopenActionBar</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_item_bg</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_up_btn</item>
+        <item name="searchViewSearchIcon">@drawable/actionbar_search</item>
     </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/bg_main</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/Widget.CirclePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
@@ -3855,24 +3889,6 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     </style>
 
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">@android:color/primary_text_light</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Widget">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Widget">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
-    </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
 
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1" />
 
@@ -3897,26 +3913,14 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="TextAppearance.AppCompat.Large" parent="Base.TextAppearance.AppCompat.Large" />
 
     <style name="TextAppearance.AppCompat.Large.Inverse" parent="Base.TextAppearance.AppCompat.Large.Inverse" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
-
-    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
 
     <style name="TextAppearance.AppCompat.Light.SearchResult.Subtitle" parent="TextAppearance.AppCompat.SearchResult.Subtitle" />
 
     <style name="TextAppearance.AppCompat.Light.SearchResult.Title" parent="TextAppearance.AppCompat.SearchResult.Title" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
 
-    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
 
-    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
 
     <style name="TextAppearance.AppCompat.Medium" parent="Base.TextAppearance.AppCompat.Medium" />
 
@@ -3939,75 +3943,33 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="TextAppearance.AppCompat.Title" parent="Base.TextAppearance.AppCompat.Title" />
 
     <style name="TextAppearance.AppCompat.Title.Inverse" parent="Base.TextAppearance.AppCompat.Title.Inverse" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse" parent="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" />
 
-    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="TextAppearance.AppCompat.Widget.ActionMode.Title" />
 
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@android:style/TextAppearance.Small">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">?actionMenuTextColor</item>
-    </style>
+    <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="Base.TextAppearance.AppCompat.Widget.DropDownItem" />
 
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@android:style/TextAppearance.Small">
-        <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
-    </style>
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large" />
 
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
-        <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse">
-        <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">?android:textColorSecondary</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
-        <item name="android:textColor">?android:textColorSecondaryInverse</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@android:style/TextAppearance.Medium" />
-
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse" />
-
-    <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="@style/TextAppearance.AppCompat.Widget.Base.DropDownItem" />
-
-    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
-
-    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" />
 
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="TextAppearance.TabPageIndicator" parent="@style/Widget">
@@ -4015,14 +3977,10 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/tab_item_text_color_selector</item>
     </style>
-
-    <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
-    </style>
-
-    <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="@style/TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
+
+    <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item" />
 
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
 
@@ -4053,13 +4011,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="Theme.Base" parent="@android:style/Theme" />
-
-    <style name="Theme.Base.Light" parent="@android:style/Theme.Light" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_iap_style.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_iap_style.xml -->
     <eat-comment />
 
     <style name="Theme.IAPTheme" parent="android:Theme">
@@ -4070,7 +4022,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat" />
@@ -4082,8 +4034,14 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/styles.xml -->
     <eat-comment />
+
+    <style name="VopenActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="height">50.0dip</item>
+        <item name="titleTextStyle">@style/VopenActionBarTitleText</item>
+        <item name="background">@drawable/actionbar_bg</item>
+    </style>
 
     <style name="VopenActionBarBtnText">
         <item name="android:textSize">14.0sp</item>
@@ -4116,7 +4074,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">#ffeeeeee</item>
     </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_styles.xml -->
     <eat-comment />
 
     <style name="WalletFragmentDefaultButtonTextAppearance">
@@ -4154,7 +4112,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="WelcomeStyle" parent="@android:style/Theme.Light.NoTitleBar">
@@ -4163,7 +4121,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     </style>
 
     <style name="Widget" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar" />
@@ -4187,28 +4145,6 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="Widget.AppCompat.ActivityChooserView" parent="Base.Widget.AppCompat.ActivityChooserView" />
 
     <style name="Widget.AppCompat.AutoCompleteTextView" parent="Base.Widget.AppCompat.AutoCompleteTextView" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
-        <item name="android:listSelector">@drawable/abc_list_selector_holo_dark</item>
-    </style>
-
-    <style name="Widget.AppCompat.Base.ListView.Menu" parent="@android:style/Widget.ListView.Menu">
-        <item name="android:listSelector">?listChoiceBackgroundIndicator</item>
-        <item name="android:divider">?dividerHorizontal</item>
-    </style>
-
-    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.ProgressBar">
-        <item name="android:maxWidth">@dimen/abc_action_bar_progress_bar_size</item>
-        <item name="android:maxHeight">@dimen/abc_action_bar_progress_bar_size</item>
-        <item name="android:minWidth">@dimen/abc_action_bar_progress_bar_size</item>
-        <item name="android:minHeight">@dimen/abc_action_bar_progress_bar_size</item>
-    </style>
-
-    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
 
     <style name="Widget.AppCompat.CompoundButton.Switch" parent="Base.Widget.AppCompat.CompoundButton.Switch" />
 
@@ -4249,24 +4185,12 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="Widget.AppCompat.Light.ActivityChooserView" parent="Base.Widget.AppCompat.Light.ActivityChooserView" />
 
     <style name="Widget.AppCompat.Light.AutoCompleteTextView" parent="Base.Widget.AppCompat.Light.AutoCompleteTextView" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
-        <item name="android:listSelector">@drawable/abc_list_selector_holo_light</item>
-    </style>
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
 
     <style name="Widget.AppCompat.Light.DropDownItem.Spinner" parent="Widget.AppCompat.DropDownItem.Spinner" />
 
     <style name="Widget.AppCompat.Light.ListPopupWindow" parent="Widget.AppCompat.ListPopupWindow" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
 
-    <style name="Widget.AppCompat.Light.ListView.DropDown" parent="@style/Widget.AppCompat.Light.Base.ListView.DropDown" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
+    <style name="Widget.AppCompat.Light.ListView.DropDown" parent="Widget.AppCompat.ListView.DropDown" />
 
     <style name="Widget.AppCompat.Light.PopupMenu" parent="Base.Widget.AppCompat.Light.PopupMenu" />
 
@@ -4277,28 +4201,20 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="Widget.AppCompat.Light.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Spinner.DropDown.ActionBar" />
 
     <style name="Widget.AppCompat.ListPopupWindow" parent="Base.Widget.AppCompat.ListPopupWindow" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
 
-    <style name="Widget.AppCompat.ListView.DropDown" parent="@style/Widget.AppCompat.Base.ListView.DropDown" />
+    <style name="Widget.AppCompat.ListView.DropDown" parent="Base.Widget.AppCompat.ListView.DropDown" />
 
-    <style name="Widget.AppCompat.ListView.Menu" parent="@style/Widget.AppCompat.Base.ListView.Menu" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
+    <style name="Widget.AppCompat.ListView.Menu" parent="Base.Widget.AppCompat.ListView.Menu" />
 
     <style name="Widget.AppCompat.PopupMenu" parent="Base.Widget.AppCompat.PopupMenu" />
 
     <style name="Widget.AppCompat.PopupMenu.Overflow" parent="Base.Widget.AppCompat.PopupMenu.Overflow" />
 
     <style name="Widget.AppCompat.PopupWindow" parent="Base.Widget.AppCompat.PopupWindow" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
-    <eat-comment />
 
-    <style name="Widget.AppCompat.ProgressBar" parent="@style/Widget.AppCompat.Base.ProgressBar" />
+    <style name="Widget.AppCompat.ProgressBar" parent="Base.Widget.AppCompat.ProgressBar" />
 
-    <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="@style/Widget.AppCompat.Base.ProgressBar.Horizontal" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
-    <eat-comment />
+    <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal" />
 
     <style name="Widget.AppCompat.SearchView" parent="Base.Widget.AppCompat.SearchView" />
 
@@ -4311,7 +4227,7 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar" />
 
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation" />
-    <!-- From: file:/E:/Aaron/MiniClass/wkb/wkb-app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="Widget.CirclePageIndicator" parent="@style/Widget">
@@ -4331,6 +4247,29 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:paddingRight">12.0dip</item>
         <item name="android:paddingBottom">12.0dip</item>
         <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="button_selector_all">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/filter_item_bg_selector</item>
+    </style>
+
+    <style name="button_selector_checked">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/filter_item_selected</item>
+    </style>
+
+    <style name="button_selector_sigle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/filter_item_bg_selector</item>
     </style>
 
     <style name="comment_toolbar_style">
@@ -4395,13 +4334,6 @@ m>                <item name="android:textColorLink">@color/link_text_material_d
         <item name="android:typeface">sans</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/text_darkgray</item>
-    </style>
-
-    <style name="fragment_category_class_all">
-        <item name="android:layout_weight">1</item>
-        <item name="android:gravity">center</item>
-        <item name="android:padding">5dp</item>
-        <item name="android:background">@drawable/my_item_selector</item>
     </style>
 
     <style name="h_about_style">
