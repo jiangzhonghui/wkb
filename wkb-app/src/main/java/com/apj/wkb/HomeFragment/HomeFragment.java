@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
+import com.apj.wkb.adapter.HomeAdapter;
 import com.apj.wkb.adapter.ImageBannerPagerAdapter;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
@@ -42,9 +43,11 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private TextView no_data_text_for_you;
     private ProgressBar  for_you_loading;
     private List<CourserItem> topData;
+    private List<CourserItem> recommenData;
     private String mParam1;
     private String mParam2;
     private ImageBannerPagerAdapter topAdapter;
+    private HomeAdapter recommendAdapter;
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -105,6 +108,10 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         topAdapter = new ImageBannerPagerAdapter(this.getActivity(),topData);
         mViewPager.setAdapter(topAdapter);
 
+        recommenData = new ArrayList<CourserItem>();
+        recommendAdapter = new HomeAdapter(this.getActivity(),this.recommenData);
+        this.grid_view_for_you.setAdapter(recommendAdapter);
+
         getLoaderManager().initLoader(0,null,this);
     }
 
@@ -143,11 +150,15 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             recommend_loading.setVisibility(View.GONE);
             grid_view_for_you.setVisibility(View.VISIBLE);
             empty_view_for_you.setVisibility(View.GONE);
-            for(HomeCategory item:homeCategories){
-                if(item.getType().equals("0")){
+            for(HomeCategory item:homeCategories) {
+                if (item.getType().equals("0")) {
                     topData.clear();
                     topData.addAll(item.getVos());
                     topAdapter.notifyDataSetChanged();
+                } else {
+                    recommenData.clear();
+                    recommenData.addAll(item.getVos());
+                    recommendAdapter.notifyDataSetChanged();
                 }
             }
         }else{

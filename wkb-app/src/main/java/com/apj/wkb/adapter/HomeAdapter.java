@@ -3,24 +3,37 @@ package com.apj.wkb.adapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.apj.wkb.R;
+import com.apj.wkb.entity.CourserItem;
+import com.squareup.picasso.Picasso;
+import android.content.Context;
+import android.view.LayoutInflater;
+import java.util.List;
 
 /**
  * Created by student on 2014/11/22.
  */
 public class HomeAdapter extends BaseAdapter {
 
-    public HomeAdapter() {
+    List<CourserItem> mData;
+    Context mContext;
+
+    public HomeAdapter(Context context, List<CourserItem> data) {
         super();
+        this.mData=data;
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return mData.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return mData.get(position);
     }
 
     @Override
