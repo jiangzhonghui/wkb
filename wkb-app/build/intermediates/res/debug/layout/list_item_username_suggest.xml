@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_selector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/suggest_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="vopen@163.com" android:maxLines="1" />
+</LinearLayout>
+<!-- From: file:/E:/wkb2222/wkb/wkb-app/src/main/res/layout/list_item_username_suggest.xml -->

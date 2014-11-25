@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#40000000" />
+    <corners android:radius="1.0dip" android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="@dimen/indicator_corner_radius" android:bottomRightRadius="@dimen/indicator_corner_radius" />
+</shape>
+<!-- From: file:/E:/wkb2222/wkb/wkb-app/src/main/res/drawable/indicator_bg_top.xml -->

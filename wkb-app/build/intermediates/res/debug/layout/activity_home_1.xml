@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netease.vopen.view.vpi.TabPageIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <view android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" class="com.netease.vopen.view.CustomViewPager" />
+</LinearLayout>
+<!-- From: file:/E:/wkb2222/wkb/wkb-app/src/main/res/layout/activity_home_1.xml -->

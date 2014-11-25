@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/vplayer2" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.netease.vopen.view.MyVideoView android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="top|left|center" android:orientation="horizontal" android:id="@id/player_title_bar" android:background="@drawable/player_bars_bg" android:layout_width="fill_parent" android:layout_height="34.0dip">
+            <ImageView android:id="@id/player_back_btn" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="@drawable/player_back_btn_src" android:scaleType="center" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffdddddd" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/player_title_text" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="视频标题" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/subtitle_btn_selecter" android:gravity="center" android:id="@id/player_subtitle_btn" android:background="@drawable/player_subtitle_btn_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/player_subtitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|left|center" android:orientation="vertical" android:id="@id/player_subtitle_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <com.netease.vopen.view.SubtitleView android:id="@id/sub_view_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.netease.vopen.view.SubtitleView android:id="@id/sub_view_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/playing_video_subtitle_bar_space" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/player_backforward_panel" android:background="@drawable/player_bars_bg" android:layout_width="140.0dip" android:layout_height="90.0dip">
+            <ImageView android:id="@id/player_backforward_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/player_forward" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_green" android:id="@id/player_backforward_curtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="115:00" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/player_backforward_sep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/player_backforward_totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120:00" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/player_replay_page" android:background="@drawable/player_replay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_replay_ico" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/player_replay" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/player_guide" android:background="@drawable/player_replay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_guide" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/player_error_page" android:background="@drawable/player_page_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_error_ico" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/player_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/player_load_error" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/player_loading_page" android:background="@drawable/player_page_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="75.0dip" android:layout_height="75.0dip">
+            <ProgressBar android:layout_gravity="center" android:id="@id/player_loadding_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateDrawable="@drawable/player_progressbar" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/player_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/player_loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/player_ready_page" android:background="@drawable/player_page_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/player_video_ready_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/player_do_play_selector" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/player_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>
+<!-- From: file:/E:/wkb2222/wkb/wkb-app/src/main/res/layout/frag_player.xml -->

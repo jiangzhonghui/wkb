@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netease.vopen.view.LoadingImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom|left|center" android:orientation="vertical" android:background="@drawable/gallery_item_bg" android:paddingLeft="10.0dip" android:paddingRight="80.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/image_tag" android:background="@drawable/head_img_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赏课" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="left" android:id="@id/image_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="长白山特色花卉植物资源哈哈哈哈" android:singleLine="true" android:shadowColor="@color/black" android:shadowDy="1.0" android:shadowRadius="3.0" />
+    </LinearLayout>
+</FrameLayout>
+<!-- From: file:/E:/wkb2222/wkb/wkb-app/src/main/res/layout/gallery_item_layout.xml -->

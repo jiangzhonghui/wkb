@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="indicator_right_padding">10.0dip</dimen>
     <dimen name="indicator_corner_radius">12.0dip</dimen>
     <dimen name="indicator_internal_padding">4.0dip</dimen>
@@ -48,4 +49,7 @@
     <dimen name="default_title_indicator_text_size">15.0dip</dimen>
     <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
     <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
 </resources>
