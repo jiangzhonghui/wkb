@@ -2,10 +2,10 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="E:\wkb2222\wkb\pulltorefresh\src\main\assets" />
+        <source path="F:\wkb\wkb\pulltorefresh\src\main\assets" />
     </dataSet>
     <dataSet config="release" >
-        <source path="E:\wkb2222\wkb\pulltorefresh\src\release\assets" />
+        <source path="F:\wkb\wkb\pulltorefresh\src\release\assets" />
     </dataSet>
 
 </merger>
