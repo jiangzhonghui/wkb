@@ -14,7 +14,6 @@ import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,12 +52,6 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        ActionBar actionbar = this.getSupportActionBar();
-        actionbar.setDisplayUseLogoEnabled(true);
-        actionbar.setDefaultDisplayHomeAsUpEnabled(true);
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setDisplayShowTitleEnabled(true);
-        actionbar.setTitle(this.getResources().getString(R.string.app_name));
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -95,11 +88,8 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.home, menu);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.home, menu);
-        return super.onCreateOptionsMenu(menu);
-//        return true;
+        getMenuInflater().inflate(R.menu.home, menu);
+        return true;
     }
 
     @Override
@@ -109,14 +99,6 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            switch (id){
-                case R.id.action_search:
-                    break;
-                case R.id.action_history:
-                    break;
-                default:
-                    break;
-            }
             return true;
         }
         return super.onOptionsItemSelected(item);
