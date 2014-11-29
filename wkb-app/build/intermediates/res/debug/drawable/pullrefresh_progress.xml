@@ -7,4 +7,4 @@
     <item android:duration="200" android:drawable="@drawable/ptr_progress_4" />
     <item android:duration="200" android:drawable="@drawable/ptr_progress_5" />
 </animation-list>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/pullrefresh_progress.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/pullrefresh_progress.xml -->

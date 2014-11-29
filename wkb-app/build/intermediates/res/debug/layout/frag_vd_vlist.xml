@@ -15,4 +15,4 @@
         <com.netease.vopen.view.MyGridView android:id="@id/vdetail_untranslated_grid" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="20.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/frag_vd_vlist.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/frag_vd_vlist.xml -->

@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textAppearance="@style/search_history_clear_style" android:gravity="center" android:id="@id/clear_history_btn" android:background="@drawable/search_history_clear_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_clear_history" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/list_footer_clear_history.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_footer_clear_history.xml -->

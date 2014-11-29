@@ -4,4 +4,4 @@
     <TextView android:textAppearance="@style/course_list_item_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/index_list_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="280.0dip" android:text="课程名称课程名称课程名称课程名称课程名称课程名称课程名称" android:maxLines="1" android:layout_weight="1.0" />
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_go_detail" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/list_item_download_course_title2.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_item_download_course_title2.xml -->

@@ -10,4 +10,4 @@
         <bitmap android:gravity="fill_horizontal|bottom|center" android:src="@drawable/welcome_bg" android:tileMode="disabled" />
     </item>
 </layer-list>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/welcome_bg_new.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/welcome_bg_new.xml -->

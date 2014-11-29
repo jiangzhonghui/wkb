@@ -5,4 +5,4 @@
     <item android:state_pressed="true" android:color="@color/white" />
     <item android:color="@color/text_black" />
 </selector>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/color/filter_item_text_selector.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/color/filter_item_text_selector.xml -->

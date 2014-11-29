@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textAppearance="@style/search_item_style" android:id="@id/search_result_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_result" />
 </LinearLayout>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/list_header_search_result.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_header_search_result.xml -->

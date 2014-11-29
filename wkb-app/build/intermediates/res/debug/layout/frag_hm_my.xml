@@ -34,4 +34,4 @@
         <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/frag_hm_my.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/frag_hm_my.xml -->

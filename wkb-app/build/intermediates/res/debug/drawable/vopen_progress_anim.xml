@@ -10,4 +10,4 @@
     <item android:duration="150" android:drawable="@drawable/vopen_progress_3" />
     <item android:duration="150" android:drawable="@drawable/vopen_progress_2" />
 </animation-list>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/drawable/vopen_progress_anim.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/vopen_progress_anim.xml -->

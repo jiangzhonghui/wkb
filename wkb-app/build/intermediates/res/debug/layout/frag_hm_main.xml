@@ -18,7 +18,6 @@
                 android:id="@id/gallery"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" />
-
             <!--
             <com.netease.vopen.view.vpi.CirclePageIndicator
                 android:id="@id/indicator"
@@ -37,7 +36,48 @@
                 android:id="@id/recommend_container"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_ico_play_green"
+                    android:drawablePadding="6.0dip"
+                    android:text="@string/main_recommend_for_you"
+                    android:textSize="16.0sp" />
+                <com.apj.wkb.view.ScrollGridView
+                    android:id="@+id/grid_view_v1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:verticalSpacing="10.0dip"
+                     android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/title_v2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_ico_play_green"
+                    android:drawablePadding="6.0dip"
+                    android:text="@string/main_recommend_for_you"
+                    android:textSize="16.0sp" />
+                <com.apj.wkb.view.ScrollGridView
+                    android:id="@+id/grid_view_v2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:verticalSpacing="10.0dip"
+                    android:visibility="visible" />
+            </LinearLayout>
+
 
             <RelativeLayout
                 android:id="@id/recommend_empty_view"
@@ -118,7 +158,7 @@
                 android:layout_marginTop="6.0dip"
                 android:orientation="vertical">
 
-                <GridView
+                <com.apj.wkb.view.ScrollGridView
                     android:id="@id/grid_view_for_you"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -164,4 +204,4 @@
             android:src="@drawable/home_slogan" />
     </LinearLayout>
 </view>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/layout/frag_hm_main.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/frag_hm_main.xml -->

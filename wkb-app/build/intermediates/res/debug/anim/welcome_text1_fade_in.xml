@@ -4,4 +4,4 @@
     <translate android:interpolator="@android:anim/decelerate_interpolator" android:duration="500" android:fromYDelta="4.999995%p" android:toYDelta="0.0" />
     <alpha android:interpolator="@android:anim/linear_interpolator" android:duration="500" android:fromAlpha="0.0" android:toAlpha="1.0" />
 </set>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/anim/welcome_text1_fade_in.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/anim/welcome_text1_fade_in.xml -->

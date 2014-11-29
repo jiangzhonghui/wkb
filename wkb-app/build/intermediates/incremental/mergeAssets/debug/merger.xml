@@ -2,26 +2,26 @@
 <merger version="2" >
 
     <dataSet config="unspecified" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\assets" />
+        <source path="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\assets" />
     </dataSet>
     <dataSet config="21.0.0" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\assets" />
+        <source path="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\assets" />
     </dataSet>
     <dataSet config="6.1.11" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\assets" />
+        <source path="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\assets" />
     </dataSet>
     <dataSet config="21.0.0" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\assets" />
+        <source path="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\assets" />
     </dataSet>
     <dataSet config="main" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\assets" >
+        <source path="E:\Aaron\wkb\wkb-app\src\main\assets" >
             <file
                 name="home_json"
-                path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\main\assets\home_json" />
+                path="E:\Aaron\wkb\wkb-app\src\main\assets\home_json" />
         </source>
     </dataSet>
     <dataSet config="debug" >
-        <source path="D:\aaronzhang\android_aaron\wkb\wkb-app\src\debug\assets" />
+        <source path="E:\Aaron\wkb\wkb-app\src\debug\assets" />
     </dataSet>
 
 </merger>

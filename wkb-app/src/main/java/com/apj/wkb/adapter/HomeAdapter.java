@@ -62,7 +62,7 @@ public class HomeAdapter extends BaseAdapter {
         }
         CourserItem item = mData.get(position);
         holder.grid_item_title.setText(item.getTitle());
-        Picasso.with(mContext).load(item.getContentUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
+        Picasso.with(mContext).load(item.getPicUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
         return convertView;
     }
     public class ViewHolder{

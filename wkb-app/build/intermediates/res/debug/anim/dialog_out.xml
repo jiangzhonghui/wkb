@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:interpolator="@android:anim/accelerate_interpolator" android:duration="300" android:fromYDelta="0.0%" android:toYDelta="100.0%" />
 </set>
-<!-- From: file:/D:/aaronzhang/android_aaron/wkb/wkb-app/src/main/res/anim/dialog_out.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/anim/dialog_out.xml -->

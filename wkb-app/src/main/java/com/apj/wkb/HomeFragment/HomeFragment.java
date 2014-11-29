@@ -54,6 +54,11 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private List<CourserItem> mViewPageData = null;
     private ImageBannerPagerAdapter mViewPageAdapter = null;
 
+    // grid_view_v1
+    private GridView grid_view_v1= null;
+    private List<CourserItem> gridV1Data=null;
+    private HomeAdapter gridV1Adapter = null;
+
     // Guess you like
     private GridView grid_view_for_you = null;
     private RelativeLayout empty_view_for_you = null;
@@ -83,17 +88,23 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         mViewPageAdapter = new ImageBannerPagerAdapter(this.getActivity(), mViewPageData);
         gallery.setAdapter(mViewPageAdapter);
 
+        // grid_view_v1
+        grid_view_v1 = (GridView)this.getActivity().findViewById(R.id.grid_view_v1);
+        gridV1Data = new ArrayList<CourserItem>();
+        gridV1Adapter = new HomeAdapter(this.getActivity(), gridV1Data);
+        grid_view_v1.setAdapter(gridV1Adapter);
+
+
         // Guess you like
-        grid_view_for_you = (GridView)this.getActivity().findViewById(R.id.grid_view_for_you);
+        /*grid_view_for_you = (GridView)this.getActivity().findViewById(R.id.grid_view_for_you);
         empty_view_for_you = (RelativeLayout)this.getActivity().findViewById(R.id.empty_view_for_you);
         no_data_text_for_you = (TextView)this.getActivity().findViewById(R.id.no_data_text_for_you);
         for_you_loading = (ProgressBar)this.getActivity().findViewById(R.id.for_you_loading);
 
         mGuessLikeData = new ArrayList<CourserItem>();
         mGuessLikeAdapter = new HomeAdapter(this.getActivity(), mGuessLikeData);
-        grid_view_for_you.setAdapter(mGuessLikeAdapter);
+        grid_view_for_you.setAdapter(mGuessLikeAdapter);*/
 
-        Log.d("InitElement", "ok");
         getLoaderManager().initLoader(0, null, this);
     }
 
@@ -161,44 +172,47 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
 
     @Override
     public Loader<List<HomeCategory>> onCreateLoader(int i, Bundle bundle) {
-        Log.d("Init_HomeCategoryLoader", "ok");
         return new HomeCategoryLoader(this.getActivity());
     }
 
     @Override
     public void onLoadFinished(Loader<List<HomeCategory>> listLoader, List<HomeCategory> homeCategories) {
-        Log.d("Init_HandlerData", homeCategories.size() + "");
+        if(homeCategories!=null && homeCategories.size()>0) {
+            // bind data
+            for (HomeCategory homeCategory : homeCategories) {
+                // ViewPager
+                if (homeCategory.getType().equals("0")) {
+                    mViewPageData.clear();
+                    mViewPageData.addAll(homeCategory.getVos());
+                    mViewPageAdapter.notifyDataSetChanged();
 
-        // bind data
-        for(HomeCategory homeCategory:homeCategories){
-            // ViewPager
-            if(homeCategory.getType().equals("0") && homeCategory.getVos().size()>0){
-                mViewPageData.clear();
-                mViewPageData.addAll(homeCategory.getVos());
-                mViewPageAdapter.notifyDataSetChanged();
-
-                recommend_empty_view.setVisibility(View.GONE);
-                gallery.setVisibility(View.GONE);
-                recommend_empty_view.setVisibility(View.GONE);
-            }else{
+                    //recommend_empty_view.setVisibility(View.GONE);
+                    gallery.setVisibility(View.VISIBLE);
+                    //recommend_empty_view.setVisibility(View.GONE);
+            /*}else{
                 recommend_empty_view.setVisibility(View.VISIBLE);
-                recommend_loading.setVisibility(View.GONE);
-            }
+                recommend_loading.setVisibility(View.GONE);*/
+                }else if(homeCategory.getType().equals("1")){
+                     gridV1Data.clear();
+                    gridV1Data.addAll(homeCategory.getVos());
+                    gridV1Adapter.notifyDataSetChanged();
+                }
 
-            // Guess you like
-            if(homeCategory.getType().equals("0") && homeCategory.getVos().size()>0){
+                // Guess you like
+            /*if(homeCategory.getType().equals("1") && homeCategory.getVos().size()>0){
                 mGuessLikeData.clear();
                 mGuessLikeData.addAll( homeCategory.getVos());
                 mGuessLikeAdapter.notifyDataSetChanged();
 
-                grid_view_for_you.setVisibility(View.VISIBLE);
-                empty_view_for_you.setVisibility(View.GONE);
-            }else{
+               *//* grid_view_for_you.setVisibility(View.VISIBLE);
+                empty_view_for_you.setVisibility(View.GONE);*//*
+            *//*}else{
                 grid_view_for_you.setVisibility(View.GONE);
                 empty_view_for_you.setVisibility(View.VISIBLE);
-                for_you_loading.setVisibility(View.GONE);
-            }
+                for_you_loading.setVisibility(View.GONE);*//*
+            }*/
 
+            }
         }
     }
 
