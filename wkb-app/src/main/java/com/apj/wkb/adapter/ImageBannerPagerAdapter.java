@@ -41,7 +41,7 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
         //    ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(w, ViewGroup.LayoutParams.WRAP_CONTENT);
         //NetworkImageView imageView = new NetworkImageView(context);
         final ImageView imageView = new ImageView(context);
-        String imgUrl = entity.getContentUrl();
+        String imgUrl = entity.getPicUrl();
         imageView.setTag(imgUrl);
         Picasso.with(context).load(imgUrl).fit().into(imageView);//.resize( w,h)
         ((ViewPager) container).addView(imageView, 0);

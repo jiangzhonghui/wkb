@@ -21,9 +21,17 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
         this.context= context;
     }
 
+
+
     @Override
     public void deliverResult(List<HomeCategory> data) {
         super.deliverResult(data);
+    }
+
+    @Override
+    protected void onStartLoading() {
+        //forceLoad();
+        super.onStartLoading();
     }
 
     @Override
