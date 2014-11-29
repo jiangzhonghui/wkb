@@ -23,7 +23,7 @@ public class SearchActivity extends ActionBarActivity implements SearchView.OnQu
         super.onCreate(savedInstanceState);
         ActionBar actionBar = this.getSupportActionBar();
         actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDefaultDisplayHomeAsUpEnabled(true);
+//        actionBar.setDefaultDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(this.getResources().getString(R.string.app_name));

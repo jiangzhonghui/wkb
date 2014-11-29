@@ -39,7 +39,8 @@
         <activity
             android:name="com.apj.wkb.SearchActivity"
             android:label="@string/title_activity_search"
-            android:theme="@style/AppBaseTheme"  >
+            android:theme="@style/AppBaseTheme"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
         <activity
