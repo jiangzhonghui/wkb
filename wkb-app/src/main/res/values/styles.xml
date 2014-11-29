@@ -7,7 +7,7 @@
         <item name="homeAsUpIndicator">@drawable/actionbar_up_btn</item>
         <item name="searchViewSearchIcon">@drawable/actionbar_search</item>
     </style>
-    <style name="VopenActionBar" parent="@style/Widget.AppCompat.ActionBar">
+    <style name="VopenActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="height">50.0dip</item>
         <item name="titleTextStyle">@style/VopenActionBarTitleText</item>
         <item name="background">@drawable/actionbar_bg</item>
