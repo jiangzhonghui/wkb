@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.apj.wkb.R;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -46,7 +47,6 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
         return topBannerData.size();
     }
 
-
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return view.equals(object);
@@ -55,15 +55,14 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         CourserItem entity = topBannerData.get(position);
-        //    ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(w, ViewGroup.LayoutParams.WRAP_CONTENT);
-        //NetworkImageView imageView = new NetworkImageView(context);
-        final ImageView imageView = new ImageView(context);
+        View view = context.getLayoutInflater().inflate(R.layout.top_image_layout,null);
+        ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
         String imgUrl = entity.getPicUrl();
         imageView.setTag(imgUrl);
         ImageLoader.getInstance().displayImage(imgUrl, imageView, options);
         //Picasso.with(context).load(imgUrl).fit().into(imageView);//.resize( w,h)
-        ((ViewPager) container).addView(imageView, 0);
-        return imageView;
+        ((ViewPager) container).addView(view, 0);
+        return view;
     }
 
 
