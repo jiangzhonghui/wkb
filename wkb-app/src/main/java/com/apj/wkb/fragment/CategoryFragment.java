@@ -1,4 +1,4 @@
-package com.apj.wkb.HomeFragment;
+package com.apj.wkb.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -14,13 +14,13 @@ import com.apj.wkb.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link SettingFragment.OnFragmentInteractionListener} interface
+ * {@link CategoryFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link SettingFragment#newInstance} factory method to
+ * Use the {@link CategoryFragment#newInstance} factory method to
  * create an instance of this fragment.
  *
  */
-public class SettingFragment extends Fragment {
+public class CategoryFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -38,18 +38,18 @@ public class SettingFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SettingFragment.
+     * @return A new instance of fragment CategoryFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SettingFragment newInstance(String param1, String param2) {
-        SettingFragment fragment = new SettingFragment();
+    public static CategoryFragment newInstance(String param1, String param2) {
+        CategoryFragment fragment = new CategoryFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
-    public SettingFragment() {
+    public CategoryFragment() {
         // Required empty public constructor
     }
 
@@ -66,7 +66,7 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.frag_hm_my, container, false);
+        return inflater.inflate(R.layout.fragment_category, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -92,6 +92,7 @@ public class SettingFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
 
 
 }

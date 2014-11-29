@@ -1,8 +1,6 @@
-package com.apj.wkb.HomeFragment;
+package com.apj.wkb.fragment;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -144,17 +142,20 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             grid_view_for_you.setVisibility(View.VISIBLE);
             empty_view_for_you.setVisibility(View.GONE);
 
+            recommenData.clear();
+            topData.clear();
+
             for(HomeCategory item:homeCategories){
                 if(item.getType().equals("0")){
-                    topData.clear();
                     topData.addAll(item.getVos());
-                    topAdapter.notifyDataSetChanged();
                 }else{
-                    recommenData.clear();
                     recommenData.addAll(item.getVos());
-                    recommendAdapter.notifyDataSetChanged();
                 }
             }
+            topAdapter.notifyDataSetChanged();
+            recommendAdapter.notifyDataSetChanged();
+            gllery_container.setVisibility(View.VISIBLE);
+            grid_view_for_you.setVisibility(View.VISIBLE);
         }else{
             recommend_loading.setVisibility(View.GONE);
             recommend_no_data.setVisibility(View.VISIBLE);
