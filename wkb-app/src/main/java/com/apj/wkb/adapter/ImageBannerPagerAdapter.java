@@ -20,7 +20,6 @@ import java.util.List;
  * Created by student on 2014/11/22.
  */
 public class ImageBannerPagerAdapter  extends PagerAdapter {
-
     private Activity context;
     private List<CourserItem> topBannerData;
     private boolean isDownloadImageIn3G;
@@ -32,6 +31,7 @@ public class ImageBannerPagerAdapter  extends PagerAdapter {
         this.topBannerData = imageList;
 
         options = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.thumb)
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .considerExifParams(true)
@@ -71,7 +71,7 @@ public class ImageBannerPagerAdapter  extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        ((ViewPager) container).removeView((ImageView) object);
+        ((ViewPager) container).removeView((View) object);
     }
 }
 

@@ -28,7 +28,8 @@ public class HomeAdapter extends BaseAdapter {
         super();
         this.mContext =  context;
         this.mData=data;
-      options = new DisplayImageOptions.Builder()
+        options = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.thumb)
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .considerExifParams(true)
@@ -71,7 +72,7 @@ public class HomeAdapter extends BaseAdapter {
         }
         CourserItem item = mData.get(position);
         holder.grid_item_title.setText(item.getTitle());
-       ImageLoader.getInstance().displayImage(item.getPicUrl(), holder.grid_item_img, options);
+        ImageLoader.getInstance().displayImage(item.getPicUrl(), holder.grid_item_img, options);
         //Picasso.with(mContext).load(item.getPicUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
         return convertView;
     }

@@ -4,6 +4,7 @@ package com.apj.wkb.entity;
  * Created by student on 2014/11/22.
  */
 public class CourserItem {
+
     private String id;
     private String gmtCreate;
     private String gmtModified;
@@ -17,6 +18,7 @@ public class CourserItem {
     private String tagColor;
     private String tagColorBg;
     private String top;
+
 
     public String getId() {
         return id;
@@ -42,20 +44,20 @@ public class CourserItem {
         this.gmtModified = gmtModified;
     }
 
-    public String getContentType() {
-        return contentType;
-    }
-
-    public void setContentType(String contentType) {
-        this.contentType = contentType;
-    }
-
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
     }
 
     public String getContentUrl() {
