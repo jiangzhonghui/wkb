@@ -30,6 +30,7 @@ public class HomeAdapter extends BaseAdapter {
         this.mContext =  context;
         this.mData=data;
         options = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.thumb)
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .considerExifParams(true)

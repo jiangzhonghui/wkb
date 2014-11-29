@@ -29,6 +29,7 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
         this.topBannerData = imageList;
 
         options = new DisplayImageOptions.Builder()
+                         .showImageOnLoading(R.drawable.thumb)
          				.cacheInMemory(true)
          				.cacheOnDisk(true)
          				.considerExifParams(true)
@@ -68,7 +69,7 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        ((ViewPager) container).removeView((ImageView) object);
+        ((ViewPager) container).removeView((View) object);
     }
 }
 
