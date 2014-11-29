@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:netease="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/actionbar_ico_favorites_off" android:id="@id/action_favorite" android:orderInCategory="100" android:title="@string/action_favorite" android:showAsAction="always" netease:showAsAction="always" />
-    <item android:icon="@drawable/actionbar_ico_download" android:id="@id/action_download" android:orderInCategory="100" android:title="@string/action_download" android:showAsAction="always" netease:showAsAction="always" />
-    <item android:icon="@drawable/actionbar_ico_share" android:id="@id/action_share" android:orderInCategory="100" android:title="@string/action_share" android:showAsAction="always" netease:showAsAction="always" />
-    <item android:icon="@drawable/actionbar_ico_report" android:id="@id/action_feedback" android:orderInCategory="100" android:title="@string/action_feedback" android:showAsAction="always" netease:showAsAction="always" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:netease="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/action_favorite"
+        android:icon="@drawable/actionbar_ico_favorites_off"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_favorite"
+        netease:showAsAction="always" />
+    <item
+        android:id="@id/action_download"
+        android:icon="@drawable/actionbar_ico_download"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_download"
+        netease:showAsAction="always" />
+    <item
+        android:id="@id/action_share"
+        android:icon="@drawable/actionbar_ico_share"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_share"
+        netease:showAsAction="always" />
+    <item
+        android:id="@id/action_feedback"
+        android:icon="@drawable/actionbar_ico_report"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_feedback"
+        netease:showAsAction="always" />
 </menu>

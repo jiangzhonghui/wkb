@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+   >
+    <item
+        android:id="@+id/action_search1"
+
+        android:title="@string/home_action_search"
+        android:icon="@drawable/actionbar_search"
+        android:orderInCategory="100"
+        yourapp:showAsAction="ifRoom|collapseActionView"
+        yourapp:actionViewClass="android.support.v7.widget.SearchV
+iew" /> />
+</menu>

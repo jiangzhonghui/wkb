@@ -18,7 +18,7 @@ public class CommentsDataSource {
             MySqliteHelper.COLUMN_COMMENT };
 
     public CommentsDataSource(Context context) {
-        dbHelper = new MySqliteHelper(context);
+     dbHelper = new MySqliteHelper(context);
     }
 
     public void open() throws SQLException {
