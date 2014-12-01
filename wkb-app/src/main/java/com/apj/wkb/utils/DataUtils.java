@@ -21,7 +21,7 @@ public class DataUtils  {
     public static List<HomeCategory> loadDate(Context context){
         String jsonString = "";
         try{
-            InputStream inputStream = context.getAssets().open("recommend.json");
+            InputStream inputStream = context.getAssets().open("recommend");
             jsonString = inputStream2String(inputStream);
         }catch (Exception ex){
             Log.e("DataUtils","loadDate",ex);

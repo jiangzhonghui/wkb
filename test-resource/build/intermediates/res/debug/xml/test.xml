@@ -1,0 +1,6 @@
+<rootelem1>
+   <subelem1>
+      Hello World from an xml sub element
+   </subelem1>
+</rootelem1>
+<!-- From: file:/E:/git/myx/wkb/test-resource/src/main/res/xml/test.xml -->

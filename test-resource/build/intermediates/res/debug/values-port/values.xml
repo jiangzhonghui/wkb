@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/apk/res/android">
+
+    <!-- From: file:/E:/git/myx/wkb/test-resource/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-port/values.xml -->
+    <eat-comment />
+
+    <bool name="abc_action_bar_embed_tabs">false</bool>
+    <!-- From: file:/E:/git/myx/wkb/test-resource/src/main/res/values-port/strings_port.xml -->
+    <eat-comment />
+
+    <ns1:string name="t1_1_en_port">t1_1_port</ns1:string>
+    <ns1:string name="t1_enport">t1_port</ns1:string>
+    <ns1:string name="testport_port">testport-port</ns1:string>
+    <ns1:string name="teststring_all">test-en-us-port</ns1:string>
+
+</resources>
