@@ -8,18 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.apj.wkb.HomeActivity;
 import com.apj.wkb.R;
 import com.apj.wkb.entity.CourserItem;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * Created by student on 2014/11/22.
- */
-public class ImageBannerPagerAdapter  extends PagerAdapter {
+
+public class ImageBannerPagerAdapter extends PagerAdapter {
+
     private Activity context;
     private List<CourserItem> topBannerData;
     private boolean isDownloadImageIn3G;
@@ -62,6 +63,7 @@ public class ImageBannerPagerAdapter  extends PagerAdapter {
         ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
         String imgUrl = entity.getPicUrl();
         imageView.setTag(imgUrl);
+
         ImageLoader.getInstance().displayImage(imgUrl, imageView, options);
         //Picasso.with(context).load(imgUrl).fit().into(imageView);//.resize( w,h)
         ((ViewPager) container).addView(view, 0);
@@ -74,5 +76,6 @@ public class ImageBannerPagerAdapter  extends PagerAdapter {
         ((ViewPager) container).removeView((View) object);
     }
 }
+
 
 

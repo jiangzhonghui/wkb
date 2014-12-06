@@ -374,7 +374,7 @@
     <item type="id" name="download_context_action_del">false</item>
     <item type="id" name="fav_context_action_delete">false</item>
     <item type="id" name="action_history">false</item>
-    <item type="id" name="action_search">false</item>
+   <item type="id" name="action_search">false</item>
     <item type="id" name="playrec_context_action_delete">false</item>
     <item type="id" name="action_favorite">false</item>
     <item type="id" name="action_download">false</item>

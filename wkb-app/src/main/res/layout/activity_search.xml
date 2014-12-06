@@ -75,7 +75,7 @@
         android:padding="10.0dip"
         android:visibility="gone">
 
-       <!-- <com.netease.vopen.view.FlowLayout
+        <com.netease.vopen.view.FlowLayout
             android:id="@id/search_hot_word"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
             android:visibility="visible"
             app:horizontalSpacing="10.0dip"
             app:orientation="horizontal"
-            app:verticalSpacing="10.0dip" />-->
+            app:verticalSpacing="10.0dip" />
     </LinearLayout>
 
     <LinearLayout

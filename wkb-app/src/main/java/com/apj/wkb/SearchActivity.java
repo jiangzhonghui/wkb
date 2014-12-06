@@ -2,6 +2,7 @@ package com.apj.wkb;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -24,7 +25,7 @@ public class SearchActivity extends ActionBarActivity implements SearchView.OnQu
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(this.getResources().getString(R.string.app_name));
-        setContentView(R.layout.activity_search);
+        //setContentView(R.layout.activity_search);
     }
 
     private SearchView mSearchView;
@@ -58,6 +59,10 @@ public class SearchActivity extends ActionBarActivity implements SearchView.OnQu
 
     @Override
     public boolean onQueryTextSubmit(String s) {
+       // Intent intent  =new Intent(this,SearchResultActivity.class);
+        //Bundle bundle = new Bundle();
+       // bundle.putString("search_key",s);
+        //startActivity(intent);
         return false;
     }
 
