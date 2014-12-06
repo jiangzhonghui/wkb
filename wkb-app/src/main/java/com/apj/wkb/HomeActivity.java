@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.apj.wkb.service.DataIntentService;
 import com.apj.wkb.utils.FragmentManagerUtils;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -84,6 +85,9 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
                 tabs.setCurrentItem(position);
             }
         });
+
+        Intent intent  = new Intent(this,DataIntentService.class);
+        startService(intent);
 
         // For each of the sections in the app, add a tab to the action bar.
 //        for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {

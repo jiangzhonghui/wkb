@@ -129,6 +129,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         topData = new ArrayList<CourserItem>();
         topAdapter = new ImageBannerPagerAdapter(this.getActivity(),topData);
         mViewPager.setAdapter(topAdapter);
+        mViewPager.setOnPageChangeListener(onPageChangeListener);
 
         recommenData = new ArrayList<CourserItem>();
         recommendAdapter = new HomeAdapter(this.getActivity(),this.recommenData);
@@ -148,6 +149,23 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
 
         getLoaderManager().initLoader(0,null,this);
     }
+
+    ViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int i, float v, int i2) {
+
+        }
+
+        @Override
+        public void onPageSelected(int i) {
+
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int i) {
+
+        }
+    };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
