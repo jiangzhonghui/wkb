@@ -47,6 +47,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private ImageBannerPagerAdapter topAdapter;
     private OnFragmentInteractionListener mListener;
 
+    private HomeCategoryLoader loader;
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -71,6 +73,21 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fr agment
+        return inflater.inflate(R.layout.frag_hm_main, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -94,14 +111,6 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         mViewPager.setAdapter(topAdapter);
 
         getLoaderManager().initLoader(0,null,this);
-
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fr agment
-        return inflater.inflate(R.layout.frag_hm_main, container, false);
     }
 
 
@@ -130,7 +139,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
 
     @Override
     public android.support.v4.content.Loader<List<HomeCategory>> onCreateLoader(int i, Bundle bundle) {
-        return new HomeCategoryLoader(this.getActivity());
+        loader = new HomeCategoryLoader(this.getActivity());
+
+        return loader;
     }
 
     @Override
@@ -155,6 +166,6 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
 
     @Override
     public void onLoaderReset(android.support.v4.content.Loader<List<HomeCategory>> listLoader) {
-
+        loader.forceLoad();
     }
 }

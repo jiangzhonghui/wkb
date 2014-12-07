@@ -98,8 +98,8 @@ public class FlipLoadingLayout extends LoadingLayout {
 	@Override
 	protected void refreshingImpl() {
 		mHeaderImage.clearAnimation();
-		mHeaderImage.setVisibility(View.INVISIBLE);
-		mHeaderProgress.setVisibility(View.VISIBLE);
+		mHeaderImage.setVisibility(INVISIBLE);
+		mHeaderProgress.setVisibility(VISIBLE);
 	}
 
 	@Override
@@ -110,8 +110,8 @@ public class FlipLoadingLayout extends LoadingLayout {
 	@Override
 	protected void resetImpl() {
 		mHeaderImage.clearAnimation();
-		mHeaderProgress.setVisibility(View.GONE);
-		mHeaderImage.setVisibility(View.VISIBLE);
+		mHeaderProgress.setVisibility(GONE);
+		mHeaderImage.setVisibility(VISIBLE);
 	}
 
 	@Override

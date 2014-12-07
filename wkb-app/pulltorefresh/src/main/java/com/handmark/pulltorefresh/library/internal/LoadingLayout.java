@@ -203,17 +203,17 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	}
 
 	public final void hideAllViews() {
-		if (View.VISIBLE == mHeaderText.getVisibility()) {
-			mHeaderText.setVisibility(View.INVISIBLE);
+		if (VISIBLE == mHeaderText.getVisibility()) {
+			mHeaderText.setVisibility(INVISIBLE);
 		}
-		if (View.VISIBLE == mHeaderProgress.getVisibility()) {
-			mHeaderProgress.setVisibility(View.INVISIBLE);
+		if (VISIBLE == mHeaderProgress.getVisibility()) {
+			mHeaderProgress.setVisibility(INVISIBLE);
 		}
-		if (View.VISIBLE == mHeaderImage.getVisibility()) {
-			mHeaderImage.setVisibility(View.INVISIBLE);
+		if (VISIBLE == mHeaderImage.getVisibility()) {
+			mHeaderImage.setVisibility(INVISIBLE);
 		}
-		if (View.VISIBLE == mSubHeaderText.getVisibility()) {
-			mSubHeaderText.setVisibility(View.INVISIBLE);
+		if (VISIBLE == mSubHeaderText.getVisibility()) {
+			mSubHeaderText.setVisibility(INVISIBLE);
 		}
 	}
 
@@ -245,7 +245,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		}
 
 		if (null != mSubHeaderText) {
-			mSubHeaderText.setVisibility(View.GONE);
+			mSubHeaderText.setVisibility(GONE);
 		}
 	}
 
@@ -262,7 +262,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		if (null != mHeaderText) {
 			mHeaderText.setText(mPullLabel);
 		}
-		mHeaderImage.setVisibility(View.VISIBLE);
+		mHeaderImage.setVisibility(VISIBLE);
 
 		if (mUseIntrinsicAnimation) {
 			((AnimationDrawable) mHeaderImage.getDrawable()).stop();
@@ -273,9 +273,9 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 
 		if (null != mSubHeaderText) {
 			if (TextUtils.isEmpty(mSubHeaderText.getText())) {
-				mSubHeaderText.setVisibility(View.GONE);
+				mSubHeaderText.setVisibility(GONE);
 			} else {
-				mSubHeaderText.setVisibility(View.VISIBLE);
+				mSubHeaderText.setVisibility(VISIBLE);
 			}
 		}
 	}
@@ -312,17 +312,17 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	}
 
 	public final void showInvisibleViews() {
-		if (View.INVISIBLE == mHeaderText.getVisibility()) {
-			mHeaderText.setVisibility(View.VISIBLE);
+		if (INVISIBLE == mHeaderText.getVisibility()) {
+			mHeaderText.setVisibility(VISIBLE);
 		}
-		if (View.INVISIBLE == mHeaderProgress.getVisibility()) {
-			mHeaderProgress.setVisibility(View.VISIBLE);
+		if (INVISIBLE == mHeaderProgress.getVisibility()) {
+			mHeaderProgress.setVisibility(VISIBLE);
 		}
-		if (View.INVISIBLE == mHeaderImage.getVisibility()) {
-			mHeaderImage.setVisibility(View.VISIBLE);
+		if (INVISIBLE == mHeaderImage.getVisibility()) {
+			mHeaderImage.setVisibility(VISIBLE);
 		}
-		if (View.INVISIBLE == mSubHeaderText.getVisibility()) {
-			mSubHeaderText.setVisibility(View.VISIBLE);
+		if (INVISIBLE == mSubHeaderText.getVisibility()) {
+			mSubHeaderText.setVisibility(VISIBLE);
 		}
 	}
 
@@ -347,14 +347,14 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	private void setSubHeaderText(CharSequence label) {
 		if (null != mSubHeaderText) {
 			if (TextUtils.isEmpty(label)) {
-				mSubHeaderText.setVisibility(View.GONE);
+				mSubHeaderText.setVisibility(GONE);
 			} else {
 				mSubHeaderText.setText(label);
 
 				// Only set it to Visible if we're GONE, otherwise VISIBLE will
 				// be set soon
-				if (View.GONE == mSubHeaderText.getVisibility()) {
-					mSubHeaderText.setVisibility(View.VISIBLE);
+				if (GONE == mSubHeaderText.getVisibility()) {
+					mSubHeaderText.setVisibility(VISIBLE);
 				}
 			}
 		}

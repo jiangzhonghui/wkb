@@ -103,10 +103,10 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 		origLoadingView.hideAllViews();
 
 		// Make sure the opposite end is hidden too
-		oppositeListViewLoadingView.setVisibility(View.GONE);
+		oppositeListViewLoadingView.setVisibility(GONE);
 
 		// Show the ListView Loading View and set it to refresh.
-		listViewLoadingView.setVisibility(View.VISIBLE);
+		listViewLoadingView.setVisibility(VISIBLE);
 		listViewLoadingView.refreshing();
 
 		if (doScroll) {
@@ -161,13 +161,13 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 
 		// If the ListView header loading layout is showing, then we need to
 		// flip so that the original one is showing instead
-		if (listViewLoadingLayout.getVisibility() == View.VISIBLE) {
+		if (listViewLoadingLayout.getVisibility() == VISIBLE) {
 
 			// Set our Original View to Visible
 			originalLoadingLayout.showInvisibleViews();
 
 			// Hide the ListView Header/Footer
-			listViewLoadingLayout.setVisibility(View.GONE);
+			listViewLoadingLayout.setVisibility(GONE);
 
 			/**
 			 * Scroll so the View is at the same Y as the ListView
@@ -234,13 +234,13 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 			// Create Loading Views ready for use later
 			FrameLayout frame = new FrameLayout(getContext());
 			mHeaderLoadingView = createLoadingLayout(getContext(), Mode.PULL_FROM_START, a);
-			mHeaderLoadingView.setVisibility(View.GONE);
+			mHeaderLoadingView.setVisibility(GONE);
 			frame.addView(mHeaderLoadingView, lp);
 			mRefreshableView.addHeaderView(frame, null, false);
 
 			mLvFooterLoadingFrame = new FrameLayout(getContext());
 			mFooterLoadingView = createLoadingLayout(getContext(), Mode.PULL_FROM_END, a);
-			mFooterLoadingView.setVisibility(View.GONE);
+			mFooterLoadingView.setVisibility(GONE);
 			mLvFooterLoadingFrame.addView(mFooterLoadingView, lp);
 
 			/**

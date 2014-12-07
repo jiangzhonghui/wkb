@@ -131,7 +131,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 		 * Check that the scrolling has stopped, and that the last item is
 		 * visible.
 		 */
-		if (state == OnScrollListener.SCROLL_STATE_IDLE && null != mOnLastItemVisibleListener && mLastItemVisible) {
+		if (state == SCROLL_STATE_IDLE && null != mOnLastItemVisibleListener && mLastItemVisible) {
 			mOnLastItemVisibleListener.onLastItemVisible();
 		}
 

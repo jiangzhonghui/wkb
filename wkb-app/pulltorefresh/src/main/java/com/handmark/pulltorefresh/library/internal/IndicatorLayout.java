@@ -102,7 +102,7 @@ public class IndicatorLayout extends FrameLayout implements AnimationListener {
 			return mInAnim == currentAnim;
 		}
 
-		return getVisibility() == View.VISIBLE;
+		return getVisibility() == VISIBLE;
 	}
 
 	public void hide() {
@@ -118,9 +118,9 @@ public class IndicatorLayout extends FrameLayout implements AnimationListener {
 	public void onAnimationEnd(Animation animation) {
 		if (animation == mOutAnim) {
 			mArrowImageView.clearAnimation();
-			setVisibility(View.GONE);
+			setVisibility(GONE);
 		} else if (animation == mInAnim) {
-			setVisibility(View.VISIBLE);
+			setVisibility(VISIBLE);
 		}
 
 		clearAnimation();
@@ -133,7 +133,7 @@ public class IndicatorLayout extends FrameLayout implements AnimationListener {
 
 	@Override
 	public void onAnimationStart(Animation animation) {
-		setVisibility(View.VISIBLE);
+		setVisibility(VISIBLE);
 	}
 
 	public void releaseToRefresh() {
