@@ -24,14 +24,17 @@ import com.apj.wkb.adapter.ImageBannerPagerAdapter;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
+import com.apj.wkb.provider.contentprovider.ProviderUtils;
 import com.apj.wkb.task.IDataListener;
 import com.apj.wkb.task.LoadDataTask;
 import com.apj.wkb.view.ScrollGridView;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>> ,IDataListener{
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>> ,IDataListener,PullToRefreshBase.OnRefreshListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -58,6 +61,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private TextView title_v1;
     private ScrollGridView grid_view_v1;
     private HomeAdapter recommendV1Adapter;
+
+    private PullToRefreshScrollView pullToRefreshScrollView;
 
     /**
      * Use this factory method to create a new instance of
@@ -112,6 +117,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         no_data_text_for_you = (TextView)this.getView().findViewById(R.id.no_data_text_for_you);
         for_you_loading = (ProgressBar)this.getView().findViewById(R.id.for_you_loading);
         empty_view_for_you =(RelativeLayout)this.getView().findViewById(R.id.empty_view_for_you);
+        pullToRefreshScrollView =(PullToRefreshScrollView)this.getView().findViewById(R.id.my_scrollview);
+
         gllery_container.setVisibility(View.GONE);
         recommend_loading.setVisibility(View.VISIBLE);
         grid_view_for_you.setVisibility(View.GONE);
@@ -129,9 +136,10 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommendDataV1  = new ArrayList<CourserItem>();
         recommendV1Adapter = new HomeAdapter(this.getActivity(),this.recommendDataV1);
         this.grid_view_v1.setAdapter(recommendV1Adapter);
-        //getLoaderManager().initLoader(0,null,this);
-        LoadDataTask load=new LoadDataTask(this.getActivity(),"",this);
-        load.execute();
+
+        pullToRefreshScrollView.setOnRefreshListener(this);
+
+        getLoaderManager().initLoader(0,null,this);
     }
 
     public void onButtonPressed(Uri uri) {
@@ -233,5 +241,29 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             recommend_loading.setVisibility(View.GONE);
             recommend_no_data.setVisibility(View.VISIBLE);
         }
+
+        pullToRefreshScrollView.onRefreshComplete();
+        postData(homeCategories);
+    }
+
+    private void postData(List<HomeCategory> homeCategories){
+        if (homeCategories!=null && homeCategories.size()>0) {
+            ProviderUtils utils = new ProviderUtils(this.getActivity());
+            utils.removeCourseItem();
+            for (HomeCategory item : homeCategories) {
+                for (CourserItem courserItem : item.getVos()) {
+                    courserItem.setType_name(item.getName());
+                    utils.addCourseItem(courserItem);
+                }
+            }
+        }
+    }
+
+//    LoadDataTask load=new LoadDataTask(this.getActivity(),"",this);
+//    load.execute();
+    @Override
+    public void onRefresh(PullToRefreshBase refreshView) {
+        LoadDataTask load=new LoadDataTask(this.getActivity(),"",this);
+        load.execute();
     }
 }

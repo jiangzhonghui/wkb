@@ -1,6 +1,8 @@
 package com.apj.wkb.utils;
 
 import android.content.Context;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 
 import com.apj.wkb.entity.HomeCategory;

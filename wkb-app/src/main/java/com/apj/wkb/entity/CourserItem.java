@@ -19,6 +19,7 @@ public class CourserItem {
     private String tagColor;
     private String tagColorBg;
     private String top;
+    private String type_name;
 
 
     public String getId() {
@@ -123,5 +124,13 @@ public class CourserItem {
 
     public void setTop(String top) {
         this.top = top;
+    }
+
+
+    public String getType_name() {
+        return type_name;
+    }
+    public void setType_name(String type_name) {
+        this.type_name = type_name;
     }
 }

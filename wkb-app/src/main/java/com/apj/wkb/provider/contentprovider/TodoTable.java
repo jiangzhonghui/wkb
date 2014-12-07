@@ -7,20 +7,40 @@ public class TodoTable {
 
     // Database table
     public static final String TABLE_TODO = "todo";
+
     public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_CATEGORY = "category";
-    public static final String COLUMN_SUMMARY = "summary";
-    public static final String COLUMN_DESCRIPTION = "description";
+    public static final String COLUMN_GMT_CREATE = "gmtCreate";
+    public static final String COLUMN_GMT_MODIFIED = "gmtModified";
+    public static final String COLUMN_TYPE = "type";
+    public static final String COLUMN_CONTENT_TYPE = "contentType";
+    public static final String COLUMN_CONTENT_URL = "contentUrl";
+    public static final String COLUMN_CONTENT_ID = "contentId";
+    public static final String COLUMN_TITLE = "title";
+    public static final String COLUMN_PIC_URL = "picUrl";
+    public static final String COLUMN_TAG = "tag";
+    public static final String COLUMN_TAG_COLOR = "tagColor";
+    public static final String COLUMN_TAG_COLOR_BG = "tagColorBg";
+    public static final String COLUMN_TOP = "top";
+    public static final String COLUMN_TYPE_NAME="type_name";
 
     // Database creation SQL statement
     private static final String DATABASE_CREATE = "create table "
             + TABLE_TODO
             + "("
-            + COLUMN_ID + " integer primary key autoincrement, "
-            + COLUMN_CATEGORY + " text not null, "
-            + COLUMN_SUMMARY + " text not null,"
-            + COLUMN_DESCRIPTION
-            + " text not null"
+            + COLUMN_ID + " integer, "
+            + COLUMN_GMT_CREATE + " text null, "
+            + COLUMN_GMT_MODIFIED + " text null,"
+            + COLUMN_TYPE + " text null,"
+            + COLUMN_CONTENT_TYPE + " text null,"
+            + COLUMN_CONTENT_URL + " text null,"
+            + COLUMN_CONTENT_ID + " text null,"
+            + COLUMN_PIC_URL + " text null,"
+            + COLUMN_TAG_COLOR + " text null,"
+            + COLUMN_TAG + " text null,"
+            + COLUMN_TITLE + " text null,"
+            + COLUMN_TAG_COLOR_BG + " text null,"
+            + COLUMN_TOP + " text null,"
+            + COLUMN_TYPE_NAME + " text null"
             + ");";
 
     public static void onCreate(SQLiteDatabase database) {
