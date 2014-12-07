@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="13.0dip" android:paddingRight="10.0dip" android:paddingBottom="13.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/search_history_clear_style" android:gravity="center" android:id="@id/clear_history_btn" android:background="@drawable/search_history_clear_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_clear_history" />
-</LinearLayout>
