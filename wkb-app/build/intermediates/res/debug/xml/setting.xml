@@ -17,4 +17,4 @@
         <intent android:action="com.netease.vopen.activity.MoreAppActivity" />
     </Preference>
 </PreferenceScreen>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/xml/setting.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/xml/setting.xml -->

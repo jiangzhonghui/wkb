@@ -6,6 +6,7 @@ import java.util.List;
  * Created by student on 2014/11/22.
  */
 public class HomeCategory {
+
     private String name;
     private String type;
     private List<CourserItem> vos;

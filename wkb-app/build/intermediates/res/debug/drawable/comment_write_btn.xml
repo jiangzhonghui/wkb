@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/comment_write_btn_pressed" />
     <item android:drawable="@drawable/comment_write_btn_normal" />
 </selector>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/comment_write_btn.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/comment_write_btn.xml -->

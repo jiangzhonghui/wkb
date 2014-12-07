@@ -48,6 +48,7 @@
                     android:drawablePadding="6.0dip"
                     android:text="@string/main_recommend_for_you"
                     android:textSize="16.0sp" />
+
                 <com.apj.wkb.view.ScrollGridView
                     android:id="@+id/grid_view_v1"
                     android:layout_width="fill_parent"
@@ -56,8 +57,7 @@
                     android:listSelector="@null"
                     android:numColumns="2"
                     android:verticalSpacing="10.0dip"
-                     android:visibility="visible" />
-
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/title_v2"
                     android:layout_marginTop="10dp"
@@ -67,6 +67,7 @@
                     android:drawablePadding="6.0dip"
                     android:text="@string/main_recommend_for_you"
                     android:textSize="16.0sp" />
+
                 <com.apj.wkb.view.ScrollGridView
                     android:id="@+id/grid_view_v2"
                     android:layout_width="fill_parent"
@@ -75,7 +76,7 @@
                     android:listSelector="@null"
                     android:numColumns="2"
                     android:verticalSpacing="10.0dip"
-                    android:visibility="visible" />
+                    android:visibility="gone" />
             </LinearLayout>
 
 

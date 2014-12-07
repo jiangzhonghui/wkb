@@ -1,2 +1,3 @@
-include ':wkblibrary', ':wkb-app', ':dataprovider', ':dataprovidersqlite', ':pulltorefresh'
+include ':wkblibrary', ':wkb-app',':dataprovider', ':dataprovidersqlite', ':pulltorefresh-library', ':pulltorefresh'
+
 

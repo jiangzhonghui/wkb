@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -33,40 +33,45 @@
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.apj.wkb.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.apj.wkb.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.apj.wkb.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.apj.wkb.TestActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="com.apj.wkb.HomeActivity"
-            android:label="@string/title_activity_home" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name="com.apj.wkb.AppLoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
         </activity>
         <activity
-            android:name="com.apj.wkb.SearchActivity"
-            android:icon="@drawable/icon"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
-        </activity>
-        <activity
-            android:name="com.apj.wkb.TestAcivity"
-            android:label="@string/title_activity_home" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+            android:name="com.apj.wkb.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/WelcomeStyle" >
         </activity>
         <activity
             android:name="com.apj.wkb.SearchResultActivity"
-            android:label="@string/title_activity_search_result" >
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

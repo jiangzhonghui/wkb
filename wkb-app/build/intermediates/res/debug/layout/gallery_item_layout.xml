@@ -7,4 +7,4 @@
         <TextView android:textSize="17.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="left" android:id="@id/image_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="长白山特色花卉植物资源哈哈哈哈" android:singleLine="true" android:shadowColor="@color/black" android:shadowDy="1.0" android:shadowRadius="3.0" />
     </LinearLayout>
 </FrameLayout>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/gallery_item_layout.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/gallery_item_layout.xml -->

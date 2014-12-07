@@ -1,8 +1,7 @@
 package com.apj.wkb.adapter;
 
-
-import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,8 @@ import android.widget.TextView;
 
 import com.apj.wkb.R;
 import com.apj.wkb.entity.CourserItem;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -20,16 +21,25 @@ import java.util.List;
  * Created by student on 2014/11/22.
  */
 public class HomeAdapter extends BaseAdapter {
-    private Activity mContext;
-    private List<CourserItem> mData;
 
-    public HomeAdapter() {
+    List<CourserItem> mData;
+    Context mContext;
+    DisplayImageOptions options;
+    public HomeAdapter(Context context, List<CourserItem> data) {
         super();
+        this.mContext =  context;
+        this.mData=data;
+        options = new DisplayImageOptions.Builder()
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .considerExifParams(true)
+                .bitmapConfig(Bitmap.Config.RGB_565)
+                .build();
     }
 
-    public  HomeAdapter(Activity context, List<CourserItem> dataList){
-        this.mContext = context;
-        this.mData = dataList;
+    public void addData(List<CourserItem> data){
+        mData.clear();
+        mData.addAll(data);
     }
 
     @Override
@@ -62,11 +72,14 @@ public class HomeAdapter extends BaseAdapter {
         }
         CourserItem item = mData.get(position);
         holder.grid_item_title.setText(item.getTitle());
-        Picasso.with(mContext).load(item.getPicUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
+        ImageLoader.getInstance().displayImage(item.getPicUrl(), holder.grid_item_img, options);
+        //Picasso.with(mContext).load(item.getPicUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
         return convertView;
     }
+
     public class ViewHolder{
         ImageView grid_item_img;
         TextView grid_item_title;
     }
+
 }

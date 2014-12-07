@@ -4,6 +4,8 @@ package com.apj.wkb.entity;
  * Created by student on 2014/11/22.
  */
 public class CourserItem {
+
+
     private String id;
     private String gmtCreate;
     private String gmtModified;

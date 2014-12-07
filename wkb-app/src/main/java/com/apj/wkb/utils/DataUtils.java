@@ -15,16 +15,17 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
- * Created by zhang on 2014/11/22.
+ * Created by student on 2014/11/22.
  */
 public class DataUtils {
+
     public static List<HomeCategory> loadDate(Context context){
         String jsonString = "";
         try{
             InputStream inputStream = context.getAssets().open("home_json");
             jsonString = inputStream2String(inputStream);
         }catch (Exception ex){
-            Log.e("DataUtils", "loadDate", ex);
+            Log.e("DataUtils","loadDate",ex);
         }
         Gson gson = new Gson();
         List<HomeCategory> data = gson.fromJson(jsonString, new TypeToken<List<HomeCategory>>(){}.getType());
@@ -45,3 +46,5 @@ public class DataUtils {
         return baos.toString();
     }
 }
+
+

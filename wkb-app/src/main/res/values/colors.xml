@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="abc_search_url_text_normal">#ff7fa87f</color>
-    <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="mblog_setting_text_color">#ff003300</color>
     <color name="text_color">#ff000000</color>
     <color name="progresscolor">#ff5b3320</color>

@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/dataprovider" />
             <option value="$PROJECT_DIR$/dataprovidersqlite" />
             <option value="$PROJECT_DIR$/pulltorefresh" />
+            <option value="$PROJECT_DIR$/pulltorefresh-library" />
             <option value="$PROJECT_DIR$/wkb-app" />
             <option value="$PROJECT_DIR$/wkblibrary" />
           </set>

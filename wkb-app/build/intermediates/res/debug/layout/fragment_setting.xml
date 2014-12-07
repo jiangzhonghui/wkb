@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.apj.wkb.HomeFragment.SettingFragment">
+    tools:context="com.apj.wkb.fragment.SettingFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,4 +11,4 @@
         android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/fragment_setting.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/fragment_setting.xml -->

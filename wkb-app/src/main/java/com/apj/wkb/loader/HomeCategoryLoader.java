@@ -1,6 +1,7 @@
 package com.apj.wkb.loader;
 
 import android.content.Context;
+import android.content.Loader;
 import android.support.v4.content.AsyncTaskLoader;
 
 import com.apj.wkb.entity.HomeCategory;
@@ -126,4 +127,5 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
         // For a simple List<> there is nothing to do.  For something
         // like a Cursor, we would close it here.
     }
+
 }

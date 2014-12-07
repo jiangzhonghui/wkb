@@ -8,4 +8,4 @@
         <scale android:drawable="@drawable/progress_green_bg" android:scaleWidth="100%" android:scaleGravity="left" />
     </item>
 </layer-list>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/nf_downloadprogress.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/nf_downloadprogress.xml -->

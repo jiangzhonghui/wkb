@@ -4,4 +4,4 @@
     <translate android:duration="300" android:fromXDelta="-100.0%p" android:toXDelta="0.0" />
     <alpha android:duration="300" android:fromAlpha="1.0" android:toAlpha="1.0" />
 </set>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/anim/push_right_in.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/anim/push_right_in.xml -->

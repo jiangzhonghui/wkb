@@ -21,9 +21,8 @@
         android:gravity="center_vertical"
         android:maxLines="1"
         android:paddingLeft="6.0dip"
-        android:paddingRight="6.0dip"
         android:singleLine="true"
         android:textColor="@color/white"
         android:textSize="12.0sp" />
 </RelativeLayout>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/grid_item_recommend.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/grid_item_recommend.xml -->

@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/video_btn_pressed" />
     <item android:drawable="@drawable/video_btn_normal" />
 </selector>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/video_btn_bg.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/video_btn_bg.xml -->

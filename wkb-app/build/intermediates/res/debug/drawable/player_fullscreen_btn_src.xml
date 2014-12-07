@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/player_fullscreen_btn_pressed" />
     <item android:drawable="@drawable/player_fullscreen_btn_normal" />
 </selector>
-<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/player_fullscreen_btn_src.xml -->
+<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/player_fullscreen_btn_src.xml -->
