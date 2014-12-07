@@ -9,8 +9,16 @@
     tools:context="com.apj.wkb.SearchActivity">
 
     <TextView
+        android:id="@+id/txtHello"
         android:text="@string/hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnclick"
+        android:text="@string/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
 
 </RelativeLayout>

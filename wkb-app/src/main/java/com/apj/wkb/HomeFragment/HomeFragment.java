@@ -24,12 +24,14 @@ import com.apj.wkb.adapter.ImageBannerPagerAdapter;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
+import com.apj.wkb.task.IDataListener;
+import com.apj.wkb.task.LoadDataTask;
 import com.apj.wkb.view.ScrollGridView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>{
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>> ,IDataListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -127,7 +129,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommendDataV1  = new ArrayList<CourserItem>();
         recommendV1Adapter = new HomeAdapter(this.getActivity(),this.recommendDataV1);
         this.grid_view_v1.setAdapter(recommendV1Adapter);
-        getLoaderManager().initLoader(0,null,this);
+        //getLoaderManager().initLoader(0,null,this);
+        LoadDataTask load=new LoadDataTask(this.getActivity(),"",this);
+        load.execute();
     }
 
     public void onButtonPressed(Uri uri) {
@@ -195,5 +199,39 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     @Override
     public void onLoaderReset(android.support.v4.content.Loader<List<HomeCategory>> listLoader) {
 
+    }
+
+    @Override
+    public void onPostExecute(List<HomeCategory> homeCategories) {
+        if(homeCategories!=null && homeCategories.size()>0){
+            gllery_container.setVisibility(View.VISIBLE);
+            recommend_loading.setVisibility(View.GONE);
+            grid_view_for_you.setVisibility(View.VISIBLE);
+            empty_view_for_you.setVisibility(View.GONE);
+            recommend_empty_view.setVisibility(View.GONE);
+            recommenData.clear();
+            topData.clear();
+            recommendDataV1.clear();
+            for(HomeCategory item:homeCategories){
+                if(item.getType().equals("0")){
+                    topData.addAll(item.getVos());
+                }else if(item.getType().equals("1")) {
+                    recommendDataV1.addAll(item.getVos());
+                    title_v1.setText(item.getName());
+                }else{
+                    recommenData.addAll(item.getVos());
+                }
+            }
+            topAdapter.notifyDataSetChanged();
+            recommendAdapter.notifyDataSetChanged();
+            recommendV1Adapter.notifyDataSetChanged();
+
+            grid_view_v1.setVisibility(View.VISIBLE);
+            gllery_container.setVisibility(View.VISIBLE);
+            grid_view_for_you.setVisibility(View.VISIBLE);
+        }else{
+            recommend_loading.setVisibility(View.GONE);
+            recommend_no_data.setVisibility(View.VISIBLE);
+        }
     }
 }

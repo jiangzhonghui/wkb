@@ -3,16 +3,24 @@ package com.apj.wkb;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class SearchActivity extends ActionBarActivity implements SearchView.OnQueryTextListener {
+
+    private Button btn;
+    private TextView txt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +32,44 @@ public class SearchActivity extends ActionBarActivity implements SearchView.OnQu
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(this.getResources().getString(R.string.app_name));
+        btn = (Button) findViewById(R.id.btnclick);
+        Log.d("hello","bb");
 
+        Thread t=new Thread(r);
+        t.start();
     }
+
+    Runnable r=new Runnable() {
+        @Override
+        public void run() {
+            Log.d("sleep","start");
+            try {
+                Thread.sleep(6000);
+            }catch (Exception ex) {
+                Log.e("ex",ex.getMessage());
+            }
+            Log.d("sleep","end");
+            Message msg=new Message();
+            msg.arg1=1;
+            handler.sendMessage(msg);
+
+        }
+    };
+
+    private Handler handler=new Handler(){
+           public void handleMessage(Message msg){
+                switch (msg.arg1) {
+                    case 1:
+                        Log.d("aa","bb");
+                          break;
+                    case 2:
+                            Log.d("bb","bb");
+                        default:
+                          break;
+                }
+             }
+     };
+
 
     private SearchView mSearchView;
 
