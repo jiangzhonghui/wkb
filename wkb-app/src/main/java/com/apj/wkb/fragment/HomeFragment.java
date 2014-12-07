@@ -1,6 +1,7 @@
 package com.apj.wkb.fragment;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,14 +22,17 @@ import com.apj.wkb.adapter.ImageBannerPagerAdapter;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
+import com.apj.wkb.provider.contentprovider.ProviderUtils;
 import com.apj.wkb.task.IDataListener;
 import com.apj.wkb.task.LoadDataTask;
 import com.apj.wkb.view.ScrollGridView;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>,IDataListener{
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>,IDataListener,PullToRefreshScrollView.OnRefreshListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -67,6 +71,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private ScrollGridView grid_view_v3;
     private HomeAdapter recommendV3Adapter;
 
+    private PullToRefreshScrollView pullToRefreshScrollView;
+    //private Context mcontext;
+    //private HomeFragment mFragment;
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -115,6 +122,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         no_data_text_for_you = (TextView)this.getView().findViewById(R.id.no_data_text_for_you);
         for_you_loading = (ProgressBar)this.getView().findViewById(R.id.for_you_loading);
         empty_view_for_you =(RelativeLayout)this.getView().findViewById(R.id.empty_view_for_you);
+
+        pullToRefreshScrollView =(PullToRefreshScrollView)this.getView().findViewById(R.id.view_pager);
+
         gllery_container.setVisibility(View.GONE);
         recommend_loading.setVisibility(View.VISIBLE);
         grid_view_for_you.setVisibility(View.GONE);
@@ -149,9 +159,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommendV3Adapter = new HomeAdapter(this.getActivity(),this.recommendDataV3);
         this.grid_view_v3.setAdapter(recommendV3Adapter);
 
-        //getLoaderManager().initLoader(0,null,this);
-        LoadDataTask task=new LoadDataTask(this.getActivity(),"",this);
-        task.execute();
+        pullToRefreshScrollView.setOnRefreshListener(this);
+        getLoaderManager().initLoader(0,null,this);
+
     }
 
     ViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
@@ -311,5 +321,36 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             recommend_loading.setVisibility(View.GONE);
             recommend_no_data.setVisibility(View.VISIBLE);
         }
+        postData(homeCategories);
+        //pullToRefreshScrollView.onRefreshComplete();
+    }
+    public void postData(List<HomeCategory> homeCategories){
+        if(homeCategories!=null && homeCategories.size()>0){
+            pullToRefreshScrollView.onRefreshComplete();
+            bindDataToUI(homeCategories);
+
+            ProviderUtils utils =new ProviderUtils(this.getActivity());
+            utils.removeCourseItem();
+
+            for(HomeCategory category:homeCategories){
+                for(CourserItem item:category.getVos()){
+                    item.setTypeName(category.getName());
+                    utils.addCourseItem(item);
+                }
+            }
+        }
+    }
+    private void bindDataToUI(List<HomeCategory> homeCategories){
+        gllery_container.setVisibility(View.VISIBLE);
+        recommend_loading.setVisibility(View.GONE);
+        grid_view_for_you.setVisibility(View.VISIBLE);
+        empty_view_for_you.setVisibility(View.GONE);
+        recommend_empty_view.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onRefresh(PullToRefreshBase refreshView) {
+        LoadDataTask task=new LoadDataTask(this.getActivity(),"",this);
+        task.execute();
     }
 }

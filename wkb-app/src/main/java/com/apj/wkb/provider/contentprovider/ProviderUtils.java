@@ -29,17 +29,18 @@ public class ProviderUtils{
         ContentValues cv = new ContentValues();
 
         cv.put(TodoTable.COLUMN_ID,item.getId());
-        cv.put(TodoTable.COLUMN_GMT_CREATE ,item.getId());
-        cv.put(TodoTable.COLUMN_TYPE ,item.getId());
-        cv.put(TodoTable.COLUMN_CONTENT_TYPE ,item.getId());
-        cv.put(TodoTable.COLUMN_CONTENT_URL ,item.getId());
-        cv.put(TodoTable.COLUMN_CONTENT_ID ,item.getId());
-        cv.put(TodoTable.COLUMN_TITLE ,item.getId());
-        cv.put(TodoTable.COLUMN_PICURL ,item.getId());
-        cv.put(TodoTable.COLUMN_TAG ,item.getId());
-        cv.put(TodoTable.COLUMN_TAG_COLOR ,item.getId());
-        cv.put(TodoTable.COLUMN_TAG_COLOR_BG,item.getId());
-        cv.put(TodoTable.COLUMN_TOP,item.getId());
+        cv.put(TodoTable.COLUMN_GMT_CREATE ,item.getGmtCreate());
+        cv.put(TodoTable.COLUMN_TYPE ,item.getType());
+        cv.put(TodoTable.COLUMN_CONTENT_TYPE ,item.getContentType());
+        cv.put(TodoTable.COLUMN_CONTENT_URL ,item.getContentUrl());
+        cv.put(TodoTable.COLUMN_CONTENT_ID ,item.getContentId());
+        cv.put(TodoTable.COLUMN_TITLE ,item.getTitle());
+        cv.put(TodoTable.COLUMN_PICURL ,item.getPicUrl());
+        cv.put(TodoTable.COLUMN_TAG ,item.getTag());
+        cv.put(TodoTable.COLUMN_TAG_COLOR ,item.getTagColor());
+        cv.put(TodoTable.COLUMN_TAG_COLOR_BG,item.getTagColorBg());
+        cv.put(TodoTable.COLUMN_TOP,item.getTop());
+        cv.put(TodoTable.COLUMN_TYPE_NAME,item.getTypeName());
 
         ContentResolver cr = this.mContext.getContentResolver();
         Uri uri = MyTodoContentProvider.CONTENT_URI;
@@ -49,22 +50,23 @@ public class ProviderUtils{
     }
 
     public void removeCourseItem() {
-        int i = getCount();
+       // int i = getCount();
         ContentResolver cr = this.mContext.getContentResolver();
         Uri uri = MyTodoContentProvider.CONTENT_URI;
-        Uri delUri = Uri.withAppendedPath(uri, Integer.toString(i));
-        cr.delete(delUri, null, null);
+        //Uri delUri = Uri.withAppendedPath(uri, Integer.toString(i));
+        //cr.delete(delUri, null, null);
+        cr.delete(uri, null, null);
     }
 
-    public List<CourserItem> showCourseItems() {
+    public List<CourserItem> showCourseItems(String type) {
         Uri uri = MyTodoContentProvider.CONTENT_URI;
         Activity a = (Activity) this.mContext;
+
         Cursor c = a.managedQuery(uri,
                 null, //projection
-                null, //selection string
-                null, //selection args array of strings
+                TodoTable.COLUMN_TYPE + "=?",
+                new String[] { type }, //selection args array of strings
                 null); //sort order
-
         int col1 = c.getColumnIndex(TodoTable.COLUMN_ID);
         int col2 = c.getColumnIndex(TodoTable.COLUMN_GMT_CREATE);
         int col3 = c.getColumnIndex(TodoTable.COLUMN_TYPE);
@@ -77,6 +79,7 @@ public class ProviderUtils{
         int col10 = c.getColumnIndex(TodoTable.COLUMN_TAG_COLOR);
         int col11 = c.getColumnIndex(TodoTable.COLUMN_TAG_COLOR_BG);
         int col12 = c.getColumnIndex(TodoTable.COLUMN_TOP);
+        int col13 = c.getColumnIndex(TodoTable.COLUMN_TYPE_NAME);
 
         List<CourserItem> items  = new ArrayList<CourserItem>();
         //walk through the rows based on indexes
@@ -96,6 +99,7 @@ public class ProviderUtils{
             item.setTagColor(c.getString(col10));
             item.setTagColorBg(c.getString(col11));
             item.setTop(c.getString(col12));
+            item.setTypeName(c.getString(col13));
             items.add(item);
 
         }
@@ -107,7 +111,7 @@ public class ProviderUtils{
         return items;
     }
 
-    private int getCount() {
+    public int getCount() {
         Uri uri = MyTodoContentProvider.CONTENT_URI;
         Activity a = (Activity) this.mContext;
         Cursor c = a.managedQuery(uri,
