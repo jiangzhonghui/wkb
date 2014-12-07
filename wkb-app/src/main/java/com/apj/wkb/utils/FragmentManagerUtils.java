@@ -3,9 +3,9 @@ package com.apj.wkb.utils;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import com.apj.wkb.HomeFragment.CategoryFragment;
-import com.apj.wkb.HomeFragment.HomeFragment;
-import com.apj.wkb.HomeFragment.SettingFragment;
+import com.apj.wkb.fragment.CategoryFragment;
+import com.apj.wkb.fragment.HomeFragment;
+import com.apj.wkb.fragment.SettingFragment;
 
 /**
  * Created by student on 2014/11/8.
