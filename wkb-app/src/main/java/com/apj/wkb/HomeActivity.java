@@ -1,10 +1,13 @@
 package com.apj.wkb;
 
 import java.util.Locale;
+import java.util.logging.LogRecord;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -86,8 +89,8 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
             }
         });
 
-        Intent intent  = new Intent(this,DataIntentService.class);
-        startService(intent);
+        //Intent intent  = new Intent(this,DataIntentService.class);
+        //startService(intent);
 
         // For each of the sections in the app, add a tab to the action bar.
 //        for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {

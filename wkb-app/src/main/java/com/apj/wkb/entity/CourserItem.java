@@ -20,6 +20,15 @@ public class CourserItem {
     private String tagColorBg;
     private String top;
 
+    private String typeName;
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
 
     public String getId() {
         return id;

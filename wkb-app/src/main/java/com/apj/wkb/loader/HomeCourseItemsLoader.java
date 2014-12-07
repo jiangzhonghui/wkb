@@ -1,14 +1,12 @@
 package com.apj.wkb.loader;
 
 import android.content.Context;
-import android.content.Loader;
 import android.support.v4.content.AsyncTaskLoader;
 
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.provider.contentprovider.ProviderUtils;
 import com.apj.wkb.utils.DataUtils;
-import com.github.kevinsawicki.http.HttpRequest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,29 +14,20 @@ import java.util.List;
 /**
  * Created by student on 2014/11/22.
  */
-public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
+public class HomeCourseItemsLoader extends AsyncTaskLoader<List<HomeCategory>> {
 
     private Context context;
     private List<HomeCategory> mData;
 
-    public HomeCategoryLoader(Context context) {
+    public HomeCourseItemsLoader(Context context) {
         super(context);
         this.context = context;
     }
 
     @Override
     public List<HomeCategory> loadInBackground() {
-        ProviderUtils utils = new ProviderUtils(context);
-        if(utils.getCount()>0){
-            return loadDataFromLocal();
-        }else{
-            return DataUtils.loadDate(context);
-        }
-    }
 
-    private List<HomeCategory> loadDataFromLocal(){
         ProviderUtils utils = new ProviderUtils(context);
-
         List<HomeCategory> listCategory = new ArrayList<HomeCategory>();
 
         HomeCategory category = new HomeCategory();
@@ -74,11 +63,11 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
         List<CourserItem> items4 = utils.showCourseItems("4");
         category4.setVos(items4);
         category4.setName(items4.size()>0?items4.get(0).getTypeName():"");
-
         listCategory.add(category4);
 
         return listCategory;
     }
+
     /**
      * Called when there is new data to deliver to the client.  The
      * super class will take care of delivering it; the implementation

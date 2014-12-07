@@ -7,10 +7,12 @@ import android.util.Log;
 
 public class TestReceiver extends BroadcastReceiver 
 {
-	private static final String tag = "TestReceiver"; 
+	private static final String tag = "TestReceiver";
+
     @Override
     public void onReceive(Context context, Intent intent) 
     {
+        //10second
     	Utils.logThreadSignature(tag);
         Log.d("TestReceiver", "intent=" + intent);
         String message = intent.getStringExtra("message");
