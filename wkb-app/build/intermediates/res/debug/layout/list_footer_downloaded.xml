@@ -5,4 +5,4 @@
     <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/memory_size_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="已下载XXM" />
     <LinearLayout android:orientation="vertical" android:id="@id/download_space_sdcards_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/list_footer_downloaded.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_footer_downloaded.xml -->

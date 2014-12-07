@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/edit_btn_white_pressed" />
     <item android:drawable="@drawable/edit_btn_white_normal" />
 </selector>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/btn_white_small_bg.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/btn_white_small_bg.xml -->

@@ -8,4 +8,4 @@
     <TextView android:textAppearance="@style/filter_panel_item_text" android:id="@id/filter_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:text="最新" />
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_down_arrow" />
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/filter_panel_folded.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/filter_panel_folded.xml -->

@@ -2,29 +2,11 @@
 <pre-dex-items>
 
     <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-ee88f8c87cc580c0d8f126756afe2bf2b777de8f.jar"
-        jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\classes.jar"
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-e950df80513032168f3c424dac0ccda27d570406.jar"
+        jar="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="e1a50e6728471fb35eb214fac44874d0723e1fb8"/>
-    <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-c89494797c6a8cb8028020b941ea5e1096e17893.jar"
-        jar="C:\Users\student\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
-    <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-22bed8634bfcb65f80adf29136395bf773983352.jar"
-        jar="C:\App\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
-    <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\gson-2.2.2-41dbaad64d13d260ea30e384e31a3ee78bfc88e1.jar"
-        jar="C:\Users\student\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="1f96456ca233dec780aa224bff076d8e8bca3908"/>
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
     <item
         dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\picasso-2.4.0-44d30db2c4240d21d18f7909b85700ec1427497b.jar"
         jar="C:\Users\student\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
@@ -32,28 +14,52 @@
         revision="21.0.2"
         sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2"/>
     <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-11c628c42b4bb6624c2253c410cf6be0029ed266.jar"
-        jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\classes.jar"
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-52a5d5923bbb21f47eec680fff729d8c444e8148.jar"
+        jar="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
+        sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
     <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-46fdb15fd82b482b70e69d4d6ce42bc1df72b81e.jar"
-        jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\http-request-5.6-4e9269adcef7ee998dcbd448970ecabab773961b.jar"
+        jar="C:\Users\student\.gradle\caches\modules-2\files-2.1\com.github.kevinsawicki\http-request\5.6\168305b7a983142b6311a005f0ad96d3b34d92d\http-request-5.6.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+        sha1="0168305b7a983142b6311a005f0ad96d3b34d92d"/>
     <item
-        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-bd0dcb124775730bd695cda0e306a4036394cd88.jar"
-        jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-d61b4c762dbd778eb3bc1d58e5b62b29a403f385.jar"
+        jar="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
         jumboMode="false"
         revision="21.0.2"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-57b814ce6274895129291ab397cb8083bf0ecfdd.jar"
+        jar="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="94f813f3585393852dffcecde3bb6e92b44b09da"/>
     <item
         dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-c61f9e8b8a2a2594c692a337cc33f168753ad91b.jar"
         jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar"
         jumboMode="false"
         revision="21.0.2"
         sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
+    <item
+        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-c89494797c6a8cb8028020b941ea5e1096e17893.jar"
+        jar="C:\Users\student\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
+    <item
+        dex="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-ee88f8c87cc580c0d8f126756afe2bf2b777de8f.jar"
+        jar="E:\jiangzhonghui\wkb\wkb-app\build\intermediates\exploded-aar\wkb\pulltorefresh\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="e1a50e6728471fb35eb214fac44874d0723e1fb8"/>
+    <item
+        dex="E:\Aaron\wkb\wkb-app\build\intermediates\pre-dexed\debug\classes-449aba433ae54c78c561779cd707f84e272518fc.jar"
+        jar="E:\Aaron\wkb\wkb-app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
 
 </pre-dex-items>

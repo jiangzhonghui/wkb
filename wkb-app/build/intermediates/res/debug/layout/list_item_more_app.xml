@@ -11,4 +11,4 @@
         <TextView android:textSize="12.0sp" android:textColor="@color/text_darkgray" android:id="@id/reco_app_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
     </LinearLayout>
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/list_item_more_app.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_item_more_app.xml -->

@@ -5,4 +5,4 @@
     <item android:state_enabled="true" android:color="@color/white" />
     <item android:color="@color/text_transwhite" />
 </selector>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/color/white_text_btn_selector.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/color/white_text_btn_selector.xml -->

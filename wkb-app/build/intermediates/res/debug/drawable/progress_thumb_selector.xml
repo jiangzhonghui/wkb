@@ -5,4 +5,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/player_seekbar_thumb_on" />
     <item android:drawable="@drawable/player_seekbar_thumb" />
 </selector>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/progress_thumb_selector.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/progress_thumb_selector.xml -->

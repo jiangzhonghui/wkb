@@ -4,4 +4,4 @@
     <TextView android:textAppearance="@style/no_item_style" android:layout_gravity="center" android:id="@id/vdetail_relative_nocourses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vdetail_no_courses" android:drawableTop="@drawable/ico_no_course" android:drawablePadding="10.0dip" />
     <ListView android:id="@id/vdetail_relative_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_item_selector" android:cacheColorHint="#00000000" android:divider="@drawable/list_view_divider" />
 </FrameLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/frag_vd_relatedcourse.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/frag_vd_relatedcourse.xml -->

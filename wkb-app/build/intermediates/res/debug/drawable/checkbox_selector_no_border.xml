@@ -4,4 +4,4 @@
     <item android:state_checked="true" android:drawable="@drawable/checkbox_no_border_checked" />
     <item android:drawable="@drawable/checkbox_no_border_normal" />
 </selector>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/checkbox_selector_no_border.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/checkbox_selector_no_border.xml -->

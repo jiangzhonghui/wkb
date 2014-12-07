@@ -4,4 +4,4 @@
     <TextView android:textAppearance="@style/VopenActionBarTabTextNormal" android:textColor="@color/tab_item_text_color_selector" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的下载" />
     <ImageView android:id="@id/tab_update_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="-5.0dip" android:src="@drawable/tab_new_ico" />
 </merge>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/tab_item_view.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/tab_item_view.xml -->

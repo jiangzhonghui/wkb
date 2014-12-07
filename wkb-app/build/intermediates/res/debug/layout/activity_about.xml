@@ -15,4 +15,4 @@
         <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:gravity="center" android:id="@id/about_copyright" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/copyright" android:lineSpacingMultiplier="1.2" />
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/activity_about.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/activity_about.xml -->

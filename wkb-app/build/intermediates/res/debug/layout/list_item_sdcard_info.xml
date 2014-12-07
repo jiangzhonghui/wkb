@@ -4,4 +4,4 @@
     <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/download_sdcard_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储卡1" />
     <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/download_sdcard_inuse" android:background="@drawable/sdcard_used_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/downloaded_sdcard_inuse" />
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/list_item_sdcard_info.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/list_item_sdcard_info.xml -->

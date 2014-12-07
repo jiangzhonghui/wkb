@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:drawable="@drawable/text_input_bg_selected" />
     <item android:drawable="@drawable/text_input_bg_normal" />
 </selector>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/drawable/text_input_bg.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/drawable/text_input_bg.xml -->

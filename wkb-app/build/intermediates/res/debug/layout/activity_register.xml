@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <WebView android:scrollbarStyle="insideInset" android:id="@id/regist_page" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/activity_register.xml -->

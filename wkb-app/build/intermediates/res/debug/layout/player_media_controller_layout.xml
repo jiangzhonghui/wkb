@@ -10,4 +10,4 @@
     </LinearLayout>
     <ImageView android:id="@id/play_fullscreen_btn" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/player_exit_fullscreen_btn_src" android:scaleType="center" />
 </LinearLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/player_media_controller_layout.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/player_media_controller_layout.xml -->

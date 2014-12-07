@@ -10,4 +10,4 @@
         <ImageView android:id="@id/m9_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/m9" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </FrameLayout>
-<!-- From: file:/E:/jiangzhonghui/wkb/wkb-app/src/main/res/layout/activity_welcome.xml -->
+<!-- From: file:/E:/Aaron/wkb/wkb-app/src/main/res/layout/activity_welcome.xml -->
