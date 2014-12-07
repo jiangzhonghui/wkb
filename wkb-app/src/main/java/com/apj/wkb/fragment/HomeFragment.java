@@ -22,11 +22,15 @@ import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
 import com.apj.wkb.view.ScrollGridView;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>{
+import static com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
+
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>, OnRefreshListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -65,6 +69,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private ScrollGridView grid_view_v3;
     private HomeAdapter recommendV3Adapter;
 
+    private com.handmark.pulltorefresh.library.PullToRefreshScrollView pullToRefreshScrollView;
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -100,6 +106,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommend_empty_view =(RelativeLayout)this.getView().findViewById(R.id.recommend_empty_view);
 
         grid_view_for_you = (ScrollGridView)this.getView().findViewById(R.id.grid_view_for_you);
+
+        pullToRefreshScrollView = (com.handmark.pulltorefresh.library.PullToRefreshScrollView)this.getView().findViewById(R.id.ID_pullToRefreshScrollView);
+
 
         title_v1  = (TextView)this.getView().findViewById(R.id.title_v1);
         grid_view_v1 = (ScrollGridView)this.getView().findViewById(R.id.grid_view_v1);
@@ -146,6 +155,8 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommendDataV3  = new ArrayList<CourserItem>();
         recommendV3Adapter = new HomeAdapter(this.getActivity(),this.recommendDataV3);
         this.grid_view_v3.setAdapter(recommendV3Adapter);
+
+        pullToRefreshScrollView.setOnRefreshListener(this);
 
         getLoaderManager().initLoader(0,null,this);
     }
@@ -204,6 +215,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
 
     @Override
     public void onLoadFinished(android.support.v4.content.Loader<List<HomeCategory>> listLoader, List<HomeCategory> homeCategories) {
+
         if(homeCategories!=null && homeCategories.size()>0){
             gllery_container.setVisibility(View.VISIBLE);
             recommend_loading.setVisibility(View.GONE);
@@ -251,10 +263,20 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             recommend_loading.setVisibility(View.GONE);
             recommend_no_data.setVisibility(View.VISIBLE);
         }
+
+        this.pullToRefreshScrollView.onRefreshComplete();
     }
+
+
 
     @Override
     public void onLoaderReset(android.support.v4.content.Loader<List<HomeCategory>> listLoader) {
+
+    }
+
+    @Override
+    public void onRefresh(PullToRefreshBase refreshView) {
+        LoaderManager.
 
     }
 }

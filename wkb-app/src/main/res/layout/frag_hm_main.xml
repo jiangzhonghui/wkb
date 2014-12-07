@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <view xmlns:android="http://schemas.android.com/apk/res/android"
     class="com.handmark.pulltorefresh.library.PullToRefreshScrollView"
+    id="@+id/ID_pullToRefreshScrollView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 

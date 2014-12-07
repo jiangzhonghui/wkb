@@ -20,6 +20,8 @@ public class TodoTable {
     public static final String COLUMN_TAG_COLOR = "tagColor";
     public static final String COLUMN_TAG_COLOR_BG = "tagColorBg";
     public static final String COLUMN_TOP  = "top";
+    public static  final  String COLUMN_TYPE_NAME = "type_name";
+
 
 
     // Database creation SQL statement
@@ -37,7 +39,8 @@ public class TodoTable {
             + COLUMN_TAG + " text null,"
             + COLUMN_TAG_COLOR + " text null,"
             + COLUMN_TAG_COLOR_BG + " text null,"
-            + COLUMN_TOP + " text null"
+            + COLUMN_TOP + " text null,"
+            + COLUMN_TYPE_NAME + " text null"
             + ");";
 
     public static void onCreate(SQLiteDatabase database) {
