@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 
+
 public class SearchResultActivity extends ActionBarActivity {
 
     @Override
@@ -35,7 +36,7 @@ public class SearchResultActivity extends ActionBarActivity {
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+                Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_search_result, container, false);
             return rootView;
         }
