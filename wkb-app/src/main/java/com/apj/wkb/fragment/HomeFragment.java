@@ -1,6 +1,7 @@
 package com.apj.wkb.fragment;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.apj.wkb.OnFragmentInteractionListener;
@@ -21,14 +23,17 @@ import com.apj.wkb.adapter.ImageBannerPagerAdapter;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
+import com.apj.wkb.provider.contentprovider.ProviderUtils;
+import com.apj.wkb.task.IDataListener;
+import com.apj.wkb.task.LoadDataTask;
 import com.apj.wkb.view.ScrollGridView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView;
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
+public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>,IDataListener {
 
 public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<HomeCategory>>, OnRefreshListener{
     // TODO: Rename parameter arguments, choose names that match
@@ -69,7 +74,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private ScrollGridView grid_view_v3;
     private HomeAdapter recommendV3Adapter;
 
-    private com.handmark.pulltorefresh.library.PullToRefreshScrollView pullToRefreshScrollView;
+    private PullToRefreshScrollView scrollView;
+    private Context mContext;
+    private HomeFragment me;
 
     /**
      * Use this factory method to create a new instance of
@@ -104,6 +111,11 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         recommend_loading = (ProgressBar)this.getView().findViewById(R.id.recommend_loading);
         recommend_no_data = (TextView)this.getView().findViewById(R.id.recommend_no_data);
         recommend_empty_view =(RelativeLayout)this.getView().findViewById(R.id.recommend_empty_view);
+
+        //Scroll View
+        scrollView =(PullToRefreshScrollView)this.getView().findViewById(R.id.scrollView);
+        mContext = this.getActivity();
+        me = this;
 
         grid_view_for_you = (ScrollGridView)this.getView().findViewById(R.id.grid_view_for_you);
 
@@ -159,7 +171,18 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         pullToRefreshScrollView.setOnRefreshListener(this);
 
         getLoaderManager().initLoader(0,null,this);
+
+        scrollView.setOnRefreshListener(onRefreshListener);
+
     }
+
+    PullToRefreshBase.OnRefreshListener onRefreshListener=new PullToRefreshBase.OnRefreshListener() {
+        @Override
+        public void onRefresh(PullToRefreshBase refreshView) {
+            LoadDataTask task = new LoadDataTask(mContext,"",me);
+            task.execute();
+        }
+    };
 
     ViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
         @Override
@@ -217,57 +240,12 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     public void onLoadFinished(android.support.v4.content.Loader<List<HomeCategory>> listLoader, List<HomeCategory> homeCategories) {
 
         if(homeCategories!=null && homeCategories.size()>0){
-            gllery_container.setVisibility(View.VISIBLE);
-            recommend_loading.setVisibility(View.GONE);
-            grid_view_for_you.setVisibility(View.VISIBLE);
-            empty_view_for_you.setVisibility(View.GONE);
-            recommend_empty_view.setVisibility(View.GONE);
-
-            recommenData.clear();
-            topData.clear();
-            recommendDataV1.clear();
-            recommendDataV2.clear();
-            recommendDataV3.clear();
-
-            for(HomeCategory item:homeCategories){
-                if(item.getType().equals("0")){
-                    topData.addAll(item.getVos());
-                }else if(item.getType().equals("1")) {
-                    recommendDataV1.addAll(item.getVos());
-                    title_v1.setText(item.getName());
-                }else if(item.getType().equals("2")) {
-                    recommendDataV2.addAll(item.getVos());
-                    title_v2.setText(item.getName());
-                }else if(item.getType().equals("3")) {
-                    recommendDataV3.addAll(item.getVos());
-                    title_v3.setText(item.getName());
-                }else if(item.getType().equals("4")) {
-                    recommenData.addAll(item.getVos());
-                }
-            }
-            topAdapter.notifyDataSetChanged();
-            recommendAdapter.notifyDataSetChanged();
-            recommendV1Adapter.notifyDataSetChanged();
-            recommendV2Adapter.notifyDataSetChanged();
-            recommendV3Adapter.notifyDataSetChanged();
-
-            title_v1.setVisibility(View.VISIBLE);
-            title_v2.setVisibility(View.VISIBLE);
-            title_v3.setVisibility(View.VISIBLE);
-            grid_view_v1.setVisibility(View.VISIBLE);
-            grid_view_v2.setVisibility(View.VISIBLE);
-            grid_view_v3.setVisibility(View.VISIBLE);
-            gllery_container.setVisibility(View.VISIBLE);
-            grid_view_for_you.setVisibility(View.VISIBLE);
+            bindDataToUI(homeCategories);
         }else{
             recommend_loading.setVisibility(View.GONE);
             recommend_no_data.setVisibility(View.VISIBLE);
         }
-
-        this.pullToRefreshScrollView.onRefreshComplete();
     }
-
-
 
     @Override
     public void onLoaderReset(android.support.v4.content.Loader<List<HomeCategory>> listLoader) {
@@ -275,8 +253,81 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     }
 
     @Override
+    public void postData(List<HomeCategory> homeCategories) {
+
+        if(homeCategories!=null && homeCategories.size()>0) {
+
+            scrollView.onRefreshComplete();
+            bindDataToUI(homeCategories);
+
+            ProviderUtils utils = new ProviderUtils(this.getActivity());
+            utils.removeCourseItem();
+
+            for(HomeCategory category:homeCategories){
+                for(CourserItem item:category.getVos()){
+                    item.setTypeName(category.getName());
+                    utils.addCourseItem(item);
+                }
+            }
+            //
+        }
+    }
+
+    private void bindDataToUI(List<HomeCategory> homeCategories){
+
+        gllery_container.setVisibility(View.VISIBLE);
+        recommend_loading.setVisibility(View.GONE);
+        grid_view_for_you.setVisibility(View.VISIBLE);
+        empty_view_for_you.setVisibility(View.GONE);
+        recommend_empty_view.setVisibility(View.GONE);
+
+        recommenData.clear();
+        topData.clear();
+        recommendDataV1.clear();
+        recommendDataV2.clear();
+        recommendDataV3.clear();
+
+        for(HomeCategory item:homeCategories){
+            if(item.getType().equals("0")){
+                topData.addAll(item.getVos());
+            }else if(item.getType().equals("1")) {
+                recommendDataV1.addAll(item.getVos());
+                title_v1.setText(item.getName());
+            }else if(item.getType().equals("2")) {
+                recommendDataV2.addAll(item.getVos());
+                title_v2.setText(item.getName());
+            }else if(item.getType().equals("3")) {
+                recommendDataV3.addAll(item.getVos());
+                title_v3.setText(item.getName());
+            }else if(item.getType().equals("4")) {
+                recommenData.addAll(item.getVos());
+            }
+
+        }
+        topAdapter.notifyDataSetChanged();
+        recommendAdapter.notifyDataSetChanged();
+        recommendV1Adapter.notifyDataSetChanged();
+        recommendV2Adapter.notifyDataSetChanged();
+        recommendV3Adapter.notifyDataSetChanged();
+
+
+        title_v1.setVisibility(View.VISIBLE);
+        title_v2.setVisibility(View.VISIBLE);
+        title_v3.setVisibility(View.VISIBLE);
+        grid_view_v1.setVisibility(View.VISIBLE);
+        grid_view_v2.setVisibility(View.VISIBLE);
+        grid_view_v3.setVisibility(View.VISIBLE);
+        gllery_container.setVisibility(View.VISIBLE);
+        grid_view_for_you.setVisibility(View.VISIBLE);
+
+        this.pullToRefreshScrollView.onRefreshComplete();
+
+
+
+    }
+
+    @Override
     public void onRefresh(PullToRefreshBase refreshView) {
         LoaderManager.
-
     }
 }

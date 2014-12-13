@@ -46,8 +46,16 @@
             android:name=".SearchResultActivity"
             android:screenOrientation="portrait" >
         </activity>
-        <provider android:name="com.apj.wkb.provider.contentprovider.MyTodoContentProvider"
-            android:authorities="com.apj.wkb.todos.contentprovider"/>
+
+        <provider
+            android:name=".provider.contentprovider.MyTodoContentProvider"
+            android:authorities="com.apj.wkb.todos.contentprovider" />
+        <!-- <service android:name=".service.DataIntentService" /> -->
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

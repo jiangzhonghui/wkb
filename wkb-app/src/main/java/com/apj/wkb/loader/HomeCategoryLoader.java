@@ -8,6 +8,7 @@ import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.provider.contentprovider.ProviderUtils;
 import com.apj.wkb.utils.DataUtils;
+import com.github.kevinsawicki.http.HttpRequest;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -28,10 +29,10 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
 
     @Override
     public List<HomeCategory> loadInBackground() {
-        ProviderUtils p = new ProviderUtils(context);
-        if(p.getCount() > 0) {
-
-          return loadDataFromLocal();
+        ProviderUtils utils = new ProviderUtils(context);
+        if(utils.getCount()>0){
+            return loadDataFromLocal();
+        }else{
         }
         else
         {
@@ -74,8 +75,52 @@ public class HomeCategoryLoader extends AsyncTaskLoader<List<HomeCategory>> {
 
         return listCategory;
 
+        }
     }
 
+    private List<HomeCategory> loadDataFromLocal(){
+        ProviderUtils utils = new ProviderUtils(context);
+
+        List<HomeCategory> listCategory = new ArrayList<HomeCategory>();
+
+        HomeCategory category = new HomeCategory();
+        category.setType("0");
+        List<CourserItem> items = utils.showCourseItems("0");
+        category.setVos(items);
+        category.setName(items.size()>0?items.get(0).getTypeName():"");
+        listCategory.add(category);
+
+        HomeCategory category1 = new HomeCategory();
+        category1.setType("1");
+        List<CourserItem> items1 = utils.showCourseItems("1");
+        category1.setVos(items1);
+        category1.setName(items1.size()>0?items1.get(0).getTypeName():"");
+        listCategory.add(category1);
+
+        HomeCategory category2 = new HomeCategory();
+        category2.setType("2");
+        List<CourserItem> items2 = utils.showCourseItems("2");
+        category2.setVos(items2);
+        category2.setName(items2.size()>0?items2.get(0).getTypeName():"");
+        listCategory.add(category2);
+
+        HomeCategory category3 = new HomeCategory();
+        category3.setType("3");
+        List<CourserItem> items3 = utils.showCourseItems("3");
+        category3.setVos(items3);
+        category3.setName(items3.size()>0?items3.get(0).getTypeName():"");
+        listCategory.add(category3);
+
+        HomeCategory category4 = new HomeCategory();
+        category4.setType("4");
+        List<CourserItem> items4 = utils.showCourseItems("4");
+        category4.setVos(items4);
+        category4.setName(items4.size()>0?items4.get(0).getTypeName():"");
+
+        listCategory.add(category4);
+
+        return listCategory;
+    }
     /**
      * Called when there is new data to deliver to the client.  The
      * super class will take care of delivering it; the implementation

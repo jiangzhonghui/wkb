@@ -20,8 +20,7 @@ public class TodoTable {
     public static final String COLUMN_TAG_COLOR = "tagColor";
     public static final String COLUMN_TAG_COLOR_BG = "tagColorBg";
     public static final String COLUMN_TOP  = "top";
-    public static  final  String COLUMN_TYPE_NAME = "type_name";
-
+    public static final String COLUMN_TYPE_NAME  = "type_name";
 
 
     // Database creation SQL statement

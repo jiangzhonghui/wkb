@@ -7,7 +7,6 @@ import com.apj.wkb.entity.HomeCategory;
 import com.github.kevinsawicki.http.HttpRequest;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
@@ -28,21 +27,25 @@ public class DataUtils {
     public static List<HomeCategory> loadDate(Context context){
         String jsonString = "";
         try{
-//            InputStream inputStream = context.getAssets().open("home_json");
-//            jsonString = inputStream2String(inputStream);
-
+            //InputStream inputStream = context.getAssets().open("home_json");
+            //jsonString = inputStream2String(inputStream);
+            jsonString  =  HttpRequest.get(DataUtils.URL_HOME).accept("application/json").body();
             jsonString = HttpRequest.get(DataUtils.URL_HOME).accept("application/json").body();
-
         }catch (Exception ex){
             Log.e("DataUtils","loadDate",ex);
         }
         Gson gson = new Gson();
         List<HomeCategory> data = gson.fromJson(jsonString, new TypeToken<List<HomeCategory>>(){}.getType());
-//        try{
-//            JSONObject jsonObject = new JSONObject(jsonString);
-//        }catch (Exception ex){
+        return data;
+    }
 
+    public static List<HomeCategory> loadDateFromRemote(Context context){
+        String jsonString = "";
+            jsonString  =  HttpRequest.get(DataUtils.URL_HOME).accept("application/json").body();
+            Log.e("DataUtils","loadDate",ex);
 //        }
+        Gson gson = new Gson();
+        List<HomeCategory> data = gson.fromJson(jsonString, new TypeToken<List<HomeCategory>>(){}.getType());
         return data;
     }
 
