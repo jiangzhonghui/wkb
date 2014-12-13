@@ -55,9 +55,15 @@
             android:name=".SearchResultActivity"
             android:label="@string/title_activity_search_result" >
         </activity>
+
         <provider
-            android:authorities="com.apj.wkb.todos.contentprovider"
-            android:name="com.apj.wkb.provider.contentprovider.MyTodoContentProvider"></provider>
+            android:name=".provider.contentprovider.MyTodoContentProvider"
+            android:authorities="com.apj.wkb.todos.contentprovider" />
+
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:label="@string/title_activity_video_player" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

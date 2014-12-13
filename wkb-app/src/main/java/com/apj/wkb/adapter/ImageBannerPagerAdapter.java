@@ -1,5 +1,6 @@
 package com.apj.wkb.adapter;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.apj.wkb.R;
+import com.apj.wkb.VideoPlayerActivity;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -52,8 +54,8 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
-        CourserItem entity = topBannerData.get(position);
+    public Object instantiateItem(final ViewGroup container, int position) {
+        final CourserItem entity = topBannerData.get(position);
         //    ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(w, ViewGroup.LayoutParams.WRAP_CONTENT);
         //NetworkImageView imageView = new NetworkImageView(context);
         //final ImageView imageView = new ImageView(context);
@@ -66,6 +68,17 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
         //((ViewPager) container).addView(imageView, 0);
         //return imageView;
         ((ViewPager) container).addView(view, 0);
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(context, VideoPlayerActivity.class);
+                intent.putExtra("url",entity.getContentUrl());
+                intent.putExtra("title",entity.getTitle());
+                context.startActivityForResult(intent,0);
+            }
+        });
+
         return view;
     }
 

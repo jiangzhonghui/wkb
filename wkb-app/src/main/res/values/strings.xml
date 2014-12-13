@@ -13,5 +13,6 @@
     <string name="title_activity_app_login">AppLoginActivity</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
 
 </resources>
