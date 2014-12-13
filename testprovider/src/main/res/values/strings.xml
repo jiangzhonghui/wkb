@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Wkb</string>
+    <string name="menu_da_clear">clear</string>
+    <string name="menu_delete">delete</string>
+    <string name="menu_display_table">table</string>
+    <string name="menu_add">add</string>
 </resources>
