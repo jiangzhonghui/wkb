@@ -1,6 +1,7 @@
 package com.apj.wkb.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.apj.wkb.R;
+import com.apj.wkb.VideoPlayerActivity;
 import com.apj.wkb.entity.CourserItem;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -71,10 +73,19 @@ public class HomeAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        CourserItem item = mData.get(position);
+        final CourserItem item = mData.get(position);
         holder.grid_item_title.setText(item.getTitle());
         ImageLoader.getInstance().displayImage(item.getPicUrl(), holder.grid_item_img, options);
         //Picasso.with(mContext).load(item.getPicUrl()).placeholder(R.drawable.ico_no_content).centerCrop().into(holder.grid_item_img);
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(mContext, VideoPlayerActivity.class);
+                intent.putExtra("url",item.getContentId());
+                intent.putExtra("title",item.getTitle());
+                mContext.startActivity(intent);
+            }
+        });
         return convertView;
     }
 

@@ -5,6 +5,7 @@ import android.content.res.AssetFileDescriptor;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.util.Log;
@@ -12,12 +13,14 @@ import android.view.View;
 
 import com.eduonline.app.d6.app.R;
 
+import java.net.URI;
+
 public class MainActivity extends Activity implements OnPreparedListener
 {
     static final String AUDIO_PATH =
 //    	"http://streaming103.radionomy.com:80/Radio-Mozart";
-        "rtsp://64.202.98.91:554/sa.sdp";    // http://somafm.com/secretagent/
-//    	"http://www.androidbook.com/akc/filestorage/android/documentfiles/3389/play.mp3";
+//        "rtsp://64.202.98.91:554/sa.sdp";    // http://somafm.com/secretagent/
+    	"http://www.androidbook.com/akc/filestorage/android/documentfiles/3389/play.mp3";
 //    	Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC) + "/music_file.mp3";
 //      Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES) + "/movie.mp4";
 
@@ -30,7 +33,7 @@ public class MainActivity extends Activity implements OnPreparedListener
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main_media_demo);
     }
 
     public void doClick(View view) {
@@ -39,7 +42,7 @@ public class MainActivity extends Activity implements OnPreparedListener
             try {
             	// Only have one of these play methods uncommented
             	playAudio(AUDIO_PATH);
-//              playLocalAudio();
+             //playLocalAudio();
 //              playLocalAudio_UsingDescriptor();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -74,13 +77,47 @@ public class MainActivity extends Activity implements OnPreparedListener
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mediaPlayer.setDataSource(url);
         mediaPlayer.setOnPreparedListener(this);
+        mediaPlayer.setOnInfoListener(new MediaPlayer.OnInfoListener() {
+            @Override
+            public boolean onInfo(MediaPlayer mp, int what, int extra) {
+                return false;
+            }
+        });
+        mediaPlayer.setOnBufferingUpdateListener(new MediaPlayer.OnBufferingUpdateListener() {
+            @Override
+            public void onBufferingUpdate(MediaPlayer mp, int percent) {
+
+            }
+        });
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+
+            }
+        });
+
+        mediaPlayer.setOnPreparedListener(new OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+
+            }
+        });
+        mediaPlayer.setOnSeekCompleteListener(seek);
         mediaPlayer.setWakeMode(this, PowerManager.PARTIAL_WAKE_LOCK);
         mediaPlayer.prepareAsync();
     }
 
+    int postion=0;
+    MediaPlayer.OnSeekCompleteListener seek = new MediaPlayer.OnSeekCompleteListener() {
+    @Override
+    public void onSeekComplete(MediaPlayer mp) {
+        postion= mp.getCurrentPosition();
+        }
+    };
+
     private void playLocalAudio() throws Exception
     {
-        mediaPlayer = MediaPlayer.create(this, R.raw.music_file);
+        mediaPlayer = MediaPlayer.create(this, R.raw.chimp);
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mediaPlayer.start();
     }
@@ -88,7 +125,7 @@ public class MainActivity extends Activity implements OnPreparedListener
     private void playLocalAudio_UsingDescriptor() throws Exception {
 
         AssetFileDescriptor fileDesc = getResources().openRawResourceFd(
-        		R.raw.music_file);
+        		R.raw.chimp);
         if (fileDesc != null) {
 
             mediaPlayer = new MediaPlayer();

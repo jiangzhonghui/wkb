@@ -26,7 +26,7 @@ public class MainActivity2 extends Activity implements OnPreparedListener
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main_media_demo2);
     }
 
     public void doClick(View view) {
@@ -75,7 +75,7 @@ public class MainActivity2 extends Activity implements OnPreparedListener
 
     private void playLocalAudio() throws Exception
     {
-        mediaPlayer = MediaPlayer.create(this, R.raw.music_file);
+        mediaPlayer = MediaPlayer.create(this, R.raw.chimp);
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mediaPlayer.start();
     }
@@ -83,7 +83,7 @@ public class MainActivity2 extends Activity implements OnPreparedListener
     private void playLocalAudio_UsingDescriptor() throws Exception {
 
         AssetFileDescriptor fileDesc = getResources().openRawResourceFd(
-        		R.raw.music_file);
+        		R.raw.chimp);
         if (fileDesc != null) {
 
             mediaPlayer = new MediaPlayer();
@@ -97,6 +97,8 @@ public class MainActivity2 extends Activity implements OnPreparedListener
             mediaPlayer.prepareAsync();
         }
     }
+
+
 
     // This is called when the MediaPlayer is ready to start
 	public void onPrepared(MediaPlayer mp) {

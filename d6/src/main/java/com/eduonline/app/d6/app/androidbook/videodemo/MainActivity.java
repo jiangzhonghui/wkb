@@ -19,15 +19,14 @@ public class MainActivity extends Activity {
 	    VideoView videoView = (VideoView)this.findViewById(R.id.videoView);
 	    MediaController mc = new MediaController(this);
 	    videoView.setMediaController(mc);
-//	    videoView.setVideoURI(Uri.parse(
-//	"http://www.androidbook.com/akc/filestorage/android/documentfiles/3389/movie.mp4"));
+	    videoView.setVideoURI(Uri.parse(
+	"http://www.androidbook.com/akc/filestorage/android/documentfiles/3389/movie.mp4"));
 // videoView.setVideoPath(
 //   Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES) +
 //   "/movie.mp4");
-	    videoView.setVideoURI(Uri.parse("file://" +
-   Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES) +
-   "/movie.mp4"));
- 
+//	    videoView.setVideoURI(Uri.parse("file://" +
+//   Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES) +
+//   "/movie.mp4"));
 	    videoView.requestFocus();
 	    videoView.start();
 	}
