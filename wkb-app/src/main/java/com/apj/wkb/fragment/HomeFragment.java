@@ -19,6 +19,7 @@ import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
 import com.apj.wkb.adapter.HomeAdapter;
 import com.apj.wkb.adapter.ImageBannerPagerAdapter;
+import com.apj.wkb.entity.CourseDetailItem;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
@@ -271,59 +272,62 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     public void onLoaderReset(android.support.v4.content.Loader<List<HomeCategory>> listLoader) {
 
     }
-
     @Override
-    public void onPostExecute(List<HomeCategory> homeCategories) {
-        if(homeCategories!=null && homeCategories.size()>0){
-            gllery_container.setVisibility(View.VISIBLE);
-            recommend_loading.setVisibility(View.GONE);
-            grid_view_for_you.setVisibility(View.VISIBLE);
-            empty_view_for_you.setVisibility(View.GONE);
-            recommend_empty_view.setVisibility(View.GONE);
+    public void postDetailData(CourseDetailItem data) {
 
-            recommenData.clear();
-            topData.clear();
-            recommendDataV1.clear();
-            recommendDataV2.clear();
-            recommendDataV3.clear();
-
-            for(HomeCategory item:homeCategories){
-                if(item.getType().equals("0")){
-                    topData.addAll(item.getVos());
-                }else if(item.getType().equals("1")) {
-                    recommendDataV1.addAll(item.getVos());
-                    title_v1.setText(item.getName());
-                }else if(item.getType().equals("2")) {
-                    recommendDataV2.addAll(item.getVos());
-                    title_v2.setText(item.getName());
-                }else if(item.getType().equals("3")) {
-                    recommendDataV3.addAll(item.getVos());
-                    title_v3.setText(item.getName());
-                }else if(item.getType().equals("4")) {
-                    recommenData.addAll(item.getVos());
-                }
-            }
-            topAdapter.notifyDataSetChanged();
-            recommendAdapter.notifyDataSetChanged();
-            recommendV1Adapter.notifyDataSetChanged();
-            recommendV2Adapter.notifyDataSetChanged();
-            recommendV3Adapter.notifyDataSetChanged();
-
-            title_v1.setVisibility(View.VISIBLE);
-            title_v2.setVisibility(View.VISIBLE);
-            title_v3.setVisibility(View.VISIBLE);
-            grid_view_v1.setVisibility(View.VISIBLE);
-            grid_view_v2.setVisibility(View.VISIBLE);
-            grid_view_v3.setVisibility(View.VISIBLE);
-            gllery_container.setVisibility(View.VISIBLE);
-            grid_view_for_you.setVisibility(View.VISIBLE);
-        }else{
-            recommend_loading.setVisibility(View.GONE);
-            recommend_no_data.setVisibility(View.VISIBLE);
-        }
-        postData(homeCategories);
-        //pullToRefreshScrollView.onRefreshComplete();
-    }
+     }
+//    @Override
+//    public void onPostExecute(List<HomeCategory> homeCategories) {
+//        if(homeCategories!=null && homeCategories.size()>0){
+//            gllery_container.setVisibility(View.VISIBLE);
+//            recommend_loading.setVisibility(View.GONE);
+//            grid_view_for_you.setVisibility(View.VISIBLE);
+//            empty_view_for_you.setVisibility(View.GONE);
+//            recommend_empty_view.setVisibility(View.GONE);
+//
+//            recommenData.clear();
+//            topData.clear();
+//            recommendDataV1.clear();
+//            recommendDataV2.clear();
+//            recommendDataV3.clear();
+//
+//            for(HomeCategory item:homeCategories){
+//                if(item.getType().equals("0")){
+//                    topData.addAll(item.getVos());
+//                }else if(item.getType().equals("1")) {
+//                    recommendDataV1.addAll(item.getVos());
+//                    title_v1.setText(item.getName());
+//                }else if(item.getType().equals("2")) {
+//                    recommendDataV2.addAll(item.getVos());
+//                    title_v2.setText(item.getName());
+//                }else if(item.getType().equals("3")) {
+//                    recommendDataV3.addAll(item.getVos());
+//                    title_v3.setText(item.getName());
+//                }else if(item.getType().equals("4")) {
+//                    recommenData.addAll(item.getVos());
+//                }
+//            }
+//            topAdapter.notifyDataSetChanged();
+//            recommendAdapter.notifyDataSetChanged();
+//            recommendV1Adapter.notifyDataSetChanged();
+//            recommendV2Adapter.notifyDataSetChanged();
+//            recommendV3Adapter.notifyDataSetChanged();
+//
+//            title_v1.setVisibility(View.VISIBLE);
+//            title_v2.setVisibility(View.VISIBLE);
+//            title_v3.setVisibility(View.VISIBLE);
+//            grid_view_v1.setVisibility(View.VISIBLE);
+//            grid_view_v2.setVisibility(View.VISIBLE);
+//            grid_view_v3.setVisibility(View.VISIBLE);
+//            gllery_container.setVisibility(View.VISIBLE);
+//            grid_view_for_you.setVisibility(View.VISIBLE);
+//        }else{
+//            recommend_loading.setVisibility(View.GONE);
+//            recommend_no_data.setVisibility(View.VISIBLE);
+//        }
+//        postData(homeCategories);
+//        //pullToRefreshScrollView.onRefreshComplete();
+//    }
     public void postData(List<HomeCategory> homeCategories){
         if(homeCategories!=null && homeCategories.size()>0){
             pullToRefreshScrollView.onRefreshComplete();

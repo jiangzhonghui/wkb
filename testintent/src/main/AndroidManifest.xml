@@ -14,7 +14,7 @@
         <activity android:name=".BasicViewActivity"
             android:label="Basic View Tests">
             <intent-filter>
-                <action android:name="com.androidbook.intent.action.ShowBasicView"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intent.action.ShowBasicView"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

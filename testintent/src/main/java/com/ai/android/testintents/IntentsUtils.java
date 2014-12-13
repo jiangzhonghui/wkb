@@ -8,7 +8,7 @@ public class IntentsUtils
 {
 	public static void invokeBasicActivity(Activity activity)
 	{
-		   String actionName= "com.androidbook.intent.action.ShowBasicView";
+		   String actionName= "com.eduonline.app.d6.app.androidbook.intent.action.ShowBasicView";
 		   Intent intent = new Intent(actionName);
 		   activity.startActivity(intent);
 	}

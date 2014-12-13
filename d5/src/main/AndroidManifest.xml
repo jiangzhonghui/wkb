@@ -22,19 +22,19 @@
 
         <receiver android:name=".TestReceiver">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
 
         <receiver android:name=".TestTimeDelayReceiver">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
 
         <receiver android:name=".TestReceiver2">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
 
@@ -46,7 +46,7 @@
 -->
         <receiver android:name=".StandaloneReceiver">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
         <!--
@@ -56,7 +56,7 @@
         -->
         <receiver android:name=".NotificationReceiver">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
 
@@ -67,7 +67,7 @@
         -->
         <receiver android:name=".TestLRBCR">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
 
@@ -80,7 +80,7 @@
         -->
         <receiver android:name=".Test30SecBCR">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
         <service android:name=".Test30SecBCRService"/>
@@ -92,7 +92,7 @@
         -->
         <receiver android:name=".Test60SecBCR">
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="com.eduonline.app.d6.app.androidbook.intents.testbc"/>
             </intent-filter>
         </receiver>
         <service android:name=".Test60SecBCRService"/>

@@ -11,7 +11,7 @@
             </intent-filter>
         </activity>
         <provider android:name=".BookProvider"
-            android:authorities="com.androidbook.provider.BookProvider"/>
+            android:authorities="com.eduonline.app.d6.app.androidbook.provider.BookProvider"/>
     </application>
 
 </manifest>
