@@ -1,2 +1,6 @@
-include ':wkblibrary', ':wkb-app',':dataprovider', ':dataprovidersqlite', ':pulltorefresh-library', ':pulltorefresh', ':viewpagerindicator'
+include ':wkblibrary', ':wkb-app', ':dataprovider', ':dataprovidersqlite', ':pulltorefresh-library', ':pulltorefresh', ':viewpagerindicator'
+
+//include ':wkblibrary', ':wkb-app', ':dataprovider', ':dataprovidersqlite', ':pulltorefresh-library', ':pulltorefresh', ':viewpagerindicator', ':d6'
+
+
 

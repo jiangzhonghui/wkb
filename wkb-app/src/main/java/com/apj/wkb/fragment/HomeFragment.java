@@ -20,6 +20,7 @@ import com.apj.wkb.OnFragmentInteractionListener;
 import com.apj.wkb.R;
 import com.apj.wkb.adapter.HomeAdapter;
 import com.apj.wkb.adapter.ImageBannerPagerAdapter;
+import com.apj.wkb.entity.CourseDetailItem;
 import com.apj.wkb.entity.CourserItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.loader.HomeCategoryLoader;
@@ -263,6 +264,11 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             }
             //
         }
+    }
+
+    @Override
+    public void postDetailData(CourseDetailItem data) {
+
     }
 
     private void bindDataToUI(List<HomeCategory> homeCategories){

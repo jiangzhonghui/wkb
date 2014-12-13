@@ -12,5 +12,8 @@
     <string name="title_section3">我</string>
     <string name="title_activity_app_login">AppLoginActivity</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_vedio_play">VedioPlayActivity</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
 
 </resources>

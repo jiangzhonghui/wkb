@@ -1,5 +1,6 @@
 package com.apj.wkb.task;
 
+import com.apj.wkb.entity.CourseDetailItem;
 import com.apj.wkb.entity.HomeCategory;
 
 import java.util.List;
@@ -10,5 +11,7 @@ import java.util.List;
 public interface IDataListener {
 
     public void postData(List<HomeCategory> data);
+
+    public void postDetailData(CourseDetailItem data);
 
 }
