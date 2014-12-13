@@ -14,6 +14,7 @@ import com.eduonline.app.d6.app.R;
 public class RecorderActivity extends Activity {
     private MediaPlayer mediaPlayer;
     private MediaRecorder recorder;
+
     private String OUTPUT_FILE;
 
     @Override

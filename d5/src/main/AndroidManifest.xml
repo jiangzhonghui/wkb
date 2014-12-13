@@ -26,9 +26,10 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".TestTimeDelayReceiver">
+        <receiver android:name=".MediaScannerReciever">
             <intent-filter>
                 <action android:name="com.androidbook.intents.testbc"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
             </intent-filter>
         </receiver>
 
