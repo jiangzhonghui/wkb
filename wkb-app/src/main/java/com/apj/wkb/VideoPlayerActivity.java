@@ -63,6 +63,10 @@ public class VideoPlayerActivity extends ActionBarActivity {
         }
     }
 
+    public void setVideoDetail(CourseDetailItem data){
+        this.mData = data;
+        this.actionBar.setTitle(data.getTitle());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

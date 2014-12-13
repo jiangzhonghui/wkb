@@ -13,6 +13,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.apj.wkb.R;
+import com.apj.wkb.VideoPlayerActivity;
 import com.apj.wkb.entity.CourseDetailItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.task.IDataListener;
@@ -62,6 +63,8 @@ public  class PlayerFragment extends Fragment implements IDataListener {
     @Override
     public void postDetailData(CourseDetailItem data) {
         if(data!=null){
+            VideoPlayerActivity activity = (VideoPlayerActivity)this.getActivity();
+            activity.setVideoDetail(data);
             String mp4Url = data.getVideoList().get(0).getRepovideourlmp4();
             MediaController mc = new MediaController(this.getActivity());
             videoView.setMediaController(mc);

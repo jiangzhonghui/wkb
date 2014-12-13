@@ -32,7 +32,7 @@
         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:src="@drawable/ico_no_such_course" />
         <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/vdetail_no_suchcourse" />
     </LinearLayout>
-    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v_detail_loading_page" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v_detail_loading_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ProgressBar android:id="@id/top_progressbar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="162.0dip" android:indeterminateDrawable="@drawable/vopen_progress_anim" />
         <TextView android:textAppearance="@style/no_item_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/loading" />
     </LinearLayout>

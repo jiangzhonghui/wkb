@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.v4.content.CursorLoader;
 import android.util.Log;
 
 import com.apj.wkb.entity.CourserItem;
@@ -61,7 +62,20 @@ public class ProviderUtils{
     public List<CourserItem> showCourseItems(String type) {
         Uri uri = MyTodoContentProvider.CONTENT_URI;
         Activity a = (Activity) this.mContext;
-        Cursor c = a.managedQuery(uri,
+
+        /*
+        CursorLoader cursorLoader = new CursorLoader(
+                a,
+                uri,
+                null,
+                TodoTable.COLUMN_TYPE + "=?",
+                new String[] { type }, //selection args array of strings
+                null);
+
+        Cursor c = cursorLoader.loadInBackground();
+        */
+
+        Cursor c = mContext.getContentResolver().query(uri,
                 null, //projection
                 TodoTable.COLUMN_TYPE + "=?",
                 new String[] { type }, //selection args array of strings
@@ -114,11 +128,11 @@ public class ProviderUtils{
     public int getCount() {
         Uri uri = MyTodoContentProvider.CONTENT_URI;
         Activity a = (Activity) this.mContext;
-        Cursor c = a.managedQuery(uri,
+        Cursor c =  mContext.getContentResolver().query(uri,
                 null, //projection
                 null, //selection string
                 null, //selection args array of strings
-                null); //sort order
+                null);
         int numberOfRecords = c.getCount();
         c.close();
         return numberOfRecords;
