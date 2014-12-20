@@ -18,8 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-public class MainActivity extends Activity implements
-        SurfaceHolder.Callback, OnInfoListener, OnErrorListener {
+import com.eduonline.app.d6.app.R;
+
+
+public class MainActivity extends Activity implements  SurfaceHolder.Callback, OnInfoListener, OnErrorListener {
 
 	private static final String TAG = "RecordVideo";
 	private MediaRecorder mRecorder = null;

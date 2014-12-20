@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.eduonline.app.d6.app.R;
+
 public class UsingMediaStoreActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

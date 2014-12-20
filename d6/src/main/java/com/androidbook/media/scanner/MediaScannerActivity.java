@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.eduonline.app.d6.app.R;
+
 public class MediaScannerActivity extends Activity implements MediaScannerConnectionClient 
 {
 	private EditText editText = null;

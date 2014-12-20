@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.media.audiofx.AudioEffect;
 import android.os.Bundle;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
     @Override

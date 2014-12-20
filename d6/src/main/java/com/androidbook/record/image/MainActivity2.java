@@ -14,6 +14,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity2 extends Activity implements MediaScannerConnectionClient {
     
 	private static final String TAG = "CameraWithIntent";

@@ -10,6 +10,8 @@ import android.os.PowerManager;
 import android.util.Log;
 import android.view.View;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity extends Activity implements OnPreparedListener
 {
     static final String AUDIO_PATH =
@@ -78,7 +80,7 @@ public class MainActivity extends Activity implements OnPreparedListener
 
     private void playLocalAudio() throws Exception
     {
-        mediaPlayer = MediaPlayer.create(this, R.raw.music_file);
+        mediaPlayer = MediaPlayer.create(this, R.raw.rooster);
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mediaPlayer.start();
     }
@@ -86,7 +88,7 @@ public class MainActivity extends Activity implements OnPreparedListener
     private void playLocalAudio_UsingDescriptor() throws Exception {
 
         AssetFileDescriptor fileDesc = getResources().openRawResourceFd(
-        		R.raw.music_file);
+        		R.raw.rooster);
         if (fileDesc != null) {
 
             mediaPlayer = new MediaPlayer();

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 
+import com.eduonline.app.d6.app.R;
+
 public class RecorderActivity extends Activity {
     private MediaPlayer mediaPlayer;
     private MediaRecorder recorder;

@@ -13,6 +13,8 @@ import android.provider.MediaStore.Images.Media;
 import android.util.Log;
 import android.view.View;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity extends Activity {
     
 	private static final String TAG = "CameraWithIntent";

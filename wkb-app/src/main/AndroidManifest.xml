@@ -56,6 +56,15 @@
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:label="@string/title_activity_video_player" >
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

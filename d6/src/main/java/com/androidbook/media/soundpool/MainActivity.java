@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ToggleButton;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity extends Activity implements SoundPool.OnLoadCompleteListener {
 	private static final int SRC_QUALITY = 0;
     private static final int PRIORITY = 1;
@@ -57,7 +59,7 @@ public class MainActivity extends Activity implements SoundPool.OnLoadCompleteLi
 
     public void doClick(View view) {
     	switch(view.getId()) {
-    	case R.id.button:
+    	case R.id.btn:
     		if(((ToggleButton)view).isChecked()) {
     			soundPool.autoResume();
     		}

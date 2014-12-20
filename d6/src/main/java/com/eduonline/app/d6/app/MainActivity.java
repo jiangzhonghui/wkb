@@ -1,5 +1,6 @@
 package com.eduonline.app.d6.app;
 
+import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_RINGTONES).getPath();
     }
 
 

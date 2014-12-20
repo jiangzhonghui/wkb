@@ -7,6 +7,8 @@ import android.os.Environment;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import com.eduonline.app.d6.app.R;
+
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
 	@Override
