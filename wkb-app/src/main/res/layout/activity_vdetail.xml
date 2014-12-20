@@ -8,15 +8,15 @@
                 android:id="@id/v_detail_player"
                 android:layout_width="match_parent"
                 android:layout_height="205.0dip" />
-            <!--
-                        <LinearLayout android:orientation="vertical" android:id="@id/v_detail_other" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-                       -->  <!-- <com.netease.vopen.view.vpi.TabPageIndicator android:id="@id/v_detail_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" />-->
-            <!--  <com.viewpagerindicator.TabPageIndicator
+
+             <LinearLayout android:orientation="vertical" android:id="@id/v_detail_other" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+
+             <com.viewpagerindicator.TabPageIndicator
                   android:id="@id/v_detail_tabs"
                   android:layout_width="fill_parent"
                   android:layout_height="40.0dip" />
               <android.support.v4.view.ViewPager android:id="@id/v_detail_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-          </LinearLayout>-->
+          </LinearLayout>
         </LinearLayout>
         <View android:id="@id/v_detail_mask" android:background="@drawable/player_replay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/v_detail_comment_box" android:background="#ffeeeeee" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">

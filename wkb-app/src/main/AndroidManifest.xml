@@ -79,16 +79,8 @@
         </service>
 
         <activity
-            android:name=".VedioPlayActivity"
-            android:label="@string/title_activity_vedio_play" >
-        </activity>
-        <activity
-            android:name=".VideoPlayActivity"
-            android:label="@string/title_activity_video_play" >
-        </activity>
-        <activity
             android:name=".VideoPlayerActivity"
-            android:label="@string/title_activity_video_player" >
+            android:label="播放" >
         </activity>
     </application>
 

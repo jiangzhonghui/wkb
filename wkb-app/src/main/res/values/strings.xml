@@ -14,6 +14,8 @@
     <string name="title_activity_search_result">SearchResultActivity</string>
     <string name="title_activity_vedio_play">VedioPlayActivity</string>
     <string name="title_activity_video_play">VideoPlayActivity</string>
-    <string name="title_activity_video_player">VideoPlayerActivity</string>
-
+    <string name="title_fragment_video_brief">简洁</string>
+    <string name="title_fragment_video_list">目录</string>
+    <string name="title_fragment_video_recommends">相关推荐</string>
+    <string name="title_fragment_video_comments">跟贴</string>
 </resources>

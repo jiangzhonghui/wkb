@@ -14,8 +14,31 @@ public class FragmentManagerUtils {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    public static Fragment getFragmentInstance(int sectionNumber){
+    public static Fragment getFragmentInstance(int sectionNumber) {
+        if (sectionNumber == 1) {
+            HomeFragment fragment = new HomeFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        } else if (sectionNumber == 2) {
+            CategoryFragment fragment = new CategoryFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        } else {
+            SettingFragment fragment = new SettingFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+    }
+
+    public static Fragment getDetailActivityFragmentInstance(int sectionNumber){
         if(sectionNumber==1){
+            //
             HomeFragment fragment = new HomeFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -27,7 +50,14 @@ public class FragmentManagerUtils {
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
-        }else{
+
+        }else if(sectionNumber==3){
+            CategoryFragment fragment = new CategoryFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }  else{
             SettingFragment fragment = new SettingFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);

@@ -1,5 +1,6 @@
 package com.apj.wkb.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -13,9 +14,11 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.apj.wkb.R;
+import com.apj.wkb.VideoPlayerActivity;
 import com.apj.wkb.entity.CourseDetailItem;
 import com.apj.wkb.entity.HomeCategory;
 import com.apj.wkb.task.IDataListener;
+import com.apj.wkb.task.OnVdFragmentInteractionListener;
 import com.apj.wkb.utils.DataUtils;
 import com.github.kevinsawicki.http.HttpRequest;
 import com.google.gson.Gson;
@@ -31,6 +34,9 @@ public  class PlayerFragment extends Fragment implements IDataListener {
     private VideoView videoView;
     private String url;
     private String title;
+    private OnVdFragmentInteractionListener mListener;
+
+    private CourseDetailItem mData;
 
     public PlayerFragment() {
     }
@@ -41,8 +47,7 @@ public  class PlayerFragment extends Fragment implements IDataListener {
         if (getArguments() != null) {
             url = getArguments().getString("url");
             title = getArguments().getString("title");
-            LoadDetailTask task =new LoadDetailTask(this.getActivity(),url,this);
-            task.execute();
+            postDetailData(mData);
         }
     }
 
@@ -62,6 +67,8 @@ public  class PlayerFragment extends Fragment implements IDataListener {
     @Override
     public void postDetailData(CourseDetailItem data) {
         if(data!=null){
+            VideoPlayerActivity activity = (VideoPlayerActivity)this.getActivity();
+            activity.setVideoDetail(data);
             String mp4Url = data.getVideoList().get(0).getRepovideourlmp4();
             MediaController mc = new MediaController(this.getActivity());
             videoView.setMediaController(mc);
@@ -72,44 +79,29 @@ public  class PlayerFragment extends Fragment implements IDataListener {
         }
     }
 
-    public class LoadDetailTask extends AsyncTask<Void,Void,String> {
-
-        private String contentId;
-        private Context context;
-        private IDataListener listener;
-
-        public LoadDetailTask(Context context,String id,IDataListener listener) {
-            super();
-            contentId = id;
-            this.context =context;
-            this.listener = listener;
+    // TODO: Rename method, update argument and hook method into UI event
+    public CourseDetailItem getData() {
+        if (mListener != null) {
+            return mListener.onFragmentInteraction();
         }
+        return null;
+    }
 
-        @Override
-        protected String doInBackground(Void... params) {
-            String jsonString = "";
-            try{
-                jsonString  =  HttpRequest.get(String.format(DataUtils.URL_DETAIL, contentId)).accept("application/json").body();
-            }catch (Exception ex){
-                Log.e("DataUtils", "loadDate", ex);
-            }
-            return jsonString;
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            mListener = (OnVdFragmentInteractionListener) activity;
+            mData= mListener.onFragmentInteraction();
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnFragmentInteractionListener");
         }
+    }
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected void onPostExecute(String jsonString) {
-            Gson gson = new Gson();
-            try{
-                CourseDetailItem data = gson.fromJson(jsonString, new TypeToken<CourseDetailItem>(){}.getType());
-                listener.postDetailData(data);
-            }catch (Exception ex){
-                listener.postDetailData(null);
-            }
-        }
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
     }
 }
