@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import com.apj.wkb.fragment.CategoryFragment;
 import com.apj.wkb.fragment.HomeFragment;
 import com.apj.wkb.fragment.SettingFragment;
+import com.apj.wkb.fragment.VdCommentsFragment;
+import com.apj.wkb.fragment.VdCourseInfoFragment;
+import com.apj.wkb.fragment.VdRelatedCourseFragment;
+import com.apj.wkb.fragment.VdVlistFragment;
 
 /**
  * Created by student on 2014/11/8.
@@ -39,26 +43,26 @@ public class FragmentManagerUtils {
     public static Fragment getDetailActivityFragmentInstance(int sectionNumber){
         if(sectionNumber==1){
             //
-            HomeFragment fragment = new HomeFragment();
+            VdCourseInfoFragment fragment = new VdCourseInfoFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
         }else if(sectionNumber==2){
-            CategoryFragment fragment = new CategoryFragment();
+            VdVlistFragment fragment = new VdVlistFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
 
         }else if(sectionNumber==3){
-            CategoryFragment fragment = new CategoryFragment();
+            VdRelatedCourseFragment fragment = new VdRelatedCourseFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
          }  else{
-            SettingFragment fragment = new SettingFragment();
+            VdCommentsFragment fragment = new VdCommentsFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
