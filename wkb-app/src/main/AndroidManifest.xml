@@ -65,6 +65,10 @@
             android:name=".MyActivity"
             android:label="@string/title_activity_my" >
         </activity>
+        <activity
+            android:name=".MyActivity2"
+            android:label="@string/title_activity_my_activity2" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

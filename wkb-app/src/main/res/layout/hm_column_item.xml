@@ -6,5 +6,5 @@
         <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
     </LinearLayout>
     <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" />
-    <com.netease.vopen.view.MyGridView android:id="@id/recommend_grid" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:listSelector="@null" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
+    <GridView android:id="@id/recommend_grid" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:listSelector="@null" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
 </LinearLayout>

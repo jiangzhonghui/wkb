@@ -14,5 +14,6 @@
     <string name="title_activity_search_result">SearchResultActivity</string>
     <string name="title_activity_video_player">VideoPlayerActivity</string>
     <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_my_activity2">MyActivity2</string>
 
 </resources>
