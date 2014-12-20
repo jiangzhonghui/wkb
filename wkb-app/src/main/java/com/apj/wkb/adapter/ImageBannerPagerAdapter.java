@@ -69,7 +69,7 @@ public class ImageBannerPagerAdapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(context, VideoPlayerActivity.class);
-                intent.putExtra("url",entity.getContentUrl());
+                intent.putExtra("url",entity.getContentId());
                 intent.putExtra("title",entity.getTitle());
                 context.startActivityForResult(intent,0);
             }

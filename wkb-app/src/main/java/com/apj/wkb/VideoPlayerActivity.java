@@ -68,11 +68,9 @@ public class VideoPlayerActivity extends ActionBarActivity implements OnVdFragme
         tabs.setViewPager(mViewPager);
 
         if (savedInstanceState == null) {
-
            LoadDetailTask task =new LoadDetailTask(this,url,new IDataListener() {
                 @Override
                 public void postData(List<HomeCategory> data) {
-
                 }
 
                 @Override
@@ -84,20 +82,16 @@ public class VideoPlayerActivity extends ActionBarActivity implements OnVdFragme
                     args.putString("url", url);
                     args.putString("title", title);
                     fragment.setArguments(args);
+                    getSupportFragmentManager().beginTransaction()
+                            .add(R.id.v_detail_player, fragment)
+                            .commit();
 
                     pagerData.add("简介");
                     pagerData.add("目录");
                     pagerData.add("相关课程");
                     pagerData.add("跟帖");
-
                     mSectionsPagerAdapter.notifyDataSetChanged();
                     tabs.notifyDataSetChanged();
-
-                    getSupportFragmentManager().beginTransaction()
-                            .add(R.id.v_detail_player, fragment)
-                            .commit();
-
-
 
                 }
             });
