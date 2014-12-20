@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eduonline.app.d5"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <activity
+            android:name="com.eduonline.app.d5.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.eduonline.app.d5.TestReceiver" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.eduonline.app.d5.TestTimeDelayReceiver" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.eduonline.app.d5.TestReceiver2" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+************************************************************
+* A receiver in a process outside of the
+* broadcast sender.
+************************************************************
+        -->
+        <receiver android:name="com.eduonline.app.d5.StandaloneReceiver" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+        <!--
+        ************************************************************
+        * A receiver to prove notifications
+        ************************************************************
+        -->
+        <receiver android:name="com.eduonline.app.d5.NotificationReceiver" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        ************************************************************
+        * Long Running Receiver Basic Test
+        ************************************************************
+        -->
+        <receiver android:name="com.eduonline.app.d5.TestLRBCR" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.eduonline.app.d5.TestLRBCRService" />
+
+        <!--
+        ************************************************************
+        * Long Running Receiver 30 sec slepp Test
+        ************************************************************
+        -->
+        <receiver android:name="com.eduonline.app.d5.Test30SecBCR" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.eduonline.app.d5.Test30SecBCRService" />
+
+        <!--
+        ************************************************************
+        * Long Running Receiver 60 sec sleep Test
+        ************************************************************
+        -->
+        <receiver android:name="com.eduonline.app.d5.Test60SecBCR" >
+            <intent-filter>
+                <action android:name="com.androidbook.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.eduonline.app.d5.Test60SecBCRService" />
+    </application>
+
+</manifest>

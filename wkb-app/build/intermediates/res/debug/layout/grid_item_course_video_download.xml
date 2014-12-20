@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/video_btn_bg" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_black" android:gravity="center" android:id="@id/course_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="第1课" />
+    <View android:id="@id/space" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/course_video_checkbox" android:visibility="visible" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" android:button="@drawable/checkbox_selector_small" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/course_video_tag_downloaded" android:background="@drawable/video_downloaded_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/vdetail_tag_downloaded" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/course_video_tag_not_available" android:background="@drawable/video_not_available_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/vdetail_tag_not_available" />
+</LinearLayout>
+<!-- From: file:/E:/wkb/wkb-app/src/main/res/layout/grid_item_course_video_download.xml -->

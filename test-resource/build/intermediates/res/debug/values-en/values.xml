@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/apk/res/android">
+
+    <!-- From: file:/E:/wkb/test-resource/src/main/res/values-en/strings_en.xml -->
+    <eat-comment />
+
+    <ns1:string name="t1_1_en_port">t1_1_en</ns1:string>
+    <ns1:string name="t1_enport">t1_en</ns1:string>
+    <ns1:string name="teststring_all">teststring-en</ns1:string>
+
+</resources>
