@@ -1,2 +1,2 @@
-include ':wkblibrary', ':wkb-app', ':testintent', ':dataprovider', ':dataprovidersqlite', ':pulltorefresh', ':app'
+include ':wkblibrary', ':wkb-app', ':testintent', ':dataprovider', ':dataprovidersqlite', ':pulltorefresh', ':app', ':viewpagerindicator'
 

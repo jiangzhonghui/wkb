@@ -57,19 +57,8 @@
     <attr name="layout_newLine" format="boolean" />
     <attr name="layout_horizontalSpacing" format="dimension" />
     <attr name="layout_verticalSpacing" format="dimension" />
-    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
-    <attr name="vpiIconPageIndicatorStyle" format="reference" />
-    <attr name="vpiLinePageIndicatorStyle" format="reference" />
-    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
-    <attr name="vpiTabPageIndicatorStyle" format="reference" />
-    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
     <attr name="centered" format="boolean" />
     <attr name="selectedColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="unselectedColor" format="color" />
-    <attr name="fillColor" format="color" />
-    <attr name="pageColor" format="color" />
-    <attr name="radius" format="dimension" />
-    <attr name="snap" format="boolean" />
-    <attr name="strokeColor" format="color" />
 </resources>
