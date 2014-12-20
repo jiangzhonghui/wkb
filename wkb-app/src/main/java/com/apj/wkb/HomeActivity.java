@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -62,7 +63,6 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         //actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
