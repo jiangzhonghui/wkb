@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set android:shareInterpolator="false"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <translate android:interpolator="@android:anim/decelerate_interpolator" android:duration="500" android:fromYDelta="2.9999971%p" android:toYDelta="0.0" />
-    <alpha android:interpolator="@android:anim/linear_interpolator" android:duration="500" android:fromAlpha="0.0" android:toAlpha="1.0" />
-</set>
-<!-- From: file:/E:/wkb/wkb-app/src/main/res/anim/welcome_text2_fade_in.xml -->
