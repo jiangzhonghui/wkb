@@ -26,6 +26,7 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.umeng.analytics.MobclickAgent;
 
 
 public class HomeActivity extends ActionBarActivity implements ActionBar.TabListener,OnFragmentInteractionListener {
@@ -50,11 +51,14 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
      */
     ViewPager mViewPager;
 
+    private Context mContext;
+    private final  String mPageName = "liuqiurongtest";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        mContext = this;
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -89,6 +93,20 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
                             .setTabListener(this));
         }
         initImageLoader(getApplicationContext());
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onPageStart(mPageName);
+        MobclickAgent.onResume(mContext);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPageEnd( mPageName );
+        MobclickAgent.onPause(mContext);
     }
 
     public static void initImageLoader(Context context) {
@@ -175,6 +193,8 @@ public class HomeActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public CharSequence getPageTitle(int position) {
             Locale l = Locale.getDefault();
+            MobclickAgent.onEvent(mContext, "click");
+            MobclickAgent.onEvent(mContext, "click", "button");
             switch (position) {
                 case 0:
                     return getString(R.string.title_section1).toUpperCase(l);

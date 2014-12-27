@@ -64,6 +64,17 @@
             android:name=".VideoPlayerActivity"
             android:label="@string/title_activity_video_player" >
         </activity>
+
+        <!-- Caution! Do not change this app key. It is only for demo usage. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549e7336fd98c573fd000143" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="liuqiuorng" >
+        </meta-data>
+
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
