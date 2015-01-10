@@ -15,3 +15,9 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keep public class * extends android.app.Activity
+-keep public class * implements android.os.Parcelable
+
+-keepclasseswithmember class * extends android.app.Activity{
+   public void *(android.view.View);
+}

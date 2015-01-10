@@ -1,1 +1,2 @@
-include ':wkblibrary', ':wkb-app'
+include  ':wkb-app', ':pulltorefresh-library', ':pulltorefresh', ':viewpagerindicator', ':d7', 'd6'
+
